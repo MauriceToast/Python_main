@@ -37,7 +37,7 @@ def scrape_standings(driver, wait):
                 'overtime_losses': cols[7].text,
                 'losses': cols[8].text,
                 'goals_for': cols[9].text,
-                'goals_againts': cols[10].text,
+                'goals_against': cols[10].text,
                 'penalty_minutes': cols[11].text
             })
 
@@ -67,7 +67,7 @@ standings = scrape_standings(driver, wait)
 # Write standings data to CSV
 with open('ligue_magnus_rankings.csv', 'w', newline='', encoding='utf-8') as csvfile:
     fieldnames = ['rank', 'team', 'points', 'games_played', 'wins', 'overtime_wins', 'overtime_losses', 'losses',
-                  'goals_for', 'goals_againts', 'penalty_minutes']
+                  'goals_for', 'goals_against', 'penalty_minutes']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
     for team in standings:
