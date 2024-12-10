@@ -1,4 +1,4 @@
-rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_againts,penalty_minutes
+rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against,penalty_minutes
 1,GRENOBLE,61,23,19,1,2,1,114,46,210
 2,ANGERS,52,24,16,2,0,6,91,58,149
 3,BORDEAUX,48,25,13,3,3,6,86,56,177
