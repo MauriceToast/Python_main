@@ -1,9 +1,7 @@
 
-import json
 from datetime import datetime, date
 import csv
-
-from kivy.storage.jsonstore import JsonStore
+import os
 import requests
 from io import StringIO
 
@@ -31,7 +29,7 @@ def replace_team_names(team_name):
     }
     return replacements.get(team_name, team_name)
 
-base_url = "https://raw.githubusercontent.com/MauriceToast/Python_main/main"
+base_url = "https://raw.githubusercontent.com/MauriceToast/Python_main/main/"
 
 french_months = {
     'janvier': 1, 'février': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6,
@@ -223,25 +221,33 @@ def calculate_bookmaker_quotes(team1, team2, rankings_data, matches_data, date_s
     return final_odds
 
 def save_quotes(date_str, match_id, quotes):
-    quotes_store = JsonStore('quotes_NL.json')
     try:
         date_obj = parse_french_date(date_str)
         formatted_date = date_obj.strftime('%Y-%m-%d')
     except ValueError:
         formatted_date = date_str
 
-    # Replace team names in the match_id
-    team1, team2 = match_id.split(' - ')
-    team1 = replace_team_names(team1)
-    team2 = replace_team_names(team2)
-    updated_match_id = f"{team1} - {team2}"
+    csv_file = 'quotes_NL.csv'
+    file_exists = os.path.isfile(csv_file)
 
-    if not quotes_store.exists(formatted_date):
-        quotes_store[formatted_date] = {match_id: quotes}
-    else:
-        date_quotes = quotes_store.get(formatted_date)
-        date_quotes[match_id] = quotes
-        quotes_store[formatted_date] = date_quotes
+    with open(csv_file, 'a', newline='') as csvfile:
+        fieldnames = ['date', 'match', 'team1', 'team2', 'draw', 'team1_extra', 'team2_extra']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+
+        if not file_exists:
+            writer.writeheader()
+
+        writer.writerow({
+            'date': formatted_date,
+            'match': match_id,
+            'team1': quotes['team1'],
+            'team2': quotes['team2'],
+            'draw': quotes['draw'],
+            'team1_extra': quotes['team1_extra'],
+            'team2_extra': quotes['team2_extra']
+        })
+
+    print(f"Quotes saved to {csv_file}")
 
 
 def filter_upcoming_matches(matches_data):
