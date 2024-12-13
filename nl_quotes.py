@@ -229,25 +229,38 @@ def save_quotes(date_str, match_id, quotes):
 
     csv_file = 'quotes_NL.csv'
     file_exists = os.path.isfile(csv_file)
+    
+    # Read existing data
+    existing_data = []
+    if file_exists:
+        with open(csv_file, 'r', newline='') as csvfile:
+            reader = csv.DictReader(csvfile)
+            existing_data = list(reader)
 
-    with open(csv_file, 'a', newline='') as csvfile:
-        fieldnames = ['date', 'match', 'team1', 'team2', 'draw', 'team1_extra', 'team2_extra']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    # Check if the match already exists
+    match_exists = any(row['date'] == formatted_date and row['match'] == match_id for row in existing_data)
 
-        if not file_exists:
-            writer.writeheader()
+    if not match_exists:
+        # Append new data
+        with open(csv_file, 'a', newline='') as csvfile:
+            fieldnames = ['date', 'match', 'team1', 'team2', 'draw', 'team1_extra', 'team2_extra']
+            writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
 
-        writer.writerow({
-            'date': formatted_date,
-            'match': match_id,
-            'team1': quotes['team1'],
-            'team2': quotes['team2'],
-            'draw': quotes['draw'],
-            'team1_extra': quotes['team1_extra'],
-            'team2_extra': quotes['team2_extra']
-        })
+            if not file_exists:
+                writer.writeheader()
 
-    print(f"Quotes saved to {csv_file}")
+            writer.writerow({
+                'date': formatted_date,
+                'match': match_id,
+                'team1': quotes['team1'],
+                'team2': quotes['team2'],
+                'draw': quotes['draw'],
+                'team1_extra': quotes['team1_extra'],
+                'team2_extra': quotes['team2_extra']
+            })
+        print(f"New quotes saved for {match_id} on {formatted_date}")
+    else:
+        print(f"Quotes for {match_id} on {formatted_date} already exist, skipping")
 
 
 def filter_upcoming_matches(matches_data):
