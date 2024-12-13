@@ -22,7 +22,7 @@ team_prestige = {
     "BRIANÇON": 10 / 20
 }
 
-base_url = "https://raw.githubusercontent.com/Valier-App/Valier-App/main/"
+base_url = "https://raw.githubusercontent.com/MauriceToast/Python_main/main"
 
 french_months = {
     'janvier': 1, 'février': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6,
