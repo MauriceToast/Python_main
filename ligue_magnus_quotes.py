@@ -104,9 +104,9 @@ def calculate_bookmaker_quotes(team1, team2, rankings_data, matches_data, date_s
     team2_prob -= weights['home_advantage'] * 0.1
 
     # 4. Goal difference
-    team1_goal_diff = (int(team1_data['goals_for']) - int(team1_data['goals_againts'])) / int(
+    team1_goal_diff = (int(team1_data['goals_for']) - int(team1_data['goals_against'])) / int(
         team1_data['games_played'])
-    team2_goal_diff = (int(team2_data['goals_for']) - int(team2_data['goals_againts'])) / int(
+    team2_goal_diff = (int(team2_data['goals_for']) - int(team2_data['goals_against'])) / int(
         team2_data['games_played'])
     total_goal_diff = abs(team1_goal_diff) + abs(team2_goal_diff)
     if total_goal_diff != 0:
