@@ -19,6 +19,13 @@ driver = webdriver.Chrome(service=service, options=chrome_options)
 web = "https://www.rts.ch/sport/resultats/#/results/hockey/nla/Phase-1-0/rankings/700217"
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
+def replace_team_names(team_name):
+    replacements = {
+        "Genève": "Geneve",
+        # Add more replacements here if needed
+    }
+    return replacements.get(team_name, team_name)
+
 def accept_cookies(driver):
     try:
         print("Waiting for cookie consent dialog...")
@@ -65,6 +72,9 @@ def get_rankings():
             if len(current_row) == 9:  # Each row should have exactly 9 fields
                 rank, team, games_played, wins, overtime_wins, overtime_losses, losses, goals, points = current_row
 
+                # Apply team name replacement
+                team = replace_team_names(team)
+                
                 # Split goals into goals_for and goals_against
                 goals_for, goals_against = map(int, goals.split('-'))
 
