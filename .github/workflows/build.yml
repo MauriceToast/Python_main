@@ -28,10 +28,12 @@ jobs:
         sudo apt-get install -y python3-pip python3-setuptools git cython3  # Install necessary packages
         pip install buildozer
 
-    - name: Install Android SDK components
+    - name: Install Android SDK Command-line Tools
       run: |
         sudo apt-get install -y android-sdk  # Install Android SDK
+        sudo apt-get install -y android-sdk-commandlinetools  # Install command-line tools
         echo "export ANDROID_HOME=/usr/lib/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
+        echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_ENV  # Add cmdline-tools to PATH
         yes | sdkmanager --licenses  # Automatically accept all licenses
         sdkmanager "build-tools;36.0.0"  # Specify the build-tools version you want
 
