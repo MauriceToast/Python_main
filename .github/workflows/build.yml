@@ -1,0 +1,36 @@
+name: Build Kivy APK
+
+on:
+  push:
+    branches:
+      - main  # This ensures the workflow runs on pushes to the main branch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.8'  # Specify the Python version you need
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y python3-pip python3-setuptools git
+        pip install buildozer
+
+    - name: Build APK
+      run: |
+        cd path/to/your/app  # Change this to the directory containing main.py and .kv files
+        buildozer android debug  # This will build the APK
+
+    - name: Upload APK
+      uses: actions/upload-artifact@v2
+      with:
+        name: myapp-apk
+        path: path/to/your/app/bin/*.apk  # Adjust this path to where your APK is generated
