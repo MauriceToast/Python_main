@@ -13,6 +13,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
+    - name: Set up Java
+      run: |
+        sudo apt-get install -y openjdk-11-jdk  # Install OpenJDK 11
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -21,8 +25,13 @@ jobs:
     - name: Install dependencies
       run: |
         sudo apt-get update
-        sudo apt-get install -y python3-pip python3-setuptools git cython3  # Change cython to cython3
+        sudo apt-get install -y python3-pip python3-setuptools git cython3  # Install necessary packages
         pip install buildozer
+
+    - name: Install Android SDK components
+      run: |
+        sudo apt-get install -y android-sdk  # Install Android SDK
+        echo "export ANDROID_HOME=/usr/lib/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
 
     - name: Build APK
       run: |
