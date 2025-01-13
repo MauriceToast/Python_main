@@ -1,0 +1,2676 @@
+# Définition de l'écran d'accueil
+
+<SetupProfileScreen>:
+    md_bg_color: self.theme_cls.backgroundColor
+
+    FitImage:
+        source: "image/Ice_Rink_Cube.jpeg"
+        size_hint: 1, 1
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+    ScrollView:
+        size_hint: .6, 1
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            padding: "20dp"
+            spacing: "20dp"
+            md_bg_color: [.8, 1, 1, 0.8]
+
+            MDTopAppBar:
+                type: "small"
+                size_hint_x: 1
+
+                MDTopAppBarLeadingButtonContainer:
+                    MDActionTopAppBarButton:
+                        icon: "menu"
+                        id: menu
+                        on_release: root.open_menu(self)
+
+                MDTopAppBarTitle:
+                    id: top_app_bar_title
+                    markup: True
+                    text: f"[font=RacingSansOne][b]{root.set_up_your_profile_text}[/b][/font]"
+                    pos_hint: {"center_x": .5}
+
+            MDBoxLayout:
+                orientation: 'horizontal'
+                adaptive_height: True
+                padding: "20dp"
+                spacing: "20dp"
+                md_bg_color: self.theme_cls.backgroundColor
+
+                MDLabel:
+                    id: pseudo_label
+                    text: root.enter_your_pseudo_text
+                    md_bg_color: self.theme_cls.backgroundColor
+                MDTextField:
+                    id: pseudo_field
+                    helper_text_mode: "on_focus"
+                    size_hint_x: None
+                    width: "300dp"
+                    pos_hint: {"center_x": .5}
+
+            MDBoxLayout:
+                orientation: 'vertical'
+                id: icon_container
+                height: icon_selection.height
+                adaptive_height: True
+                MDList:
+                    IconSelectionPanel:
+                        id: icon_selection
+
+            MDButton:
+                on_release: root.save_profile()
+                size_hint_x: None
+                width: "300dp"
+                pos_hint: {"left": .5}
+                MDButtonText:
+                    text: root.save_and_continue_text
+
+<IconSelectionPanel>:
+    size_hint_y: None
+    height: self.ids.header.height
+    id: panel
+
+    MDExpansionPanelHeader:
+        id:header
+        height: "56dp"
+        MDListItem:
+            MDListItemLeadingIcon:
+                id: selected_icon
+                icon: "account-circle-outline"  # Default icon
+            MDListItemHeadlineText:
+                text: root.select_icon_text
+            TrailingPressedIconButton:
+                id: chevron
+                icon: "chevron-right"
+                on_release: app.tap_expansion_chevron_register(panel, chevron)
+
+    MDExpansionPanelContent:
+        orientation: "vertical"
+        padding: "12dp", 0, "12dp", "12dp"
+        md_bg_color: self.theme_cls.surfaceContainerLowestColor
+        #adaptive_height: True
+
+        MDLabel:
+            text: "Channel informations"
+            adaptive_height: True
+            padding_x: "16dp"
+            padding_y: "12dp"
+
+        MDGridLayout:
+            adaptive_height: True
+            cols: 8
+            spacing: "10dp"
+            padding: "10dp"
+
+            MDIconButton:
+                icon: "account-circle-outline"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account-cowboy-hat"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account-tie"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account-tie-woman"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "card-account-details"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account-box"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "account-cog"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "bat"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "bird"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "dolphin"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "duck"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "elephant"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "fish"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "google-downasaur"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "horse-variant"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "jellyfish"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "linux"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "owl"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "shark"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "shark-fin"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "snake"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "spider"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "turtle"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "leaf"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "pine-tree"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "wizard-hat"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-cool"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-dead"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-devil"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-happy"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-poop"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "emoticon-wink"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "axe-battle"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "cards-diamond"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "cards-heart"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "cards-club"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "cards-spade"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "magic-staff"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "one-up"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "pac-man"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "pokeball"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "shield"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "skull-crossbones"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "star-face"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "teddy-bear"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "leaf-maple"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "hockey-puck"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "hockey-sticks"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "skate"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "trophy-outline"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "whistle-outline"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "snowflake"
+                on_release: root.select_icon(self.icon)
+            MDIconButton:
+                icon: "snowflake-variant"
+                on_release: root.select_icon(self.icon)
+
+<ForgotPasswordScreen>
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "20dp"
+            spacing: "20dp"
+
+            MDLabel:
+                text: root.forgot_your_password_text
+                halign: "center"
+                adaptive_height: True
+
+            MDTextField:
+                id: current_email
+                helper_text: "Enter your current email adress"
+                helper_text_mode: "on_focus"
+                MDTextFieldHintText:
+                    text: root.email_adress_text
+
+            MDButton:
+                id: send_temporary_password
+                on_release: root.send_temporary_password()
+                MDButtonText:
+                    text: root.send_temporary_password_text
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: temporary_password.height
+
+                MDTextField:
+                    id: temporary_password
+                    helper_text_mode: "on_focus"
+                    password: True
+                    MDTextFieldHintText:
+                        text: root.enter_temporary_password_text
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        temporary_password.password = not temporary_password.password
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: new_password.height
+
+                MDTextField:
+                    id: new_password
+                    helper_text_mode: "on_focus"
+                    password: True
+                    on_text: app.check_password_length(self, self.text)
+                    MDTextFieldHintText:
+                        text: root.enter_new_password_text
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 10
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        new_password.password = not new_password.password
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: confirm_new_password.height
+
+                MDTextField:
+                    id: confirm_new_password
+                    helper_text: "Enter your current email adress"
+                    helper_text_mode: "on_focus"
+                    password: True
+                    MDTextFieldHintText:
+                        text: root.confirm_new_password_text
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        confirm_new_password.password = not confirm_new_password.password
+
+            MDBoxLayout:
+                orientation : "horizontal"
+                spacing: "100dp"
+                adaptive_height : "True"
+                adaptive_size : "True"
+                MDButton:
+                    on_release: root.change_password()
+                    MDButtonText:
+                        text : root.confirm_changes_text
+                MDButton:
+                    on_release: app.cancel_verification()
+                    MDButtonText:
+                        text : root.cancel_text
+
+<ChangePasswordScreen>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "20dp"
+            spacing: "20dp"
+
+            MDLabel:
+                text: root.change_password_text
+                halign: "center"
+                adaptive_height: True
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: "10dp"
+                adaptive_height: True
+
+                MDLabel:
+                    text: root.current_password_text
+
+                MDRelativeLayout:
+                    size_hint_y: None
+                    height: current_password.height
+
+                    MDTextField:
+                        id: current_password
+                        password: True
+                        helper_text: "Enter your current password"
+                        helper_text_mode: "on_focus"
+
+                    MDIconButton:
+                        icon: "eye-off"
+                        pos_hint: {"center_y": .5, "right": 1}
+                        on_release:
+                            self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                            current_password.password = not current_password.password
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: "10dp"
+                adaptive_height: True
+
+                MDLabel:
+                    text: root.new_password_text
+
+                MDRelativeLayout:
+                    size_hint_y: None
+                    height: new_password.height
+
+                    MDTextField:
+                        id: new_password
+                        password: True
+                        helper_text_mode: "on_focus"
+                        on_text: app.check_password_length(self, self.text)
+                        MDTextFieldMaxLengthText:
+                            max_text_length: 10
+
+                    MDIconButton:
+                        icon: "eye-off"
+                        pos_hint: {"center_y": .5, "right": 1}
+                        on_release:
+                            self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                            new_password.password = not new_password.password
+
+            MDBoxLayout:
+                orientation: "vertical"
+                spacing: "10dp"
+                adaptive_height: True
+
+                MDLabel:
+                    text: root.confirm_new_password_text
+
+                MDRelativeLayout:
+                    size_hint_y: None
+                    height: confirm_password.height
+
+                    MDTextField:
+                        id: confirm_password
+                        password: True
+                        helper_text_mode: "on_focus"
+
+                    MDIconButton:
+                        icon: "eye-off"
+                        pos_hint: {"center_y": .5, "right": 1}
+                        on_release:
+                            self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                            confirm_password.password = not confirm_password.password
+
+            MDBoxLayout:
+                orientation: "horizontal"
+                spacing: "10dp"
+                adaptive_height: True
+                pos_hint: {"center_x": .5}
+
+                MDButton:
+                    on_release: root.change_password()
+                    style: "filled"
+                    MDButtonText:
+                        text: root.change_password_text
+
+                MDButton:
+                    on_release: app.switch_to_main_screen()
+                    style: "outlined"
+                    MDButtonText:
+                        text: root.cancel_text
+
+<VerificationPendingScreen>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+        MDBoxLayout:
+            orientation: 'vertical'
+            padding: "20dp"
+            spacing: "20dp"
+
+            MDLabel:
+                text: root.please_verify_your_email_text
+                halign: "center"
+
+            MDLabel:
+                text: root.verification_code_sent_text.format(root.email)
+                halign: "center"
+
+            MDTextField:
+                id: verification_code
+                mode : "filled"
+                MDTextFieldLeadingIcon:
+                    icon: "magnify"
+                MDTextFieldHintText:
+                    text: root.enter_digit_text
+                MDTextFieldMaxLengthText:
+                    max_text_length: 6
+
+            MDButton:
+                on_release: root.verify_code()
+                pos_hint: {"center_x": .5}
+                MDButtonText:
+                    text: root.verify_text
+
+            MDButton:
+                on_release: root.resend_verification_email()
+                pos_hint: {"center_x": .5}
+                MDButtonText:
+                    text: root.resend_verification_email_text
+
+            MDButton:
+                on_release: app.cancel_verification()
+                pos_hint: {"center_x": .5}
+                MDButtonText:
+                    text: root.cancel_text
+
+<LoadingScreen>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            spacing: '20dp'
+            size_hint: None, None
+            size: "300dp", "150dp"  # Adjusted size
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+            MDLabel:
+                text: root.loading_text
+                halign: 'center'
+                size_hint_y: None
+                height: "50dp"
+
+            MDCircularProgressIndicator:
+                size_hint: None, None
+                size: "48dp", "48dp"
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                #determinate: True
+
+<ChangingLanguageScreen>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            spacing: '20dp'
+            size_hint: None, None
+            size: "300dp", "150dp"  # Adjusted size
+            pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+            MDLabel:
+                text: root.changing_language_text
+                halign: 'center'
+                size_hint_y: None
+                height: "50dp"
+
+            MDCircularProgressIndicator:
+                size_hint: None, None
+                size: "48dp", "48dp"
+                pos_hint: {'center_x': .5, 'center_y': .5}
+                #determinate: True
+
+<HomeScreen>:
+    md_bg_color: self.theme_cls.backgroundColor
+
+    FitImage:
+        source: "image/Ice_Rink_Cube.jpeg"
+        size_hint: 1, 1
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+    ScrollView:
+        size_hint_x: .6
+        size_hint_y : 1
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDBoxLayout:
+            orientation: "vertical"
+            adaptive_height: True
+            #spacing: "20dp"
+            padding: "20dp"
+            md_bg_color: [.8, 1, 1, 0.8]
+
+            MDTopAppBar:
+                type: "small"
+                size_hint_x: 1
+
+                MDTopAppBarLeadingButtonContainer:
+                    MDActionTopAppBarButton:
+                        icon: "menu"
+                        id: menu
+                        on_release: root.open_menu(self)
+
+                MDBoxLayout:
+                    size_hint_x: None
+                    width: "200dp"
+                    pos_hint: {"x": 0.1, "center_y": 0.5}
+                    canvas:
+                        Color:
+                            rgba: 1, 1, 1, 1  # White color, adjust as needed
+                        Rectangle:
+                            pos: self.pos
+                            size: self.size
+                            source: "image/logo-transparent-small.png"
+                MDBoxLayout:
+                    width: "300dp"
+                MDBoxLayout:
+                    width: "300dp"
+
+            MDList:
+                id: container
+
+<ExpansionPanelItemConnection>
+    id: login_panel
+    MDExpansionPanelHeader:
+        MDListItem:
+            MDListItemLeadingIcon:
+                icon: "account-arrow-right"
+            MDListItemHeadlineText:
+                text: root.log_in_text
+            TrailingPressedIconButton:
+                id: chevron
+                icon: "chevron-right"
+                on_release: app.tap_expansion_chevron(root, chevron)
+
+    MDExpansionPanelContent:
+        orientation: "vertical"
+        padding: "12dp", 0, "12dp", "12dp"
+        spacing: "10dp"
+        md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+        MDLabel:
+            text: root.enter_your_informations_text
+            adaptive_height: True
+            padding_x: "16dp"
+            padding_y: "12dp"
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "email"
+
+            MDTextField:
+                id: login_email
+                mode: "outlined"
+                validator: "email"
+                helper_text_mode: "on_error"
+                MDTextFieldHelperText:
+                    text: "user@email.com"
+                    mode: "persistent"
+                MDTextFieldHintText:
+                    text: root.enter_email_text
+
+            MDListItemHeadlineText:
+                text: root.email_text
+
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "lock"
+
+            MDListItemHeadlineText:
+                text: root.password_text
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: login_password.height
+
+                MDTextField:
+                    id: login_password
+                    mode: "outlined"
+                    password: True
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        login_password.password = not login_password.password
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            adaptive_height : True
+            adaptive_size: True
+            spacing: "115dp"
+            MDButton:
+                on_release: app.login_user()
+                size_hint_x: 1
+                MDButtonText:
+                    markup : True
+                    text: f"[b]{root.log_in_text}[/b]"
+            MDButton:
+                on_release: app.switch_to_forgot_password_screen()
+                size_hint_x: 1
+                MDButtonText:
+                    markup : True
+                    text: f"[b]{root.forgot_password_text}[/b]"
+
+<ExpansionPanelItemInscription>
+    id: register_panel
+    MDExpansionPanelHeader:
+
+        MDListItem:
+            MDListItemLeadingIcon:
+                icon: "account-plus"
+            MDListItemHeadlineText:
+                text: root.register_text
+            TrailingPressedIconButton:
+                id: chevron
+                icon: "chevron-right"
+                on_release: app.tap_expansion_chevron(root, chevron)
+
+    MDExpansionPanelContent:
+        orientation: "vertical"
+        padding: "12dp", 0, "12dp", "12dp"
+        spacing: "20dp"
+        md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+        MDLabel:
+            text: root.enter_your_informations_text
+            adaptive_height: True
+            padding_x: "16dp"
+            padding_y: "12dp"
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "email"
+
+            MDTextField:
+                id: register_email
+                mode: "outlined"
+                validator: "email"
+                MDTextFieldHintText:
+                    text: root.enter_email_text
+
+            MDListItemHeadlineText:
+                text: root.enter_email_text
+
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "lock"
+
+            MDListItemHeadlineText:
+                text: root.password_text
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: register_password.height
+
+                MDTextField:
+                    id: register_password
+                    mode: "outlined"
+                    password: True
+                    on_text: app.check_password_length(self, self.text)
+                    MDTextFieldHintText:
+                        text: root.avoid_text
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 10
+
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        register_password.password = not register_password.password
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "lock"
+
+            MDListItemHeadlineText:
+                text: root.confirm_password_text
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: confirm_password.height
+
+                MDTextField:
+                    id: confirm_password
+                    mode: "outlined"
+                    password: True
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        confirm_password.password = not confirm_password.password
+
+        MDButton:
+            on_release: app.register_user()
+            size_hint_x: 1
+            pos_hint_x: {"center_x" :1}
+            MDButtonText:
+                markup: True
+                text: f"[b]{root.register_text}[/b]"
+
+<ExpansionPanelItemVerification>
+    id: verification_panel
+    MDExpansionPanelHeader:
+
+        MDListItem:
+            MDListItemLeadingIcon:
+                icon: "account-check"
+            MDListItemHeadlineText:
+                text: root.verify_text
+            TrailingPressedIconButton:
+                id: chevron
+                icon: "chevron-right"
+                on_release: app.tap_expansion_chevron(root, chevron)
+
+    MDExpansionPanelContent:
+        orientation: "vertical"
+        padding: "12dp", 0, "12dp", "12dp"
+        spacing: "10dp"
+        md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+        MDLabel:
+            text: root.verify_email_adress_text
+            adaptive_height: True
+            padding_x: "16dp"
+            padding_y: "12dp"
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "email"
+
+            MDTextField:
+                id: verify_email
+                mode: "outlined"
+                validator: "email"
+                MDTextFieldHintText:
+                    text: root.enter_email_text
+
+            MDListItemHeadlineText:
+                text: root.email_registered_text
+
+
+        MDListItem:
+            theme_bg_color: "Custom"
+            md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+            MDListItemLeadingIcon:
+                icon: "code-array"
+
+            MDListItemHeadlineText:
+                text: root.code_received_text
+
+            MDRelativeLayout:
+                size_hint_y: None
+                height: verification_code.height
+
+                MDTextField:
+                    id: verification_code
+                    mode: "outlined"
+                    helper_text_mode: "on_error"
+                    password: True
+                    MDTextFieldMaxLengthText:
+                        max_text_length: 6
+                    MDTextFieldHintText:
+                        text: root.six_digit_code_text
+
+                MDIconButton:
+                    icon: "eye-off"
+                    pos_hint: {"center_y": .5, "right": 1}
+                    on_release:
+                        self.icon = "eye" if self.icon == "eye-off" else "eye-off"
+                        verification_code.password = not verification_code.password
+
+        MDButton:
+            on_release: root.verify_code()
+            size_hint_x: 1
+            pos_hint_x: {"center_x" :1}
+            MDButtonText:
+                markup: True
+                text: f"[b]{root.verify_text}[/b]"
+
+<MainScreen>:
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            adaptive_height: True
+            height: "56dp"
+            adaptive_width: True
+            spacing: "8dp"
+            size_hint_x: 1
+
+            MDTopAppBarLeadingButtonContainer:
+                MDActionTopAppBarButton:
+                    icon: "menu"
+                    id: menu
+                    on_release: root.open_menu(self)
+
+            Widget:
+                size_hint_x: 0.1
+
+            MDBoxLayout:
+                adaptive_width: True
+                size_hint_x: None
+                width: "200dp"
+                pos_hint: {"center_y": .5}
+                canvas:
+                    Color:
+                        rgba: 1, 1, 1, 1
+                    Rectangle:
+                        pos: self.pos
+                        size: self.size
+                        source: "image/logo-transparent-small.png"
+
+            Widget:
+                size_hint_x: 0.1
+
+            MDTopAppBarTrailingButtonContainer:
+                MDBoxLayout:
+                    adaptive_width: True
+                    spacing: "4dp"
+                    padding: [0, 0, "8dp", 0]
+                    MDLabel:
+                        id: pseudo_label
+                        text: root.pseudo
+                        font_style: "Title"
+                        adaptive_width: True
+                        valign: "center"
+                    MDActionTopAppBarButton:
+                        id: profile_icon
+                        icon: root.profile_icon_source
+                        on_release: root.open_profil(self)
+
+        MDBoxLayout:
+            orientation: "horizontal"
+            md_bg_color: self.theme_cls.backgroundColor
+
+            MDNavigationRail:
+                id: nav_rail
+                spacing: "16dp"
+                padding: "16dp"
+                type: "labeled"
+                md_bg_color: self.theme_cls.backgroundColor
+                anchor: "top"
+
+                MDNavigationRailItem:
+                    on_active: if self.active: root.on_nav_rail_item_active(self)
+                    MDNavigationRailItemLabel:
+                        text: root.home_menu_text
+                    MDNavigationRailItemIcon:
+                        icon: "home"
+
+                MDNavigationRailItem:
+                    on_active: if self.active: root.on_nav_rail_item_active(self)
+                    MDNavigationRailItemLabel:
+                        text: root.manage_text
+                    MDNavigationRailItemIcon:
+                        icon: "pencil-circle-outline"
+
+            MDBoxLayout:
+                orientation: "vertical"
+
+                MDScreenManager:
+                    id: competition_manager
+
+<MainHome>:
+    MDScreen:
+        MDRelativeLayout:
+            FitImage:
+                source: app.background_image
+                size_hint: 1, 1
+                pos_hint: {"center_x": 0.5, "center_y": 0.5}
+            MDBoxLayout:
+                orientation: "vertical"
+                size_hint: 1, 0.8
+                pos_hint: {"top": .9}
+                padding: "16dp"
+                #spacing: "35dp"
+                MDLabel:
+                    markup: True
+                    text: f"[font=RacingSansOne]{root.welcome_text}[/font]"
+                    halign: "center"
+                    font_style: "Headline"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                MDLabel:
+                    markup: True
+                    text: f"[font=RacingSansOne]{root.to_text}[/font]"
+                    halign: "center"
+                    font_style: "Headline"
+                    role: "small"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                FitImage:
+                    source: "image/logo-transparent-medium.png"
+                    size: min(root.width * 0.5, root.height * 0.4), min(root.width * 0.5, root.height * 0.4)
+                    pos_hint: {"center_x": 0.5, "center_y": .5}
+                BoxLayout:
+                    size_hint_y: None
+                    height: "30dp"
+                MDLabel:
+                    markup : True
+                    text: f"[font=Nunito]{root.bet_here_text}[/font]"
+                    halign: "center"
+                    font_style: "Title"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                MDBoxLayout:
+                    orientation: "vertical"
+                    size_hint_x: 0.65  # Adjust this value to control the width of the list
+                    pos_hint: {"center_x": 0.5}
+                    MDLabel:
+                        markup: True
+                        text: f"[font=Nunito][b]• {root.ligue_magnus_text}[/b]\n[b]• {root.nl_text}[/b]\n[b]• {root.nhl_text}[/b][/font]"
+                        halign: "left"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+
+            Widget:
+                size_hint_y: 0.2  # Empty space at the bottom for ads
+
+<CompetitionCard>:
+    padding: "12dp"
+    spacing: "12dp"
+    size_hint_y: None
+    height: self.minimum_height
+    style: "outlined"
+    id: competition_card
+    MDBoxLayout:
+        orientation: "horizontal"
+        adaptive_height: True
+        spacing: "8dp"
+        MDBoxLayout:
+            orientation: "vertical"
+            adaptive_height: True
+            spacing: "8dp"
+            size_hint_x: 0.8
+            MDLabel:
+                markup: True
+                text: f"[b]{root.name_text}:[/b] {root.competition_name}"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDLabel:
+                markup: True
+                text: f"[b]{root.type_text}:[/b] {root.competition_type}"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDLabel:
+                markup: True
+                text: f"[b]{root.duration_text}:[/b] {root.competition_duration}"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDLabel:
+                markup: True
+                text: f"[b]Admin:[/b] {root.admin_pseudo}"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDLabel:
+                markup: True
+                text: f"[b]{root.id_text}:[/b] {root.competition_id}"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDBoxLayout:
+                orientation: "horizontal"
+                adaptive_height: True
+                spacing: "4dp"  # Reduced spacing
+                size_hint_x: 1  # Ensure the box takes full width
+                MDBoxLayout:
+                    orientation: "horizontal"
+                    adaptive_height: True
+                    size_hint_x: 0.7  # Adjust this value to control label width
+                    MDLabel:
+                        markup: True
+                        text: f"[b]{root.status_text}:[/b] {root.contest_mode}"
+                        size_hint_y: None
+                        height: self.texture_size[1]
+                        valign: "center"  # Vertically center the text
+                MDBoxLayout:
+                    orientation: "horizontal"
+                    adaptive_height: True
+                    size_hint_x: 0.3  # Adjust this value to control switch area width
+                    MDSwitch:
+                        active: root.contest_mode == "open"
+                        on_active: root.toggle_contest_mode(self)
+                        opacity: 1 if root.is_admin else 0
+                        disabled: not root.is_admin
+                        icon_active: "check"
+                        icon_inactive: "close"
+                        pos_hint: {"center_y": 0.5}  # Center the switch vertically
+
+            MDLabel:
+                markup: True
+                text: f"[b]{root.rules_text}:[/b]"
+                size_hint_y: None
+                height: self.texture_size[1]
+            MDLabel:
+                text: root.competition_rules
+                size_hint_y: None
+                height: self.texture_size[1]
+        MDBoxLayout:
+            orientation: "vertical"
+            adaptive_height: True
+            size_hint_x: 0.2
+            spacing: "8dp"
+            pos_hint: {"center_y": 0.5}
+            MDCard:
+                orientation: "vertical"
+                padding: "4dp"
+                size_hint: None, None
+                size: "80dp", "80dp"
+                pos_hint: {"center_x": 0.5}
+                style: "outlined"
+                MDLabel:
+                    markup: True
+                    text: f"[b]{root.quit_text}[/b]"
+                    halign: "center"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                MDIconButton:
+                    icon: "exit-to-app"
+                    on_release: root.show_confirmation_dialog()
+                    pos_hint: {"center_x": 0.5}
+            MDCard:
+                orientation: "vertical"
+                padding: "4dp"
+                size_hint: None, None
+                size: "80dp", "80dp"
+                pos_hint: {"center_x": 0.5}
+                style: "outlined"
+                MDLabel:
+                    markup: True
+                    text: f"[b]{root.share_text}[/b]"
+                    halign: "center"
+                    size_hint_y: None
+                    height: self.texture_size[1]
+                MDIconButton:
+                    icon: "share-variant"
+                    on_release: root.share_competition(self)
+                    pos_hint: {"center_x": 0.5}
+
+<ListOfYourCompetitionPanel>:
+    MDExpansionPanelHeader:
+        MDListItem:
+            MDListItemLeadingIcon:
+                icon: "trophy"
+            MDListItemHeadlineText:
+                text: root.your_competitions_text
+            TrailingPressedIconButton:
+                id: chevron_competition
+                icon: "chevron-right"
+                on_release: root.tap_expansion_chevron_list_of_your_competition(root, self)
+
+    MDExpansionPanelContent:
+        orientation: "vertical"
+        padding: "12dp", 0, "12dp", "12dp"
+        md_bg_color: self.theme_cls.surfaceContainerLowestColor
+
+        MDLabel:
+            text: root.competition_information_text
+            adaptive_height: True
+            padding_x: "16dp"
+            padding_y: "12dp"
+        MDDivider:
+            size_hint_x: 1
+            orientation: "horizontal"
+            divider_width: "2dp"
+        MDBoxLayout:
+            id: competition_grid
+            orientation: "vertical"
+            adaptive_height: True
+            spacing: "10dp"
+            padding: "10dp"
+
+
+<ManageCompetitionScreen>:
+    md_bg_color: self.theme_cls.backgroundColor
+
+    FitImage:
+        source: "image/Face_off.jpeg"
+        size_hint: 1, 1
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+    MDBoxLayout:
+        orientation: "vertical"
+
+        ScrollView:
+            size_hint: .6, 1
+            pos_hint: {"center_x": .5, "center_y": .5}
+
+            MDBoxLayout:
+                orientation: 'vertical'
+                adaptive_height: True
+                padding: "20dp"
+                spacing: "20dp"
+                md_bg_color: [.8, 1, 1, 0.8]
+
+                MDTopAppBar:
+                    type: "small"
+                    size_hint_x: 1
+
+                    MDTopAppBarLeadingButtonContainer:
+                        MDActionTopAppBarButton:
+                            icon: "menu"
+                            id: menu
+                            on_release: root.open_menu(self)
+
+                    MDTopAppBarTitle:
+                        markup: True
+                        text: f"[font=RacingSansOne][b]{root.manage_competitions_text}[/b][/font]"
+                        pos_hint: {"center_x": .5}
+
+                MDList:
+                    id: list_competition_panel
+                    ListOfYourCompetitionPanel:
+                        id: competition_panel
+
+                Widget:
+
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    adaptive_height: True
+                    padding: "20dp"
+                    spacing: "20dp"
+                    md_bg_color: self.theme_cls.backgroundColor
+
+                    MDLabel:
+                        markup : True
+                        text: f"[b]{root.join_competition_text}[/b]"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: "darkcyan"
+                    MDDivider:
+                        size_hint_x: 1
+                        orientation: "horizontal"
+                        divider_width: "3dp"
+                        color: "darkcyan"
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        spacing: "16dp"
+                        padding: "16dp"
+                        adaptive_height: True
+                        MDLabel:
+                            markup: True
+                            text: f"[b]{root.from_shared_id_text}[/b]"
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                        MDTextField:
+                            id: join_competition_id
+                            helper_text_mode: "on_focus"
+                            md_bg_color: self.theme_cls.backgroundColor
+                            MDTextFieldHintText:
+                                text: root.enter_an_id_text
+                    MDButton:
+                        on_release: root.join_competition()
+                        pos_hint: {"center_x": .9}
+                        MDButtonText:
+                            markup : True
+                            text: f"[b]{root.join_text}[/b]"
+
+                MDBoxLayout:
+                    orientation: 'vertical'
+                    adaptive_height: True
+                    padding: "20dp"
+                    spacing: "20dp"
+                    md_bg_color: self.theme_cls.backgroundColor
+
+                    MDLabel:
+                        markup : True
+                        text: f"[b]{root.create_new_competition_text}[/b]"
+                        halign: "center"
+                        theme_text_color: "Custom"
+                        text_color: "darkcyan"
+                    MDDivider:
+                        size_hint_x: 1
+                        orientation: "horizontal"
+                        divider_width: "3dp"
+                        color: "darkcyan"
+                    MDBoxLayout:
+                        size_hint_y: None
+                        orientation: "vertical"
+                        adaptive_height: True
+                        spacing: "16dp"
+                        padding: "16dp"
+                        MDLabel:
+                            markup : True
+                            text: f"[b]{root.name_text}[/b]"
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+                        MDTextField:
+                            id: create_competition_name
+                            helper_text_mode: "on_focus"
+                            text_color_focus: "lightblue"
+                            MDTextFieldHintText:
+                                text: root.enter_a_competition_name_text
+                    MDBoxLayout:
+                        size_hint_y: None
+                        orientation: "vertical"
+                        adaptive_height: True
+                        spacing: "16dp"
+                        padding: "16dp"
+                        MDLabel:
+                            markup: True
+                            text: f"[b]{root.select_a_type_of_competition_text}[/b]"
+                            adaptive_height: True
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+                        MDSegmentedButton:
+                            md_bg_color: self.theme_cls.backgroundColor
+                            id: competition_type
+                            adaptive_height: True
+                            MDSegmentedButtonItem:
+                                id: ligue_magnus
+                                on_active: root.on_segment_button_active_LM(self)
+                                selected_color: "darkcyan"
+                                MDSegmentButtonLabel:
+                                    text: "Ligue Magnus"
+                            MDSegmentedButtonItem:
+                                id: nl
+                                on_active: root.on_segment_button_active_NL(self)
+                                selected_color: "darkcyan"
+                                MDSegmentButtonLabel:
+                                    text: "NL"
+                            MDSegmentedButtonItem:
+                                id: fournations
+                                on_active: root.on_segment_button_active_FourNations(self)
+                                selected_color: "darkcyan"
+                                MDSegmentButtonLabel:
+                                    text: "NHL 4 Nations"
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        adaptive_height: True
+                        spacing: "20dp"
+                        padding: "20dp"
+                        MDLabel:
+                            markup: True
+                            text: f"[b]{root.choose_the_rules_of_the_competition_text}[/b]"
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+                        MDBoxLayout:
+                            orientation: "vertical"
+                            adaptive_height: True
+                            spacing: "30dp"
+                            padding: "20dp"
+
+                            MDLabel:
+                                markup: True
+                                text: f"[b]{root.duration_text}[/b]"
+                            MDDivider:
+                                size_hint_x: 1
+                                orientation: "horizontal"
+                            MDBoxLayout:
+                                id: duration_switches
+                                orientation: "vertical"
+                                adaptive_height: True
+                                spacing: "20dp"
+                                MDCard:
+                                    orientation: "vertical"
+                                    padding: "10dp"
+                                    spacing: "25dp"
+                                    adaptive_height: True
+                                    size_hint_x: 1
+                                    pos_hint: {"center_x": 0.5}
+                                    style: "outlined"
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        opacity: 1 if root.selected_competition_type != "Four Nations" else 0
+                                        height: self.minimum_height if root.selected_competition_type != "Four Nations" else 0
+                                        MDLabel:
+                                            text: root.full_championship_season_text
+                                        MDSwitch:
+                                            id: full_season
+                                            active: True if root.selected_competition_type != "Four Nations" else False
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        opacity: 1 if root.selected_competition_type != "Four Nations" else 0
+                                        height: self.minimum_height if root.selected_competition_type != "Four Nations" else 0
+                                        MDLabel:
+                                            text: root.first_leg_of_the_championship_text
+                                        MDSwitch:
+                                            id: first_leg
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        opacity: 1 if root.selected_competition_type != "Four Nations" else 0
+                                        height: self.minimum_height if root.selected_competition_type != "Four Nations" else 0
+                                        MDLabel:
+                                            text: root.second_leg_of_the_championship_text
+                                        MDSwitch:
+                                            id: second_leg
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        MDLabel:
+                                            text: root.full_championship_season_playoffs_text
+                                        MDSwitch:
+                                            id: full_season_playoffs
+                                            active : True if root.selected_competition_type == "Four Nations" else False
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        opacity: 1 if root.selected_competition_type != "Four Nations" else 0
+                                        height: self.minimum_height if root.selected_competition_type != "Four Nations" else 0
+                                        MDLabel:
+                                            text: root.second_leg_of_the_championship_playoffs_text
+                                        MDSwitch:
+                                            id: second_leg_playoffs
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                                    MDBoxLayout:
+                                        orientation : "horizontal"
+                                        adaptive_height: True
+                                        opacity: 1 if root.selected_competition_type != "Four Nations" else 0
+                                        height: self.minimum_height if root.selected_competition_type != "Four Nations" else 0
+                                        MDLabel:
+                                            text: root.playoffs_text
+                                        MDSwitch:
+                                            id: playoffs
+                                            icon_active: "check"
+                                            icon_inactive: "close"
+                                            on_active: root.on_duration_switch(self)
+                            MDLabel:
+                                markup: True
+                                text: f"[b]{root.predictions_method_text}[/b]"
+                            MDDivider:
+                                size_hint_x: 1
+                                orientation: "horizontal"
+                            MDSegmentedButton:
+                                md_bg_color: self.theme_cls.backgroundColor
+                                id: predictions_method
+                                adaptive_height: True
+                                MDSegmentedButtonItem:
+                                    id : match_score
+                                    on_active: root.update_awarding_points_method()
+                                    selected_color: "darkcyan"
+                                    MDSegmentButtonLabel:
+                                        text: root.match_score_text
+                                MDSegmentedButtonItem:
+                                    id : winner_loser
+                                    on_active: root.update_awarding_points_method()
+                                    selected_color: "darkcyan"
+                                    MDSegmentButtonLabel:
+                                        text: root.winner_loser_text
+                            MDLabel:
+                                markup: True
+                                text: f"[b]{root.awarding_points_method_text}[/b]"
+                            MDDivider:
+                                size_hint_x: 1
+                            MDSegmentedButton:
+                                md_bg_color: self.theme_cls.backgroundColor
+                                id: awarding_points_method
+                                adaptive_height: True
+                                MDSegmentedButtonItem:
+                                    id : bookmaker_quotes
+                                    on_active: root.update_awarding_points_method()
+                                    selected_color: "darkcyan"
+                                    MDSegmentButtonLabel:
+                                        text: root.bookmaker_quotes_text
+                                MDSegmentedButtonItem:
+                                    id : point_scale
+                                    on_active: root.update_awarding_points_method()
+                                    selected_color: "darkcyan"
+                                    MDSegmentButtonLabel:
+                                        text: root.point_scale_text
+
+                    MDBoxLayout:
+                        id: point_scale_box
+                        orientation: "vertical"
+                        size_hint_y: None
+                        adaptive_height : True
+                        #height: self.minimum_height
+                        spacing: "16dp"
+                        opacity: 1 if root.ids.point_scale.active else 0
+                        disabled: not root.ids.point_scale.active
+
+                        MDTabsPrimary:
+                            id: point_scale_tabs
+                            on_tab_switch: root.on_tab_switch(*args)
+                            size_hint_y: None
+
+                        MDDivider:
+
+                        MDBoxLayout:
+                            id: tab_content
+                            orientation: "vertical"
+                            size_hint_y: None
+                            height: self.minimum_height
+
+                MDButton:
+                    on_release: root.create_competition()
+                    pos_hint: {"center_x": .9}
+                    MDButtonText:
+                        markup: True
+                        text: f"[b]{root.create_text}[/b]"
+
+                MDBoxLayout:
+                    adaptive_height: True
+                    spacing: "16dp"
+
+                    MDButton:
+                        on_release: root.cancel()
+                        pos_hint: {"center_x": .8}
+                        MDButtonText:
+                            markup: True
+                            text: f"[b]{root.cancel_text}[/b]"
+        Widget:
+            size_hint: 1, .12
+
+<MatchWidgetWinnerLoser>:
+    orientation: "vertical"
+    adaptive_height: True
+    spacing: "20dp"
+    padding: "10dp"
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        adaptive_height: True
+        MDBoxLayout:
+            orientation: 'horizontal'
+            adaptive_height: True
+            MDLabel:
+                text: root.date
+                halign: 'left'
+                size_hint_x: 0.5
+            MDLabel:
+                text: root.journee
+                halign: 'right'
+                size_hint_x: 0.5
+        MDDivider:
+            size_hint_x: 1
+            orientation: "horizontal"
+            divider_width: "2dp"
+
+    MDBoxLayout:
+        orientation: 'horizontal'
+        adaptive_height: True
+        spacing: '50dp'
+        adaptive_size: True
+        pos_hint: {"center_x": .5, "center_y": .5}
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            adaptive_size: True
+            spacing: '20dp'
+            MDButton:
+                style: root.team1_style
+                id: fab_button_team_1
+                pos_hint: {"center_x": .5, "center_y": .5}
+                on_release: root.select_team1()
+                MDButtonIcon:
+                    icon: root.team1_icon
+                MDButtonText:
+                    markup: True
+                    text: f"[b]{root.team1}[/b]"
+            MDLabel:
+                text: root.team1_odds
+                halign: 'center'
+                opacity: 1 if root.show_odds else 0
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            spacing: '20dp'
+            adaptive_size: True
+            MDIconButton:
+                pos_hint: {"center_x": .5, "center_y": .5}
+                icon: "equal"
+                style: "filled" if root.is_draw_selected else "outlined"
+                on_release: root.toggle_draw()
+                md_bg_color: self.theme_cls.primaryColor if root.draw_selected else self.theme_cls.backgroundColor
+            MDLabel:
+                text: root.draw_odds
+                halign: 'center'
+                opacity: 1 if root.show_odds else 0
+
+        MDBoxLayout:
+            orientation: 'vertical'
+            adaptive_height: True
+            spacing: '20dp'
+            adaptive_size: True
+            MDButton:
+                style: root.team2_style
+                id: fab_button_team_2
+                on_release: root.select_team2()
+                pos_hint: {"center_x": .5, "center_y": .5}
+                MDButtonText:
+                    markup: True
+                    text: f"[b]{root.team2}[/b]"
+                MDButtonIcon:
+                    icon: root.team2_icon
+            MDLabel:
+                text: root.team2_odds
+                halign: 'center'
+                opacity: 1 if root.show_odds else 0
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        adaptive_height: True
+        spacing: '20dp'
+        adaptive_size: True
+        pos_hint: {"center_x": .5, "center_y": .5}
+        opacity: 1 if root.is_draw_selected else 0
+        disabled: not root.is_draw_selected
+        MDLabel:
+            text: root.winner_in_extra_time_text
+            halign: 'center'
+        MDBoxLayout:
+            orientation: 'horizontal'
+            adaptive_height: True
+            spacing: '50dp'
+            adaptive_size: True
+            pos_hint: {"center_x": .5, "center_y": .5}
+            MDBoxLayout:
+                orientation: 'vertical'
+                adaptive_height: True
+                spacing: '10dp'
+                adaptive_size: True
+                MDButton:
+                    style: root.team1_extra_style
+                    id: fab_button_team_1_extra
+                    on_release: root.select_team1_extra()
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    MDButtonIcon:
+                        icon: root.team1_icon
+                    MDButtonText:
+                        markup: True
+                        text: f"[b]{root.team1}[/b]"
+                MDLabel:
+                    text: root.team1_extra_odds
+                    halign: 'center'
+                    opacity: 1 if root.show_odds else 0
+            MDBoxLayout:
+                orientation: 'vertical'
+                adaptive_height: True
+                spacing: '10dp'
+                adaptive_size: True
+                MDButton:
+                    pos_hint: {"center_x": .5, "center_y": .5}
+                    id: fab_button_team_2_extra
+                    on_release: root.select_team2_extra()
+                    style: root.team2_extra_style
+                    MDButtonText:
+                        markup: True
+                        text: f"[b]{root.team2}[/b]"
+                    MDButtonIcon:
+                        icon: root.team2_icon
+                MDLabel:
+                    text: root.team2_extra_odds
+                    halign: 'center'
+                    opacity: 1 if root.show_odds else 0
+
+<MatchWidgetMatchScore>:
+    orientation: "vertical"
+    adaptive_height: True
+    spacing: "20dp"
+    padding: "10dp"
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        adaptive_height: True
+        MDBoxLayout:
+            orientation: 'horizontal'
+            adaptive_height: True
+            MDLabel:
+                text: root.date
+                halign: 'left'
+                size_hint_x: 0.5
+            MDLabel:
+                text: root.journee
+                halign: 'right'
+                size_hint_x: 0.5
+        MDDivider:
+            size_hint_x: 1
+            orientation: "horizontal"
+            divider_width: "2dp"
+
+    MDBoxLayout:
+        orientation: 'horizontal'
+        adaptive_height: True
+        spacing: '50dp'
+        adaptive_size: True
+        pos_hint: {"center_x": .5, "center_y": .5}
+
+        MDButton:
+            id: button_team_1
+            pos_hint: {"center_x": .5, "center_y": .5}
+            style: root.team1_style
+            MDButtonIcon:
+                icon: root.team1_icon
+            MDButtonText:
+                markup : True
+                text: f"[b]{root.team1}[/b]"
+
+        MDBoxLayout:
+            orientation: 'horizontal'
+            adaptive_height: True
+            adaptive_size: True
+            spacing: '10dp'
+
+            MDRelativeLayout:
+                size_hint: None, None
+                size: dp(80), dp(48)
+
+                MDTextField:
+                    id: team1_score
+                    text: root.team1_score
+                    on_text: root.on_team1_score(self, self.text)
+                    size_hint_x: None
+                    width: dp(60)
+                    input_filter: 'int'
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+                MDIconButton:
+                    icon: "chevron-up"
+                    on_release: root.increment_score(1)
+                    pos_hint: {'center_x': 0.9, 'center_y': 0.75}
+
+                MDIconButton:
+                    icon: "chevron-down"
+                    on_release: root.decrement_score(1)
+                    pos_hint: {'center_x': 0.9, 'center_y': 0.25}
+
+            MDLabel:
+                text: "-"
+                size_hint_x: None
+                width: "20dp"
+                halign: 'center'
+
+            MDRelativeLayout:
+                size_hint: None, None
+                size: dp(80), dp(48)
+
+                MDTextField:
+                    id: team2_score
+                    text: root.team2_score
+                    on_text: root.on_team2_score(self, self.text)
+                    size_hint_x: None
+                    width: dp(60)
+                    input_filter: 'int'
+                    pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+
+                MDIconButton:
+                    icon: "chevron-up"
+                    on_release: root.increment_score(2)
+                    pos_hint: {'center_x': 0.9, 'center_y': 0.75}
+
+                MDIconButton:
+                    icon: "chevron-down"
+                    on_release: root.decrement_score(2)
+                    pos_hint: {'center_x': 0.9, 'center_y': 0.25}
+
+        MDButton:
+            id: button_team_2
+            pos_hint: {"center_x": .5, "center_y": .5}
+            style: root.team2_style
+            MDButtonText:
+                markup: True
+                text: f"[b]{root.team2}[/b]"
+            MDButtonIcon:
+                icon: root.team2_icon
+
+    MDBoxLayout:
+        orientation: 'vertical'
+        adaptive_height: True
+        spacing: '20dp'
+        adaptive_size: True
+        pos_hint: {"center_x": .5, "center_y": .5}
+        opacity: 1 if root.is_draw_selected else 0
+        disabled: not root.is_draw_selected
+        MDLabel:
+            text: root.winner_in_extra_time_text
+            halign: 'center'
+        MDBoxLayout:
+            orientation: 'horizontal'
+            adaptive_height: True
+            spacing: '50dp'
+            adaptive_size: True
+            pos_hint: {"center_x": .5, "center_y": .5}
+            MDButton:
+                id: button_team_1_extra
+                on_release: root.select_team1_extra()
+                pos_hint: {"center_x": .5, "center_y": .5}
+                style: root.team1_extra_style
+                MDButtonIcon:
+                    icon: root.team1_icon
+                MDButtonText:
+                    markup: True
+                    text: f"[b]{root.team1}[/b]"
+            MDButton:
+                pos_hint: {"center_x": .5, "center_y": .5}
+                id: button_team_2_extra
+                on_release: root.select_team2_extra()
+                style: root.team2_extra_style
+                MDButtonText:
+                    markup : True
+                    text: f"[b]{root.team2}[/b]"
+                MDButtonIcon:
+                    icon: root.team2_icon
+
+<BaseScreenLM_Pronostics>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            ScrollView:
+                MDBoxLayout:
+                    id: matches_layout
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp"
+
+            Widget:
+                size_hint_y: .2
+
+<BaseScreenLM_Classement>:
+    name: 'rankings'
+    md_bg_color: .4, .7, .7, .4
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: [0, "20dp", 0, 0]
+
+            MDCard:
+                orientation: "vertical"
+                size_hint: 0.95, 0.8
+                pos_hint: {"center_x": 0.5, "top": .98}
+                padding: dp(10)
+                spacing: dp(10)
+                style: "outlined"
+
+                MDBoxLayout:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    pos_hint: {"center_x": 0.5, "top": 1}
+                    spacing: "10dp"
+                    padding: [0, "20dp", 0, 0]
+
+                    MDGridLayout:
+                        id: classement_header
+                        cols: 5
+                        spacing: dp(5)
+                        padding: dp(5)
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: root.rank_text
+                            bold: True
+                            size_hint_x: 0.5
+
+                        MDLabel:
+                            text: "Pseudo"
+                            bold: True
+                            size_hint_x: 1.8
+
+                        MDLabel:
+                            text: "Points"
+                            bold: True
+                            size_hint_x: 0.8
+
+                    MDDivider:
+                        size_hint_x: 1
+                        orientation: "horizontal"
+                        divider_width: "2dp"
+
+                    MDScrollView:
+                        size_hint_y: None
+                        height: root.height * 0.6
+
+                        MDGridLayout:
+                            id: classement_content
+                            cols: 1
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+
+<BaseScreenLM_Rankings>:
+    name: 'league_rankings'
+    md_bg_color: .4, .7, .7, 1
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            MDFloatLayout:
+                MDCard:
+                    orientation: "vertical"
+                    size_hint: 0.95, None
+                    height: self.minimum_height
+                    pos_hint: {"center_x": 0.5, "top": 0.98}
+                    padding: dp(10)
+                    spacing: dp(10)
+                    style: "outlined"
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDGridLayout:
+                            id: rankings_header
+                            cols: 11
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+                            MDLabel:
+                                text: root.rank_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: root.team_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 1.8  # Increased size_hint_x
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "Points"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.8
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GP"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "W"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTW"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTL"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "L"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GF"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GA"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "PIM"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+
+                        MDScrollView:
+                            size_hint_y: None
+                            height: root.height * 0.7 # Adjust this value as needed
+
+                            MDGridLayout:
+                                id: rankings_content
+                                cols: 11
+                                spacing: dp(5)
+                                padding: dp(5)
+                                size_hint_y: None
+                                height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+<RankingsCard>:
+    orientation: "horizontal"
+    size_hint_y: None
+    height: "30dp"
+    style: "outlined"
+
+    MDLabel:
+        text: root.rank
+        size_hint_x: 0.2
+
+    MDLabel:
+        text: root.team
+        size_hint_x: 0.6
+
+    MDLabel:
+        text: root.points
+        size_hint_x: 0.2
+
+<CompetitionScreenLM>:
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDScreenManager:
+            id: screen_manager
+
+            BaseScreenLM_Pronostics:
+                name: 'pronostics'
+                md_bg_color: .4, .7, .7 , .7
+
+            BaseScreenLM_Classement:
+                name: 'rankings'
+                md_bg_color: .4, .7, .7 , .4
+                MDLabel:
+                    halign: "center"
+
+            BaseScreenLM_Rankings:
+                name: 'league_rankings'
+                md_bg_color: .4, .7, .7 , 1
+
+        MDNavigationBar:
+            on_switch_tabs: root.on_switch_tabs(*args)
+
+            BaseMDNavigationItem:
+                id : pronostics_tab
+                MDNavigationItemIcon:
+                    icon: "scoreboard"
+                    MDBadge:
+                        text: str(root.unsaved_bets_count)
+                        pos_hint: {"center_x": .7, "center_y": .7}
+                        theme_bg_color : "Custom"
+                        #md_bg_color: "cyan"
+                MDNavigationItemLabel:
+                    text: root.pronostics_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: rankings_tab
+                MDNavigationItemIcon:
+                    icon: "podium"
+                MDNavigationItemLabel:
+                    text: root.rankings_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: league_rankings_tab
+                MDNavigationItemIcon:
+                    icon: "hockey-sticks"
+                MDNavigationItemLabel:
+                    text: root.league_rankings_text
+
+<BaseScreenNL_Pronostics>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            ScrollView:
+                MDBoxLayout:
+                    id: matches_layout
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp"
+
+            Widget:
+                size_hint_y: .2
+
+<BaseScreenNL_Classement>:
+    name: 'rankings'
+    md_bg_color: .4, .7, .7, .4
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: [0, "20dp", 0, 0]
+
+            MDCard:
+                orientation: "vertical"
+                size_hint: 0.95, 0.8
+                pos_hint: {"center_x": 0.5, "top": .98}
+                padding: dp(10)
+                spacing: dp(10)
+                style: "outlined"
+
+                MDBoxLayout:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    pos_hint: {"center_x": 0.5, "top": 1}
+                    spacing: "10dp"
+                    padding: [0, "20dp", 0, 0]
+
+                    MDGridLayout:
+                        id: classement_header
+                        cols: 5
+                        spacing: dp(5)
+                        padding: dp(5)
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: root.rank_text
+                            bold: True
+                            size_hint_x: 0.5
+
+                        MDLabel:
+                            text: "Pseudo"
+                            bold: True
+                            size_hint_x: 1.8
+
+                        MDLabel:
+                            text: "Points"
+                            bold: True
+                            size_hint_x: 0.8
+
+                    MDDivider:
+                        size_hint_x: 1
+                        orientation: "horizontal"
+                        divider_width: "2dp"
+
+                    MDScrollView:
+                        size_hint_y: None
+                        height: root.height * 0.6
+
+                        MDGridLayout:
+                            id: classement_content
+                            cols: 1
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+<BaseScreenNL_Rankings>:
+    name: 'league_rankings'
+    md_bg_color: .4, .7, .7, 1
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            MDFloatLayout:
+                MDCard:
+                    orientation: "vertical"
+                    size_hint: 0.95, None
+                    height: self.minimum_height
+                    pos_hint: {"center_x": 0.5, "top": 0.98}
+                    padding: dp(10)
+                    spacing: dp(10)
+                    style: "outlined"
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDGridLayout:
+                            id: rankings_header
+                            cols: 10
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+                            MDLabel:
+                                text: root.rank_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: root.team_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 1.8  # Increased size_hint_x
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "Points"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.8
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GP"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "W"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTW"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTL"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "L"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GF"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GA"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+
+                        MDScrollView:
+                            size_hint_y: None
+                            height: root.height * 0.7 # Adjust this value as needed
+
+                            MDGridLayout:
+                                id: rankings_content
+                                cols: 10
+                                spacing: dp(5)
+                                padding: dp(5)
+                                size_hint_y: None
+                                height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+<CompetitionScreenNL>:
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDScreenManager:
+            id: screen_manager
+
+            BaseScreenNL_Pronostics:
+                name: 'pronostics'
+                md_bg_color: .4, .7, .7 , .7
+
+            BaseScreenNL_Classement:
+                name: 'rankings'
+                md_bg_color: .4, .7, .7 , .4
+                MDLabel:
+                    halign: "center"
+
+            BaseScreenNL_Rankings:
+                name: 'league_rankings'
+                md_bg_color: .4, .7, .7 , 1
+
+        MDNavigationBar:
+            on_switch_tabs: root.on_switch_tabs(*args)
+
+            BaseMDNavigationItem:
+                id : pronostics_tab
+                MDNavigationItemIcon:
+                    icon: "scoreboard"
+                    MDBadge:
+                        text: str(root.unsaved_bets_count)
+                        pos_hint: {"center_x": .7, "center_y": .7}
+                        theme_bg_color : "Custom"
+                        #md_bg_color: "cyan"
+                MDNavigationItemLabel:
+                    text: root.pronostics_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: rankings_tab
+                MDNavigationItemIcon:
+                    icon: "podium"
+                MDNavigationItemLabel:
+                    text: root.rankings_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: league_rankings_tab
+                MDNavigationItemIcon:
+                    icon: "hockey-sticks"
+                MDNavigationItemLabel:
+                    text: root.league_rankings_text
+
+<BaseScreenFourNations_Pronostics>:
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+
+            ScrollView:
+                MDBoxLayout:
+                    id: matches_layout
+                    orientation: "vertical"
+                    adaptive_height: True
+                    spacing: "10dp"
+                    padding: "10dp"
+
+            Widget:
+                size_hint_y: .2
+
+<BaseScreenFourNations_Classement>:
+    name: 'rankings'
+    md_bg_color: .4, .7, .7, .4
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            padding: [0, "20dp", 0, 0]
+
+            MDCard:
+                orientation: "vertical"
+                size_hint: 0.95, 0.8
+                pos_hint: {"center_x": 0.5, "top": .98}
+                padding: dp(10)
+                spacing: dp(10)
+                style: "outlined"
+
+                MDBoxLayout:
+                    orientation: "vertical"
+                    adaptive_height: True
+                    pos_hint: {"center_x": 0.5, "top": 1}
+                    spacing: "10dp"
+                    padding: [0, "20dp", 0, 0]
+
+                    MDGridLayout:
+                        id: classement_header
+                        cols: 5
+                        spacing: dp(5)
+                        padding: dp(5)
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDLabel:
+                            text: root.rank_text
+                            bold: True
+                            size_hint_x: 0.5
+
+                        MDLabel:
+                            text: "Pseudo"
+                            bold: True
+                            size_hint_x: 1.8
+
+                        MDLabel:
+                            text: "Points"
+                            bold: True
+                            size_hint_x: 0.8
+
+                    MDDivider:
+                        size_hint_x: 1
+                        orientation: "horizontal"
+                        divider_width: "2dp"
+
+                    MDScrollView:
+                        size_hint_y: None
+                        height: root.height * 0.6
+
+                        MDGridLayout:
+                            id: classement_content
+                            cols: 1
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+<BaseScreenFourNations_Rankings>:
+    name: 'league_rankings'
+    md_bg_color: .4, .7, .7, 1
+
+    MDRelativeLayout:
+        FitImage:
+            source: app.background_image
+            size_hint: 1, 1
+
+        MDBoxLayout:
+            orientation: "vertical"
+            MDFloatLayout:
+                MDCard:
+                    orientation: "vertical"
+                    size_hint: 0.95, None
+                    height: self.minimum_height
+                    pos_hint: {"center_x": 0.5, "top": 0.98}
+                    padding: dp(10)
+                    spacing: dp(10)
+                    style: "outlined"
+
+                    MDBoxLayout:
+                        orientation: "vertical"
+                        size_hint_y: None
+                        height: self.minimum_height
+
+                        MDGridLayout:
+                            id: rankings_header
+                            cols: 10
+                            spacing: dp(5)
+                            padding: dp(5)
+                            size_hint_y: None
+                            height: self.minimum_height
+
+                            MDLabel:
+                                text: root.rank_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: root.team_text
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 1.8  # Increased size_hint_x
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "Points"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.8
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GP"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "W"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTW"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "OTL"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "L"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GF"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+                            MDLabel:
+                                text: "GA"
+                                bold: True
+                                size_hint_y: None
+                                size_hint_x: 0.5
+                                height: self.texture_size[1]
+
+                        MDDivider:
+                            size_hint_x: 1
+                            orientation: "horizontal"
+                            divider_width: "2dp"
+
+                        MDScrollView:
+                            size_hint_y: None
+                            height: root.height * 0.7 # Adjust this value as needed
+
+                            MDGridLayout:
+                                id: rankings_content
+                                cols: 10
+                                spacing: dp(5)
+                                padding: dp(5)
+                                size_hint_y: None
+                                height: self.minimum_height
+
+            Widget:
+                size_hint_y: .2
+
+<CompetitionScreenFourNations>:
+    MDBoxLayout:
+        orientation: "vertical"
+
+        MDScreenManager:
+            id: screen_manager
+
+            BaseScreenFourNations_Pronostics:
+                name: 'pronostics'
+                md_bg_color: .4, .7, .7 , .7
+
+            BaseScreenFourNations_Classement:
+                name: 'rankings'
+                md_bg_color: .4, .7, .7 , .4
+                MDLabel:
+                    halign: "center"
+
+            BaseScreenFourNations_Rankings:
+                name: 'league_rankings'
+                md_bg_color: .4, .7, .7 , 1
+
+        MDNavigationBar:
+            on_switch_tabs: root.on_switch_tabs(*args)
+
+            BaseMDNavigationItem:
+                id : pronostics_tab
+                MDNavigationItemIcon:
+                    icon: "scoreboard"
+                    MDBadge:
+                        text: str(root.unsaved_bets_count)
+                        pos_hint: {"center_x": .7, "center_y": .7}
+                        theme_bg_color : "Custom"
+                        #md_bg_color: "cyan"
+                MDNavigationItemLabel:
+                    text: root.pronostics_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: rankings_tab
+                MDNavigationItemIcon:
+                    icon: "podium"
+                MDNavigationItemLabel:
+                    text: root.rankings_text
+
+            MDDivider:
+                size_hint_y: 1
+                orientation: "vertical"
+                divider_width: "2dp"
+
+            BaseMDNavigationItem:
+                id: league_rankings_tab
+                MDNavigationItemIcon:
+                    icon: "hockey-sticks"
+                MDNavigationItemLabel:
+                    text: root.league_rankings_text
