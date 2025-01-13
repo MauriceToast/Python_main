@@ -31,8 +31,11 @@ jobs:
     - name: Install Android SDK Command-line Tools
       run: |
         sudo apt-get install -y android-sdk  # Install Android SDK
-        sudo apt-get install -y android-sdk-commandlinetools  # Install command-line tools
-        echo "export ANDROID_HOME=/usr/lib/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
+        mkdir -p $HOME/android-sdk/cmdline-tools  # Create directory for command-line tools
+        wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O cmdline-tools.zip  # Download command-line tools
+        unzip cmdline-tools.zip -d $HOME/android-sdk/cmdline-tools/  # Unzip to the correct directory
+        mv $HOME/android-sdk/cmdline-tools/cmdline-tools $HOME/android-sdk/cmdline-tools/latest  # Rename directory for compatibility
+        echo "export ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
         echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_ENV  # Add cmdline-tools to PATH
         yes | sdkmanager --licenses  # Automatically accept all licenses
         sdkmanager "build-tools;36.0.0"  # Specify the build-tools version you want
