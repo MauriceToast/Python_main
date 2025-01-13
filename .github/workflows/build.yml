@@ -3,7 +3,7 @@ name: Build Kivy APK
 on:
   push:
     branches:
-      - main  # This ensures the workflow runs on pushes to the main branch
+      - main  # This triggers the workflow on pushes to the main branch
 
 jobs:
   build:
@@ -26,11 +26,11 @@ jobs:
 
     - name: Build APK
       run: |
-        cd path/to/your/app  # Change this to the directory containing main.py and .kv files
+        cd ${{ github.workspace }}  # Navigate to the root of the repository
         buildozer android debug  # This will build the APK
 
     - name: Upload APK
       uses: actions/upload-artifact@v2
       with:
         name: myapp-apk
-        path: path/to/your/app/bin/*.apk  # Adjust this path to where your APK is generated
+        path: bin/*.apk  # The APK is generated in the 'bin' directory within the repo root
