@@ -15,30 +15,24 @@ jobs:
 
     - name: Set up Java
       run: |
-        sudo apt-get install -y openjdk-11-jdk  # Install OpenJDK 11
-
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.8'  # Specify the Python version you need
-
-    - name: Install dependencies
-      run: |
         sudo apt-get update
-        sudo apt-get install -y python3-pip python3-setuptools git cython3  # Install necessary packages
-        pip install buildozer
+        sudo apt-get install -y openjdk-8-jdk  # Install OpenJDK 8
+
+    - name: Set up Python and Install Dependencies
+      run: |
+        sudo apt-get install -y python3-pip git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+        pip3 install kivy buildozer Cython==0.29.19
 
     - name: Install Android SDK Command-line Tools
       run: |
-        sudo apt-get install -y android-sdk  # Install Android SDK
-        mkdir -p $HOME/android-sdk/cmdline-tools  # Create directory for command-line tools
+        mkdir -p $HOME/android-sdk/cmdline-tools
         wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O cmdline-tools.zip  # Download command-line tools
         unzip cmdline-tools.zip -d $HOME/android-sdk/cmdline-tools/  # Unzip to the correct directory
         mv $HOME/android-sdk/cmdline-tools/cmdline-tools $HOME/android-sdk/cmdline-tools/latest  # Rename directory for compatibility
         echo "export ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
         echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_ENV  # Add cmdline-tools to PATH
         yes | sdkmanager --licenses  # Automatically accept all licenses
-        sdkmanager "build-tools;36.0.0"  # Specify the build-tools version you want
+        sdkmanager "platforms;android-30" "build-tools;30.0.3"  # Install required platforms and build-tools
 
     - name: Build APK
       run: |
