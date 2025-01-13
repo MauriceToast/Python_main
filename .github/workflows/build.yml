@@ -20,7 +20,7 @@ jobs:
 
     - name: Set up Python and Install Dependencies
       run: |
-        sudo apt-get install -y python3-pip git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo5 cmake libffi-dev libssl-dev
+        sudo apt-get install -y python3-pip git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo-dev cmake libffi-dev libssl-dev
         pip3 install kivy buildozer Cython==0.29.19
 
     - name: Install Android SDK Command-line Tools
