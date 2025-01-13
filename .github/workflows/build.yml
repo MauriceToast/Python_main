@@ -32,6 +32,8 @@ jobs:
       run: |
         sudo apt-get install -y android-sdk  # Install Android SDK
         echo "export ANDROID_HOME=/usr/lib/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
+        yes | sdkmanager --licenses  # Automatically accept all licenses
+        sdkmanager "build-tools;36.0.0"  # Specify the build-tools version you want
 
     - name: Build APK
       run: |
