@@ -2,45 +2,21 @@ name: Build Kivy APK
 
 on:
   push:
-    branches:
-      - main  # This triggers the workflow on pushes to the main branch
+    branches: [ main ]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-
+    runs-on: ubuntu-22.04
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - uses: actions/checkout@v4
+      - name: Build APK
+        uses: digreatbrian/buildozer-action@v2
+        with:
+          python-version: 3.8
+          buildozer-cmd: buildozer -v android debug
 
-    - name: Set up Java
-      run: |
-        sudo apt-get update
-        sudo apt-get install -y openjdk-8-jdk  # Install OpenJDK 8
-
-    - name: Set up Python and Install Dependencies
-      run: |
-        sudo apt-get install -y python3-pip git zip unzip autoconf libtool pkg-config zlib1g-dev libncurses5-dev libncursesw5-dev libtinfo-dev cmake libffi-dev libssl-dev
-        pip3 install kivy buildozer Cython==0.29.19
-
-    - name: Install Android SDK Command-line Tools
-      run: |
-        mkdir -p $HOME/android-sdk/cmdline-tools
-        wget https://dl.google.com/android/repository/commandlinetools-linux-7583922_latest.zip -O cmdline-tools.zip  # Download command-line tools
-        unzip cmdline-tools.zip -d $HOME/android-sdk/cmdline-tools/  # Unzip to the correct directory
-        mv $HOME/android-sdk/cmdline-tools/cmdline-tools $HOME/android-sdk/cmdline-tools/latest  # Rename directory for compatibility
-        echo "export ANDROID_HOME=$HOME/android-sdk" >> $GITHUB_ENV  # Set ANDROID_HOME environment variable
-        echo "export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin" >> $GITHUB_ENV  # Add cmdline-tools to PATH
-        yes | sdkmanager --licenses  # Automatically accept all licenses
-        sdkmanager "platforms;android-30" "build-tools;30.0.3"  # Install required platforms and build-tools
-
-    - name: Build APK
-      run: |
-        cd ${{ github.workspace }}  # Navigate to the root of the repository
-        buildozer android debug  # This will build the APK
-
-    - name: Upload APK
-      uses: actions/upload-artifact@v3  # Update to v3
-      with:
-        name: myapp-apk
-        path: bin/*.apk  # The APK is generated in the 'bin' directory within the repo root
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: package
+          path: ./bin/*.apk
