@@ -283,6 +283,14 @@ Playoffs,4,5 mars 2025,NICE - GRENOBLE,Regular Time,1-2,no,GRENOBLE
 Playoffs,4,5 mars 2025,AMIENS - ROUEN,Regular Time,0-2,no,ROUEN
 Playoffs,4,5 mars 2025,CHAMONIX - ANGERS,Regular Time,1-5,no,ANGERS
 Playoffs,4,5 mars 2025,MARSEILLE - BORDEAUX,Regular Time,1-4,no,BORDEAUX
-Playoffs,5,8 mars 2025,ANGERS - CHAMONIX,,,yes,
-Playoffs,5,8 mars 2025,BORDEAUX - MARSEILLE,,,yes,
-Playoffs,5,8 mars 2025,ROUEN - AMIENS,,,yes,
+Playoffs,5,8 mars 2025,ANGERS - CHAMONIX,Extra Time,1-2,no,CHAMONIX
+Playoffs,5,8 mars 2025,BORDEAUX - MARSEILLE,Regular Time,1-5,no,MARSEILLE
+Playoffs,5,9 mars 2025,ROUEN - AMIENS,Extra Time,6-7,no,AMIENS
+Playoffs,6,10 mars 2025,CHAMONIX - ANGERS,Extra Time,1-2,no,ANGERS
+Playoffs,6,10 mars 2025,MARSEILLE - BORDEAUX,Regular Time,1-5,no,BORDEAUX
+Playoffs,6,10 mars 2025,AMIENS - ROUEN,Regular Time,1-0,no,AMIENS
+Playoffs,7,12 mars 2025,ROUEN - AMIENS,,,yes,
+Playoffs,1,14 mars 2025,ANGERS - BORDEAUX,,,yes,
+Playoffs,2,15 mars 2025,ANGERS - BORDEAUX,,,yes,
+Playoffs,3,18 mars 2025,BORDEAUX - ANGERS,,,yes,
+Playoffs,4,19 mars 2025,BORDEAUX - ANGERS,,,yes,
