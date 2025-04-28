@@ -277,6 +277,7 @@ try:
     for url in urls:
         print(f"\nProcessing URL: {url}")
         driver.get(url)
+        accept_cookies(driver)
 
         # First attempt
         if not accept_cookies(driver):
