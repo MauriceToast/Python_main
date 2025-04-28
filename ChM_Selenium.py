@@ -256,11 +256,11 @@ try:
         accept_cookies(driver)
         accept_cookies(driver)
 
-        # First attempt
-        if not accept_cookies(driver):
-            print("First cookie attempt failed - refreshing")
-            driver.refresh()
-            accept_cookies(driver)
+        # # First attempt
+        # if not accept_cookies(driver):
+        #     print("First cookie attempt failed - refreshing")
+        #     driver.refresh()
+        #     accept_cookies(driver)
 
         # Validate content exists
         try:
