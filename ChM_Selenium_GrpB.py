@@ -141,9 +141,10 @@ try:
         try:
             teams = {
                 "Autriche", "Slovaquie", "Finlande",
-                "Suède", "Canada", "Allemagne",
-                "États-Unis", "Lettonie", "France", "Slovénie",
-                "Lettonie",
+                "Suède", "Canada",
+                "Lettonie", "France", "Slovénie",
+                "Allemagne", "Tchéquie", "Danemark", "Norvège",
+                "Suisse", "Hongrie", "Kazakhstan", "USA"
             }
 
             # Wait for the table to load
