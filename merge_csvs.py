@@ -15,7 +15,7 @@ def merge_and_sort():
     merged = []
     
     # Define input files
-    files = ['ChM_matches_1.csv', 'ChM_matches_2.csv']
+    files = ['ChM_GrpA_matches.csv', 'ChM_GrpB_matches.csv']
     
     # Load and merge data
     for file in files:
