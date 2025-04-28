@@ -60,80 +60,33 @@ try:
         return f"{date.day} {french_months[date.month]} {date.year}"
 
 
-    # def accept_cookies(driver):
-    #     try:
-    #         print("Waiting for cookie consent dialog...")
-    #         WebDriverWait(driver, 10).until(
-    #             EC.presence_of_element_located((By.ID, "usercentrics-root"))
-    #         )
-    #         print("Cookie consent dialog found. Attempting to click 'Accept' button...")
-    #         script = """
-    #         var shadowRoot = document.querySelector("#usercentrics-root").shadowRoot;
-    #         var button = shadowRoot.querySelector("button[data-testid='uc-deny-all-button']");
-    #         if (button) {
-    #             button.click();
-    #             return true;
-    #         }
-    #         return false;
-    #         """
-    #         result = driver.execute_script(script)
-    #         if result:
-    #             print("Cookies accepted successfully")
-    #         else:
-    #             print("Failed to find or click the 'Accept' button")
-    #         time.sleep(5)
-    #     except Exception as e:
-    #         print(f"Error accepting cookies: {str(e)}")
-
     def accept_cookies(driver):
         try:
-            WebDriverWait(driver, 15).until(
+            print("Waiting for cookie consent dialog...")
+            WebDriverWait(driver, 10).until(
                 EC.presence_of_element_located((By.ID, "usercentrics-root"))
             )
-
-            # Use JavaScript to click the "Deny All" button directly
-            driver.execute_script("""
-                const root = document.getElementById("usercentrics-root");
-                if (root && root.shadowRoot) {
-                    const denyButton = root.shadowRoot.querySelector(
-                        'button[data-testid="uc-deny-all-button"]'
-                    );
-                    if (denyButton) denyButton.click();
-                }
-            """)
-            print("Cookie consent handled")
-            time.sleep(3)  # Allow cookie settings to apply
-            return True
+            print("Cookie consent dialog found. Attempting to click 'Accept' button...")
+            script = """
+            var shadowRoot = document.querySelector("#usercentrics-root").shadowRoot;
+            var button = shadowRoot.querySelector("button[data-testid='uc-deny-all-button']");
+            if (button) {
+                button.click();
+                return true;
+            }
+            return false;
+            """
+            result = driver.execute_script(script)
+            if result:
+                print("Cookies accepted successfully")
+            else:
+                print("Failed to find or click the 'Accept' button")
+            time.sleep(5)
         except Exception as e:
-            print(f"Cookie handling skipped: {str(e)}")
-            return False
-
-
-    # def select_month(driver, month):
-    #     try:
-    #         print(f"Attempting to select month: {month}")
-    #         month_selector = WebDriverWait(driver, 10).until(
-    #             EC.presence_of_element_located(
-    #                 (By.XPATH, f"//p[@class='stxt-scrollselection__label' and text()='{month}']"))
-    #         )
-    #         print(f"Month selector found for {month}")
-    #
-    #         # Try regular click first
-    #         try:
-    #             month_selector.click()
-    #         except:
-    #             # If regular click fails, try JavaScript click
-    #             driver.execute_script("arguments[0].click();", month_selector)
-    #
-    #         print(f"Clicked on month: {month}")
-    #         time.sleep(5)
-    #     except Exception as e:
-    #         print(f"Error selecting month {month}: {str(e)}")
-
+            print(f"Error accepting cookies: {str(e)}")
 
     def determine_win_type(score):
         return "Extra Time" if "ap" in score or "tb" in score else "Regular Time"
-
 
     def determine_winner(home_team, away_team, score):
         if score == "No Score":
@@ -300,6 +253,7 @@ try:
     for url in urls:
         print(f"\nProcessing URL: {url}")
         driver.get(url)
+        accept_cookies(driver)
         accept_cookies(driver)
 
         # First attempt
