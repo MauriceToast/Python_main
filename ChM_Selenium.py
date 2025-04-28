@@ -278,14 +278,12 @@ try:
     months = ["Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars"]
 
     all_matches_data = []
-    for month in months:
-        print(f"\nScraping data for: {month}")
-        select_month(driver, month)
-        matches_data = scrape_month(driver)
-
-        # Filter duplicates before adding
-        unique_new = [m for m in matches_data if is_unique(m, all_matches_data)]
-        all_matches_data.extend(unique_new)
+    # for month in months:
+        # print(f"\nScraping data for: {month}")
+        # select_month(driver, month)
+    print(f"\nScraping data for: ")
+    matches_data = scrape_month(driver)
+    all_matches_data.extend(matches_data)
 
     if all_matches_data:
         write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
