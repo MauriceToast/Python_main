@@ -252,12 +252,6 @@ try:
             print(traceback.format_exc())
             return []
 
-
-    def is_unique(match, existing_matches):
-        match_id = (match['date'], match['match'])
-        return not any((m['date'] == match_id[0] and m['match'] == match_id[1]) for m in existing_matches)
-
-
     def write_matches_to_csv(matches_data, filename):
         with open(filename, 'w', newline='') as csvfile:
             fieldnames = ['leg', 'journee', 'date', 'match', 'win_type', 'score', 'available', 'winner']
@@ -275,21 +269,14 @@ try:
     accept_cookies(driver)
     accept_cookies(driver)
 
-    months = ["Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars"]
-
-    all_matches_data = []
-    # for month in months:
-        # print(f"\nScraping data for: {month}")
-        # select_month(driver, month)
-    print(f"\nScraping data for: ")
-    matches_data = scrape_month(driver)
-    all_matches_data.extend(matches_data)
+    # Scrape directly without month selection
+    all_matches_data = scrape_month(driver)  # Single scrape call
 
     if all_matches_data:
         write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
-        print(f"Total matches written to CSV: {len(all_matches_data)}")
+        print(f"Total matches written: {len(all_matches_data)}")
     else:
-        print("No data collected for any month")
+        print("No data collected")
 
     print("Scraping process completed")
 except Exception as e:
