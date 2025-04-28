@@ -1,4 +1,4 @@
-name: Run NL QuotesScript
+name: Run ChM QuotesScript
 
 on:
   schedule:
