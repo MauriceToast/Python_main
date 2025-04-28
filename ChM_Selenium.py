@@ -60,30 +60,53 @@ try:
         return f"{date.day} {french_months[date.month]} {date.year}"
 
 
+    # def accept_cookies(driver):
+    #     try:
+    #         print("Waiting for cookie consent dialog...")
+    #         WebDriverWait(driver, 10).until(
+    #             EC.presence_of_element_located((By.ID, "usercentrics-root"))
+    #         )
+    #         print("Cookie consent dialog found. Attempting to click 'Accept' button...")
+    #         script = """
+    #         var shadowRoot = document.querySelector("#usercentrics-root").shadowRoot;
+    #         var button = shadowRoot.querySelector("button[data-testid='uc-deny-all-button']");
+    #         if (button) {
+    #             button.click();
+    #             return true;
+    #         }
+    #         return false;
+    #         """
+    #         result = driver.execute_script(script)
+    #         if result:
+    #             print("Cookies accepted successfully")
+    #         else:
+    #             print("Failed to find or click the 'Accept' button")
+    #         time.sleep(5)
+    #     except Exception as e:
+    #         print(f"Error accepting cookies: {str(e)}")
+
     def accept_cookies(driver):
         try:
-            print("Waiting for cookie consent dialog...")
-            WebDriverWait(driver, 10).until(
+            WebDriverWait(driver, 15).until(
                 EC.presence_of_element_located((By.ID, "usercentrics-root"))
             )
-            print("Cookie consent dialog found. Attempting to click 'Accept' button...")
-            script = """
-            var shadowRoot = document.querySelector("#usercentrics-root").shadowRoot;
-            var button = shadowRoot.querySelector("button[data-testid='uc-deny-all-button']");
-            if (button) {
-                button.click();
-                return true;
-            }
-            return false;
-            """
-            result = driver.execute_script(script)
-            if result:
-                print("Cookies accepted successfully")
-            else:
-                print("Failed to find or click the 'Accept' button")
-            time.sleep(5)
+
+            # Use JavaScript to click the "Deny All" button directly
+            driver.execute_script("""
+                const root = document.getElementById("usercentrics-root");
+                if (root && root.shadowRoot) {
+                    const denyButton = root.shadowRoot.querySelector(
+                        'button[data-testid="uc-deny-all-button"]'
+                    );
+                    if (denyButton) denyButton.click();
+                }
+            """)
+            print("Cookie consent handled")
+            time.sleep(3)  # Allow cookie settings to apply
+            return True
         except Exception as e:
-            print(f"Error accepting cookies: {str(e)}")
+            print(f"Cookie handling skipped: {str(e)}")
+            return False
 
 
     # def select_month(driver, month):
