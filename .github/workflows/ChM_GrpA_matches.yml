@@ -1,4 +1,4 @@
-name: Run ChM Matches Script
+name: Run ChM GrpA Matches Script
 
 on:
   # schedule:
@@ -23,10 +23,10 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
     - name: Run Matches script
-      run: python ChM_Selenium.py
+      run: python ChM_Selenium_GrpA.py
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add ChM_matches.csv
+        git add ChM_GrpA_matches.csv
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update matches CSV file" && git push)
