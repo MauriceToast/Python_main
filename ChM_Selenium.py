@@ -262,15 +262,6 @@ try:
         #     driver.refresh()
         #     accept_cookies(driver)
 
-        # Validate content exists
-        try:
-            WebDriverWait(driver, 15).until(
-                EC.visibility_of_element_located((By.CSS_SELECTOR, ".stxt-results-table__score"))
-            )
-        except Exception as e:
-            print(f"Content validation failed: {str(e)}")
-            continue
-
         # Scrape data
         matches = scrape_month(driver)
         print(f"Retrieved {len(matches)} matches from this URL")
