@@ -89,7 +89,7 @@ try:
                     current_row = []
 
             # Write to CSV
-            with open('ChM_GrpB_rankings.csv', 'w', newline='', encoding='utf-8') as csvfile:
+            with open('ChM_GrpA_rankings.csv', 'w', newline='', encoding='utf-8') as csvfile:
                 writer = csv.writer(csvfile)
                 writer.writerow(['rank', 'team', 'points', 'games_played', 'wins',
                                  'overtime_wins', 'overtime_losses', 'losses',
