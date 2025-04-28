@@ -125,9 +125,22 @@ def calculate_bookmaker_quotes(team1, team2, rankings_data, matches_data, date_s
     team1_points_ratio = int(team1_data['points']) / max(int(team1_data['games_played']), 1)
     team2_points_ratio = int(team2_data['points']) / max(int(team2_data['games_played']), 1)
     total_points_ratio = team1_points_ratio + team2_points_ratio
+
+    if total_points_ratio == 0:
+        # Avoid division by zero: skip this factor, or use default odds, or set equal probability
+        print(f"Both teams {team1} and {team2} have zero points ratio. Using default odds.")
+        default_odds = {
+            'team1': 2.0,
+            'team2': 2.0,
+            'draw': 3.0,
+            'team1_extra': 4.0,
+            'team2_extra': 4.0
+        }
+        save_quotes(date_str, f"{team1} - {team2}", default_odds)
+        return default_odds
+
     team1_prob += weights['points_ratio'] * (team1_points_ratio / total_points_ratio - 0.5)
     team2_prob += weights['points_ratio'] * (team2_points_ratio / total_points_ratio - 0.5)
-
     # 2. Team prestige
     team1_prestige = team_prestige.get(team1.upper(), 10 / 20)
     team2_prestige = team_prestige.get(team2.upper(), 10 / 20)
