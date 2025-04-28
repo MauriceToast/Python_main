@@ -282,18 +282,21 @@ try:
         print(f"Matches scraped from {url}: {len(matches_data)}")
         all_matches_data.extend(matches_data)
 
-    unique_matches = []
-    seen = set()
+    # unique_matches = []
+    # seen = set()
+    #
+    # for match in all_matches_data:
+    #     match_id = (match['date'], match['match'], match['score'])
+    #     if match_id not in seen:
+    #         seen.add(match_id)
+    #         unique_matches.append(match)
 
-    for match in all_matches_data:
-        match_id = (match['date'], match['match'], match['score'])
-        if match_id not in seen:
-            seen.add(match_id)
-            unique_matches.append(match)
-
-    write_matches_to_csv(unique_matches, 'ChM_matches.csv')
-    print(f"Total unique matches written: {len(unique_matches)}")
-
+    if all_matches_data:
+        write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
+        print(f"Total matches written: {len(all_matches_data)}")
+    else:
+        print("No data collected")
+        
     # print("Starting the scraping process...")
     # driver.get(web)
     # print("Webpage loaded")
