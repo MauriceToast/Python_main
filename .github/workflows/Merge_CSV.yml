@@ -1,0 +1,34 @@
+name: Merge CSV Files
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 3 * * *'  # Daily at 3 AM UTC
+
+jobs:
+  merge-csvs:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+    
+    - name: Install dependencies
+      run: pip install pandas  # Not strictly needed but good to have
+    
+    - name: Merge and sort CSVs
+      run: python merge_csvs.py
+    
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+    
+    - name: Commit and push merged file
+      run: |
+        git add ChM_matches_merged.csv
+        git commit -m "Update merged matches CSV"
+        git push origin main
