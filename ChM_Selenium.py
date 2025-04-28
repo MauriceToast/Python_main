@@ -18,7 +18,12 @@ def replace_team_names(team_name):
     return replacements.get(team_name, team_name)
 
 
-web = "https://www.rts.ch/sport/resultats/#/results/hockey/wm/GroupPhase-1-0/Group-2-0"
+urls = [
+    "https://www.rts.ch/sport/resultats/#/results/hockey/wm/GroupPhase-1-0/Group-2-0",
+    "https://www.rts.ch/sport/resultats/#/results/hockey/wm/GroupPhase-1-0/Group-2-1"
+]
+
+# web = "https://www.rts.ch/sport/resultats/#/results/hockey/wm/GroupPhase-1-0/Group-2-0"
 driver = None
 try:
     chrome_options = Options()
@@ -36,8 +41,8 @@ try:
     driver = webdriver.Chrome(service=service, options=chrome_options)
     wait = WebDriverWait(driver, 20)
 
-    driver.get(web)
-    print(f"Webpage loaded: {web}")
+    # driver.get(web)
+    # print(f"Webpage loaded: {web}")
 
 
     def parsefrenchdate(datestr):
@@ -264,22 +269,46 @@ try:
                 print(f"Wrote match to CSV: {match}")  # Debug print
 
 
-    print("Starting the scraping process...")
-    driver.get(web)
-    print("Webpage loaded")
-    accept_cookies(driver)
-    accept_cookies(driver)
+    all_matches_data = []
 
-    # Scrape directly without month selection
-    all_matches_data = scrape_month(driver)  # Single scrape call
+    for url in urls:
+        print(f"Loading page: {url}")
+        driver.get(url)
+        accept_cookies(driver)  # Accept cookies once per page load
+        time.sleep(5)  # Wait for page content to load fully
 
-    if all_matches_data:
-        write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
-        print(f"Total matches written: {len(all_matches_data)}")
-    else:
-        print("No data collected")
+        matches_data = scrape_month(driver)  # Reuse your existing scrape function
+        print(f"Matches scraped from {url}: {len(matches_data)}")
+        all_matches_data.extend(matches_data)
 
-    print("Scraping process completed")
+    unique_matches = []
+    seen = set()
+
+    for match in all_matches_data:
+        match_id = (match['date'], match['match'], match['score'])
+        if match_id not in seen:
+            seen.add(match_id)
+            unique_matches.append(match)
+
+    write_matches_to_csv(unique_matches, 'ChM_matches.csv')
+    print(f"Total unique matches written: {len(unique_matches)}")
+
+    # print("Starting the scraping process...")
+    # driver.get(web)
+    # print("Webpage loaded")
+    # accept_cookies(driver)
+    # accept_cookies(driver)
+    # 
+    # # Scrape directly without month selection
+    # all_matches_data = scrape_month(driver)  # Single scrape call
+    # 
+    # if all_matches_data:
+    #     write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
+    #     print(f"Total matches written: {len(all_matches_data)}")
+    # else:
+    #     print("No data collected")
+    # 
+    # print("Scraping process completed")
 except Exception as e:
     print(f"An error occurred: {str(e)}")
 
