@@ -253,6 +253,11 @@ try:
             return []
 
 
+    def is_unique(match, existing_matches):
+        match_id = (match['date'], match['match'])
+        return not any((m['date'] == match_id[0] and m['match'] == match_id[1]) for m in existing_matches)
+
+
     def write_matches_to_csv(matches_data, filename):
         with open(filename, 'w', newline='') as csvfile:
             fieldnames = ['leg', 'journee', 'date', 'match', 'win_type', 'score', 'available', 'winner']
@@ -277,7 +282,10 @@ try:
         print(f"\nScraping data for: {month}")
         select_month(driver, month)
         matches_data = scrape_month(driver)
-        all_matches_data.extend(matches_data)
+
+        # Filter duplicates before adding
+        unique_new = [m for m in matches_data if is_unique(m, all_matches_data)]
+        all_matches_data.extend(unique_new)
 
     if all_matches_data:
         write_matches_to_csv(all_matches_data, 'ChM_matches.csv')
