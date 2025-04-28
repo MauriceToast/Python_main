@@ -200,7 +200,7 @@ try:
             #         }
             #         matches_data.append(match_data)
             # else:
-            print("JavaScript extraction failed. Trying original method.")
+            # print("JavaScript extraction failed. Trying original method.")
             span_elements = driver.find_elements(By.XPATH, "//span")
             all_data = [span.text.strip() for span in span_elements]
 
@@ -275,7 +275,8 @@ try:
     for url in urls:
         print(f"Loading page: {url}")
         driver.get(url)
-        accept_cookies(driver)  # Accept cookies once per page load
+        accept_cookies(driver) 
+        accept_cookies(driver)
         time.sleep(5)  # Wait for page content to load fully
 
         matches_data = scrape_month(driver)  # Reuse your existing scrape function
@@ -296,7 +297,7 @@ try:
         print(f"Total matches written: {len(all_matches_data)}")
     else:
         print("No data collected")
-        
+
     # print("Starting the scraping process...")
     # driver.get(web)
     # print("Webpage loaded")
