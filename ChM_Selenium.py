@@ -140,9 +140,10 @@ try:
     def scrape_month(driver):
         try:
             teams = {
-                "Davos", "Zurich", "Berne", "Lausanne", "Kloten",
-                "Zoug", "Bienne", "Langnau", "Fribourg", "Genève",
-                "Ambri", "Lugano", "Rapperswil", "Ajoie"
+                "Autriche", "Slovaquie", "Finlande",
+                "Suède", "Canada", "Allemagne",
+                "États-Unis", "Lettonie", "France", "Slovénie",
+                "Lettonie",
             }
 
             # Wait for the table to load
