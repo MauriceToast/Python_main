@@ -1,0 +1,42 @@
+name: ChM_GrpA_Rankings
+
+on:
+  workflow_dispatch:  # Manual trigger
+  schedule:
+    - cron: '0 4 * * *'  # Daily at 4 AM UTC
+
+jobs:
+  update-rankings:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+        
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install selenium webdriver_manager
+
+    - name: Install Chrome
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+
+    - name: Run Rankings Script
+      run: python ChM_GrpA_Rankings_Selenium.py
+
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+
+    - name: Commit and push changes
+      run: |
+        git add ChM_GrpA_rankings.csv
+        git commit -m "Update Group B rankings"
+        git pull --rebase origin main
+        git push origin main
