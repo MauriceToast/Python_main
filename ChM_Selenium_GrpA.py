@@ -12,8 +12,23 @@ from datetime import datetime
 
 def replace_team_names(team_name):
     replacements = {
-        "Genève": "Geneve",
-        # Add more replacements here if needed
+        "Autriche": "Austria",
+        "Finlande": "Finland",
+        "Suède": "Sweden",
+        "Slovaquie": "Slovakia",
+        "Suisse": "Switzerland",
+        "Tchéquie": "Czechia",
+        "Danemark": "Denmark",
+        "USA": "USA",
+        "Slovénie": "Slovenia",
+        "Canada": "Canada",
+        "France": "France",
+        "Lettonie": "Latvia",
+        "Norvège": "Norway",
+        "Kazakhstan": "Kazakhstan",
+        "Allemagne": "Germany",
+        "Hongrie": "Hungary",
+        # Add more if needed
     }
     return replacements.get(team_name, team_name)
 
