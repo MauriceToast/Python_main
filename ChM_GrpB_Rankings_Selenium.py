@@ -9,6 +9,28 @@ import time
 import csv
 from datetime import datetime
 
+def replace_team_names(team_name):
+    replacements = {
+        "Autriche": "Austria",
+        "Finlande": "Finland",
+        "Suède": "Sweden",
+        "Slovaquie": "Slovakia",
+        "Suisse": "Switzerland",
+        "Tchéquie": "Czechia",
+        "Danemark": "Denmark",
+        "USA": "USA",
+        "Slovénie": "Slovenia",
+        "Canada": "Canada",
+        "France": "France",
+        "Lettonie": "Latvia",
+        "Norvège": "Norway",
+        "Kazakhstan": "Kazakhstan",
+        "Allemagne": "Germany",
+        "Hongrie": "Hungary",
+        # Add more if needed
+    }
+    return replacements.get(team_name, team_name)
+
 web = "https://www.rts.ch/sport/resultats/#/results/hockey/wm/GroupPhase-1-0/Group-2-1/rankings/700333"
 driver = None
 try:
