@@ -104,6 +104,7 @@ try:
                     current_row.append(text)
                 if len(current_row) == 9:  # Each row should have exactly 9 fields
                     rank, team, games_played, wins, overtime_wins, overtime_losses, losses, goals, points = current_row
+                    team = replace_team_names(team)
 
                     # Split goals into goals_for and goals_against
                     goals_for, goals_against = map(int, goals.split('-'))
