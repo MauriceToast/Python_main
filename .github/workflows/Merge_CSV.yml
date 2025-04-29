@@ -2,8 +2,8 @@ name: Merge CSV Files
 
 on:
   workflow_dispatch:  # Manual trigger
-  schedule:
-    - cron: '0 3 * * *'  # Daily at 3 AM UTC
+  # schedule:
+  #   - cron: '0 3 * * *'  # Daily at 3 AM UTC
 
 jobs:
   merge-csvs:
