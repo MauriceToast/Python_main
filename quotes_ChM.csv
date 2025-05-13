@@ -3,7 +3,7 @@ date,match,team1,team2,draw,team1_extra,team2_extra
 2025-05-09,Denmark - USA,9.75,1.19,6.5,4.0,4.0
 2025-05-09,Switzerland - Czechia,2.8,2.05,3.9,4.0,4.0
 2025-05-09,Sweden - Slovakia,1.14,11.0,7.5,4.0,4.0
-2025-05-10,Slovenia - Canada,35.0,1.01,19.0,4.0,4.0
+2025-05-10,Slovenia - Canada,35.0,1.01,19.0,30.0,1.01
 2025-05-10,Norway - Kazakhstan,1.72,3.75,4.5,4.0,4.0
 2025-05-10,France - Latvia,3.75,1.72,4.3,4.0,4.0
 2025-05-10,Sweden - Austria,1.02,35,15,1.1,6.5
@@ -19,3 +19,11 @@ date,match,team1,team2,draw,team1_extra,team2_extra
 2025-05-12,Finland - Sweden,4.5,1.55,4.75,4.0,4.0
 2025-05-12,USA - Switzerland,1.72,4.25,3.5,4.0,4.0
 2025-05-12,Czechia - Denmark,1.27,8.0,6.0,4.0,4.0
+2025-05-13,Slovenia - Latvia,6.0,1.4,5.25,1.27,3.35
+2025-05-13,Canada - France,1.02,28.0,17.0,1.01,11.5
+2025-05-13,Norway - Germany,6.0,5.25,1.4,8.0,1.05
+2025-05-13,Kazakhstan - Hungary,1.7,3.8,4.4,1.42,2.65
+2025-05-14,Slovakia - France,1.35,5.75,5.25,1.19,3.5
+2025-05-14,Latvia - Sweden,10.5,1.18,6.5,4.9,1.08
+2025-05-14,USA - Norway,1.12,14,7.5,1.05,5.75
+2025-05-14,Kazakhstan - Denmark,3.7,1.65,4.5,2.5,1.38
