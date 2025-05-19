@@ -2,7 +2,7 @@ name: ChM_GrpA_Rankings
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Runs every 6 hours
+    - cron: '0 4 * * *'  # Daily at 4 AM UTC
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -28,9 +28,7 @@ jobs:
       run: |
         git config --global user.name 'GitHub Action'
         git config --global user.email 'action@github.com'
-        git add ChM_GrpA_rankings.csv
-        git diff --quiet && git diff --staged --quiet || (git commit -m "Update matches CSV file" && git push)
-
+        
     - name: Commit and push changes
       run: |
         git add ChM_GrpA_rankings.csv
