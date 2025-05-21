@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Czechia,17,6,5,1,0,0,33,9
-2,Switzerland,16,6,5,0,1,0,30,8
-3,USA,14,6,4,1,0,1,29,12
-4,Denmark,9,6,3,0,0,3,23,23
-5,Germany,9,6,3,0,0,3,19,20
+1,Switzerland,19,7,6,0,1,0,34,9
+2,USA,17,7,5,1,0,1,34,14
+3,Czechia,17,7,5,1,0,1,35,14
+4,Denmark,11,7,3,1,0,3,25,24
+5,Germany,10,7,3,0,1,3,20,22
 6,Norway,4,7,1,0,1,5,13,24
 7,Hungary,3,7,1,0,0,6,8,39
-8,Kazakhstan,3,6,1,0,0,5,8,28
+8,Kazakhstan,3,7,1,0,0,6,9,32
