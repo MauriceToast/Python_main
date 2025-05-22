@@ -1,7 +1,7 @@
 name: ChM_GrpA_Rankings
 
 on:
-  schedule:
+  # schedule:
     # - cron: '0 4 * * *'  # Daily at 4 AM UTC
   workflow_dispatch:  # Allows manual triggering
 
