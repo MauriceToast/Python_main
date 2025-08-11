@@ -17,7 +17,7 @@ team_prestige = {
     "ANGLET": 10 / 20,
     "NICE": 10 / 20,
     "GAP": 10 / 20,
-    "BRIANÇON": 10 / 20
+    "BRIANCON": 10 / 20
 }
 
 base_url = "https://raw.githubusercontent.com/MauriceToast/Python_main/main/"
@@ -301,5 +301,6 @@ def main():
             processed_teams.add(team2)
 
 main()
+
 
 
