@@ -1,6 +1,8 @@
 name: Run NL Matches Script
 
 on:
+  schedule:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -34,3 +36,4 @@ jobs:
       run: |
         git add nl_matches.csv
         git diff --quiet && git diff --staged --quiet || (git commit -m "Update matches CSV file" && git push origin main)
+
