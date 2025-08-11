@@ -1,16 +1,17 @@
 leg,journee,date,match,win_type,score,available,winner
-First Leg,1,12 septembre 2025,NICE - CHAMONIX,,,yes,
-First Leg,1,12 septembre 2025,BRIANCON - ANGERS,,,yes,
-First Leg,1,12 septembre 2025,GRENOBLE - BORDEAUX,,,yes,
-First Leg,1,12 septembre 2025,MARSEILLE - ANGLET,,,yes,
-First Leg,1,12 septembre 2025,CERGY - AMIENS,,,yes,
-First Leg,1,12 septembre 2025,ROUEN - GAP,,,yes,
-First Leg,2,16 septembre 2025,CHAMONIX - BRIANCON,,,yes,
-First Leg,2,16 septembre 2025,BORDEAUX - ROUEN,,,yes,
-First Leg,2,16 septembre 2025,AMIENS - NICE,,,yes,
-First Leg,2,16 septembre 2025,ANGLET - CERGY,,,yes,
-First Leg,2,16 septembre 2025,GAP - MARSEILLE,,,yes,
-First Leg,2,16 septembre 2025,ANGERS - GRENOBLE,,,yes,
+First Leg,1,12 septembre 2025,NICE - CHAMONIX,Regular Time,No Score,yes,
+First Leg,1,12 septembre 2025,BRIANCON - ANGERS,Regular Time,No Score,yes,
+First Leg,1,12 septembre 2025,GRENOBLE - BORDEAUX,Regular Time,No Score,yes,
+First Leg,1,12 septembre 2025,MARSEILLE - ANGLET,Regular Time,No Score,yes,
+First Leg,1,12 septembre 2025,CERGY - AMIENS,Regular Time,No Score,yes,
+First Leg,1,12 septembre 2025,ROUEN - GAP,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,CHAMONIX - BRIANCON,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,BORDEAUX - ROUEN,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,AMIENS - NICE,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,ANGLET - CERGY,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,GAP - MARSEILLE,Regular Time,No Score,yes,
+First Leg,2,16 septembre 2025,ANGERS - GRENOBLE,Regular Time,No Score,yes,
+
 
 
 
