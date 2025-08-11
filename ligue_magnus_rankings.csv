@@ -1,14 +1,15 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against,penalty_minutes
-1,GRENOBLE,,,,,,,,,
-2,ANGERS,,,,,,,,,
-3,BORDEAUX,,,,,,,,,
-4,ROUEN,,,,,,,,,
-5,AMIENS,,,,,,,,,
-6,MARSEILLE,,,,,,,,,
-7,CHAMONIX,,,,,,,,,
-8,NICE,,,,,,,,,
-9,BRIANCON,,,,,,,,,
-10,CERGY,,,,,,,,,
-11,ANGLET,,,,,,,,,
-12,GAP,,,,,,,,,
+1,GRENOBLE,0,0,0,0,0,0,0,0
+2,ANGERS,0,0,0,0,0,0,0,0
+3,BORDEAUX,0,0,0,0,0,0,0,0
+4,ROUEN,0,0,0,0,0,0,0,0
+5,AMIENS,0,0,0,0,0,0,0,0
+6,MARSEILLE,0,0,0,0,0,0,0,0
+7,CHAMONIX,0,0,0,0,0,0,0,0
+8,NICE,0,0,0,0,0,0,0,0
+9,BRIANCON,0,0,0,0,0,0,0,0
+10,CERGY,0,0,0,0,0,0,0,0
+11,ANGLET,0,0,0,0,0,0,0,0
+12,GAP,0,0,0,0,0,0,0,0
+
 
