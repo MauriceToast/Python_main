@@ -374,15 +374,20 @@ try:
     #         return []
     
     def write_matches_to_csv(matches_data, filename):
-        with open(filename, 'w', newline='') as csvfile:
-            fieldnames = ['leg', 'journee', 'date', 'match', 'win_type', 'score', 'available', 'winner']
+        # Add 'hour' to the CSV columns
+        fieldnames = ['leg', 'journee', 'date', 'hour', 'match', 'win_type', 'score', 'available', 'winner']
+        
+        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    
             writer.writeheader()
             for match in matches_data:
+                # Make sure the hour field exists (empty string if missing)
+                if 'hour' not in match:
+                    match['hour'] = ''
                 writer.writerow(match)
-                # print(f"Wrote match to CSV: {match}")  # Debug print
-    
+                # Uncomment below if you want debugging info when writing
+                print(f"Wrote match to CSV: {match}")
+
     print("Starting the scraping process...")
     driver.get(web)
     print("Webpage loaded")
@@ -411,6 +416,7 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
 
