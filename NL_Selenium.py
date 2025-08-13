@@ -153,17 +153,27 @@ try:
                     var date = row.querySelector('.stxt-results-table__date-inner')?.textContent.trim();
                     var teams = row.querySelectorAll('.stxt-results-table__team-name');
                     var score = row.querySelector('.stxt-results-table__score')?.textContent.trim();
-                    if (date && teams.length === 2 && score) {
+            
+                    // New: Extract the hour
+                    var hour = "";
+                    var hourElem = row.querySelector('div.cell.status');
+                    if(hourElem) {
+                        hour = hourElem.textContent.trim();
+                    }
+            
+                    if (date && teams.length === 2 && score !== null) {
                         data.push({
                             date: date,
                             home: teams[0].textContent.trim(),
                             away: teams[1].textContent.trim(),
-                            score: score
+                            score: score,
+                            hour: hour  // add hour here
                         });
                     }
                 });
                 return data;
             """)
+
     
             print("JavaScript extracted data:", js_data)
     
@@ -175,11 +185,15 @@ try:
                     win_type = determine_win_type(match['score'])
                     cleaned_score = clean_score(match['score'])
                     winner = determine_winner(match['home'], match['away'], cleaned_score)
-    
+                
+                    # Print hour for debug
+                    print(f"Match hour: {match.get('hour', 'N/A')}")
+                
                     match_data = {
                         "leg": "First Leg" if parsefrenchdate(match['date']) < datetime(2024, 12, 4) else "Second Leg",
                         "journee": "",
                         "date": format_french_date(parsefrenchdate(match['date'])),
+                        "hour": match.get('hour', ''),
                         "match": f"{match['home']} - {match['away']}",
                         "win_type": win_type,
                         "score": cleaned_score,
@@ -281,3 +295,4 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
