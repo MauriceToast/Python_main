@@ -138,7 +138,7 @@ try:
                 "Zoug", "Bienne", "Langnau", "Fribourg", "Genève",
                 "Ambri", "Lugano", "Rapperswil", "Ajoie"
             }
-    
+            
             print("Waiting for results table to load...")
             WebDriverWait(driver, 60).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
@@ -146,106 +146,96 @@ try:
             print("Results table loaded.")
             
             matches_data = []
-    
-            # Find the container that holds dates and match rows.
-            container = driver.find_element(By.CSS_SELECTOR, ".stxt-results-table__body")
-    
-            # Retrieve all direct child elements inside container (both date headers and match rows)
-            children = container.find_elements(By.XPATH, "./*")
-    
-            print(f"Total rows (date headers + matches): {len(children)}")
+            
+            # Collect all date elements text for reference (if needed)
+            date_elements = driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
+            dates_text = [date.text.strip() for date in date_elements]
+            print(f"Found date headers: {dates_text}")
+            
+            # Get all match rows
+            rows = driver.find_elements(By.CSS_SELECTOR, "li.stxt-results-table-row")
+            print(f"Found {len(rows)} match rows.")
             
             current_date = None
-    
-            for i, elem in enumerate(children, start=1):
-                classes = elem.get_attribute("class")
-                
-                # Check if element is a date header (usually has stxt-results-table__date-inner)
+            
+            for i, row in enumerate(rows, start=1):
+                print(f"\nProcessing row #{i}...")
+                # Check if this row is actually a date row
                 try:
-                    date_elem = elem.find_element(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
-                    if date_elem and "stxt-results-table__date-row" in classes:
+                    date_elem = row.find_element(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
+                    if date_elem:
                         current_date = date_elem.text.strip()
-                        print(f"Row #{i} is a DATE header: {current_date}")
-                        continue
+                        print(f"Row #{i} is a date header: {current_date}")
+                        continue  # skip to next row since no match data here
                 except Exception:
-                    pass  # Not a date header
+                    print(f"Row #{i} is not a date header.")
                 
-                # Check if element is a match row
-                if "stxt-results-table-row" in classes:
-                    print(f"\nRow #{i} is a match row.")
-    
-                    # Extract hour
-                    try:
-                        hour_elem = elem.find_element(By.CSS_SELECTOR, "div.cell.status")
-                        hour = hour_elem.text.strip()
-                        print(f"Row #{i} hour: '{hour}'")
-                    except Exception as e:
-                        hour = ""
-                        print(f"Row #{i} hour not found: {e}")
-    
-                    # Extract home and away teams
-                    try:
-                        home_elem = elem.find_element(By.CSS_SELECTOR, "div.home span")
-                        away_elem = elem.find_element(By.CSS_SELECTOR, "div.away span")
-                        home_team_raw = home_elem.text.strip() if home_elem else ""
-                        away_team_raw = away_elem.text.strip() if away_elem else ""
-                        home_team = replace_team_names(home_team_raw)
-                        away_team = replace_team_names(away_team_raw)
-                        print(f"Row #{i} teams: Home='{home_team}', Away='{away_team}'")
-                    except Exception as e:
-                        home_team = ""
-                        away_team = ""
-                        print(f"Row #{i} teams not found: {e}")
-    
-                    # Extract score
-                    try:
-                        score_elem = elem.find_element(By.CSS_SELECTOR, "div.cell.lrc-score")
-                        score = score_elem.text.strip()
-                        if score == "":
-                            score = "No Score"
-                        print(f"Row #{i} score: '{score}'")
-                    except Exception as e:
+                # Extract hour
+                try:
+                    hour_elem = row.find_element(By.CSS_SELECTOR, "div.cell.status")
+                    hour = hour_elem.text.strip()
+                    print(f"Row #{i} hour found: {hour}")
+                except Exception:
+                    hour = ""
+                    print(f"Row #{i} hour not found.")
+                
+                # Extract home and away teams
+                try:
+                    home_elem = row.find_element(By.CSS_SELECTOR, "div.home span")
+                    away_elem = row.find_element(By.CSS_SELECTOR, "div.away span")
+                    home_team = replace_team_names(home_elem.text.strip()) if home_elem else ""
+                    away_team = replace_team_names(away_elem.text.strip()) if away_elem else ""
+                    print(f"Row #{i} teams found: Home='{home_team}', Away='{away_team}'")
+                except Exception as e:
+                    home_team = ""
+                    away_team = ""
+                    print(f"Row #{i} teams not found or error: {e}")
+                
+                # Extract score
+                try:
+                    score_elem = row.find_element(By.CSS_SELECTOR, "div.cell.lrc-score")
+                    score = score_elem.text.strip()
+                    if score == "":
                         score = "No Score"
-                        print(f"Row #{i} score not found, defaulting to 'No Score': {e}")
-    
-                    if current_date is None:
-                        print(f"Row #{i} skipping match since current date is not set yet.")
-                        continue
-    
-                    if home_team in teams and away_team in teams:
-                        win_type = determine_win_type(score)
-                        cleaned_score = clean_score(score)
-                        winner = determine_winner(home_team, away_team, cleaned_score)
-                        leg = "First Leg" if parsefrenchdate(current_date) < datetime(2024, 12, 4) else "Second Leg"
-    
-                        match_data = {
-                            "leg": leg,
-                            "journee": "",
-                            "date": format_french_date(parsefrenchdate(current_date)),
-                            "hour": hour,
-                            "match": f"{home_team} - {away_team}",
-                            "win_type": win_type,
-                            "score": cleaned_score,
-                            "available": "yes" if cleaned_score == "No Score" else "no",
-                            "winner": winner
-                        }
-                        print(f"Row #{i} compiled match data: {match_data}")
-                        matches_data.append(match_data)
-                    else:
-                        print(f"Row #{i} teams not recognized in known teams list, skipping this match.")
+                    print(f"Row #{i} score found: '{score}'")
+                except Exception:
+                    score = "No Score"
+                    print(f"Row #{i} score not found, defaulting to 'No Score'")
+                
+                if current_date is None:
+                    print(f"Row #{i} skipping because no current date set yet.")
+                    continue
+                
+                if home_team in teams and away_team in teams:
+                    win_type = determine_win_type(score)
+                    cleaned_score = clean_score(score)
+                    winner = determine_winner(home_team, away_team, cleaned_score)
+                    leg = "First Leg" if parsefrenchdate(current_date) < datetime(2024, 12, 4) else "Second Leg"
+                    
+                    match_data = {
+                        "leg": leg,
+                        "journee": "",
+                        "date": format_french_date(parsefrenchdate(current_date)),
+                        "hour": hour,
+                        "match": f"{home_team} - {away_team}",
+                        "win_type": win_type,
+                        "score": cleaned_score,
+                        "available": "yes" if cleaned_score == "No Score" else "no",
+                        "winner": winner
+                    }
+                    print(f"Row #{i} match data compiled: {match_data}")
+                    matches_data.append(match_data)
                 else:
-                    print(f"Row #{i} ignored (not date header or match row).")
+                    print(f"Row #{i} teams not in known teams list, skipping entry.")
             
             print(f"\nTotal matches scraped for month: {len(matches_data)}")
             return matches_data
-    
+        
         except Exception as e:
-            print(f"Error scraping month: {e}")
+            print(f"Error scraping month: {str(e)}")
             import traceback
             print(traceback.format_exc())
             return []
-
-
 
     
     # def scrape_month(driver):
@@ -411,6 +401,7 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
 
