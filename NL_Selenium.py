@@ -147,28 +147,61 @@ try:
             
             matches_data = []
             
-            # Collect all date elements text for reference (if needed)
+            # --- STEP 1: Extract all dates via span text to create a list of all dates ---
             date_elements = driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
             dates_text = [date.text.strip() for date in date_elements]
             print(f"Found date headers: {dates_text}")
             
-            # Get all match rows
+            # --- STEP 2: Extract all span texts for fallback date association ---
+            span_elements = driver.find_elements(By.XPATH, "//span")
+            all_spans = [span.text.strip() for span in span_elements]
+            
+            # Create a map from each match key (home + away + score) to the corresponding date
+            # by simulating iteration over the spans (like your original fallback logic)
+            current_date_for_match = None
+            matches_date_map = []  # list of (home_team, away_team, score, date) item placeholders
+            
+            temp_match = {}
+            temp_score = None
+            
+            print("Processing spans to map matches to dates...")
+            for span_text in all_spans:
+                # Debug print for spans
+                # print(f"Span text: '{span_text}'")
+            
+                if span_text in dates_text:
+                    current_date_for_match = span_text
+                    temp_match = {}
+                    temp_score = None
+                    # print(f"Current date updated to: {current_date_for_match}")
+                elif current_date_for_match:
+                    if span_text in teams:
+                        if "home_team" not in temp_match:
+                            temp_match["home_team"] = replace_team_names(span_text)
+                        elif "away_team" not in temp_match:
+                            temp_match["away_team"] = replace_team_names(span_text)
+                            temp_match["date"] = current_date_for_match
+                            temp_match["score"] = clean_score(temp_score) if temp_score else "No Score"
+                            matches_date_map.append(temp_match)
+                            temp_match = {}
+                            temp_score = None
+                    elif " - " in span_text:
+                        temp_score = span_text
+            
+            print(f"Total matches mapped from spans: {len(matches_date_map)}")
+            
+            # --- STEP 3: Extract match rows and correlate with dates from step 2 ---
             rows = driver.find_elements(By.CSS_SELECTOR, "li.stxt-results-table-row")
             print(f"Found {len(rows)} match rows.")
+    
+            # We will iterate rows and try to match each row to one entry in matches_date_map, 
+            # based on home_team and away_team (score could also help)
             
-            current_date = None
+            # Use a copy to safely pop matched entries to avoid duplicates
+            unmatched_matches = matches_date_map.copy()
             
             for i, row in enumerate(rows, start=1):
                 print(f"\nProcessing row #{i}...")
-                # Check if this row is actually a date row
-                try:
-                    date_elem = row.find_element(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
-                    if date_elem:
-                        current_date = date_elem.text.strip()
-                        print(f"Row #{i} is a date header: {current_date}")
-                        continue  # skip to next row since no match data here
-                except Exception:
-                    print(f"Row #{i} is not a date header.")
                 
                 # Extract hour
                 try:
@@ -190,6 +223,7 @@ try:
                     home_team = ""
                     away_team = ""
                     print(f"Row #{i} teams not found or error: {e}")
+                    continue  # skip this row
                 
                 # Extract score
                 try:
@@ -202,40 +236,50 @@ try:
                     score = "No Score"
                     print(f"Row #{i} score not found, defaulting to 'No Score'")
                 
-                if current_date is None:
-                    print(f"Row #{i} skipping because no current date set yet.")
+                # Find the matching date based on team names and score from matches_date_map
+                matched_date = None
+                for match in unmatched_matches:
+                    # We match on home and away teams (and optionally score)
+                    if (match.get("home_team") == home_team and 
+                        match.get("away_team") == away_team):
+                        # Optionally match score here if you want stricter matching:
+                        # if match.get("score") == clean_score(score):
+                        matched_date = match.get("date")
+                        unmatched_matches.remove(match)
+                        break
+                
+                if matched_date is None:
+                    print(f"Row #{i} no matching date found for teams '{home_team} - {away_team}'. Skipping...")
                     continue
                 
-                if home_team in teams and away_team in teams:
-                    win_type = determine_win_type(score)
-                    cleaned_score = clean_score(score)
-                    winner = determine_winner(home_team, away_team, cleaned_score)
-                    leg = "First Leg" if parsefrenchdate(current_date) < datetime(2024, 12, 4) else "Second Leg"
-                    
-                    match_data = {
-                        "leg": leg,
-                        "journee": "",
-                        "date": format_french_date(parsefrenchdate(current_date)),
-                        "hour": hour,
-                        "match": f"{home_team} - {away_team}",
-                        "win_type": win_type,
-                        "score": cleaned_score,
-                        "available": "yes" if cleaned_score == "No Score" else "no",
-                        "winner": winner
-                    }
-                    print(f"Row #{i} match data compiled: {match_data}")
-                    matches_data.append(match_data)
-                else:
-                    print(f"Row #{i} teams not in known teams list, skipping entry.")
+                win_type = determine_win_type(score)
+                cleaned_score = clean_score(score)
+                winner = determine_winner(home_team, away_team, cleaned_score)
+                leg = "First Leg" if parsefrenchdate(matched_date) < datetime(2024, 12, 4) else "Second Leg"
+                
+                match_data = {
+                    "leg": leg,
+                    "journee": "",
+                    "date": format_french_date(parsefrenchdate(matched_date)),
+                    "hour": hour,
+                    "match": f"{home_team} - {away_team}",
+                    "win_type": win_type,
+                    "score": cleaned_score,
+                    "available": "yes" if cleaned_score == "No Score" else "no",
+                    "winner": winner
+                }
+                print(f"Row #{i} match data compiled: {match_data}")
+                matches_data.append(match_data)
             
             print(f"\nTotal matches scraped for month: {len(matches_data)}")
             return matches_data
-        
+    
         except Exception as e:
             print(f"Error scraping month: {str(e)}")
             import traceback
             print(traceback.format_exc())
             return []
+
 
     
     # def scrape_month(driver):
@@ -307,53 +351,53 @@ try:
     #                     "winner": winner
     #                 }
     #                 matches_data.append(match_data)
-    #         else:
-    #             print("JavaScript extraction failed. Trying original method.")
-    #             span_elements = driver.find_elements(By.XPATH, "//span")
-    #             all_data = [span.text.strip() for span in span_elements]
+            # else:
+            #     print("JavaScript extraction failed. Trying original method.")
+            #     span_elements = driver.find_elements(By.XPATH, "//span")
+            #     all_data = [span.text.strip() for span in span_elements]
                 
-    #             current_date = None
-    #             temp_match = {}
-    #             temp_score = None
+            #     current_date = None
+            #     temp_match = {}
+            #     temp_score = None
     
-    #             for span_text in all_data:
-    #                 print(f"Processing span text: {span_text}")
-    #                 if span_text in [date.text for date in driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")]:
-    #                     current_date = span_text
-    #                     temp_match = {}
-    #                     temp_score = None
-    #                 elif current_date:
-    #                     if span_text in teams:
-    #                         if "home_team" not in temp_match:
-    #                             temp_match["home_team"] = replace_team_names(span_text)
-    #                         elif "away_team" not in temp_match:
-    #                             temp_match["away_team"] = replace_team_names(span_text)
-    #                             temp_match["date"] = current_date
-    #                             if temp_score:
-    #                                 win_type = determine_win_type(temp_score)
-    #                                 temp_match["score"] = clean_score(temp_score)
-    #                             else:
-    #                                 temp_match["score"] = "No Score"
-    #                                 win_type = "Regular Time"
+            #     for span_text in all_data:
+            #         print(f"Processing span text: {span_text}")
+            #         if span_text in [date.text for date in driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")]:
+            #             current_date = span_text
+            #             temp_match = {}
+            #             temp_score = None
+            #         elif current_date:
+            #             if span_text in teams:
+            #                 if "home_team" not in temp_match:
+            #                     temp_match["home_team"] = replace_team_names(span_text)
+            #                 elif "away_team" not in temp_match:
+            #                     temp_match["away_team"] = replace_team_names(span_text)
+            #                     temp_match["date"] = current_date
+            #                     if temp_score:
+            #                         win_type = determine_win_type(temp_score)
+            #                         temp_match["score"] = clean_score(temp_score)
+            #                     else:
+            #                         temp_match["score"] = "No Score"
+            #                         win_type = "Regular Time"
     
-    #                             leg = "First Leg" if parsefrenchdate(current_date) < datetime(2024, 12, 4) else "Second Leg"
-    #                             winner = determine_winner(temp_match["home_team"], temp_match["away_team"], temp_match["score"])
+            #                     leg = "First Leg" if parsefrenchdate(current_date) < datetime(2024, 12, 4) else "Second Leg"
+            #                     winner = determine_winner(temp_match["home_team"], temp_match["away_team"], temp_match["score"])
     
-    #                             match_data = {
-    #                                 "leg": leg,
-    #                                 "journee": "",
-    #                                 "date": format_french_date(parsefrenchdate(current_date)),
-    #                                 "match": f"{replace_team_names(temp_match['home_team'])} - {replace_team_names(temp_match['away_team'])}",
-    #                                 "win_type": win_type,
-    #                                 "score": temp_match["score"],
-    #                                 "available": "yes" if temp_match["score"] == "No Score" else "no",
-    #                                 "winner": winner
-    #                             }
-    #                             matches_data.append(match_data)
-    #                             temp_match = {}
-    #                             temp_score = None
-    #                     elif " - " in span_text:
-    #                         temp_score = span_text
+            #                     match_data = {
+            #                         "leg": leg,
+            #                         "journee": "",
+            #                         "date": format_french_date(parsefrenchdate(current_date)),
+            #                         "match": f"{replace_team_names(temp_match['home_team'])} - {replace_team_names(temp_match['away_team'])}",
+            #                         "win_type": win_type,
+            #                         "score": temp_match["score"],
+            #                         "available": "yes" if temp_match["score"] == "No Score" else "no",
+            #                         "winner": winner
+            #                     }
+            #                     matches_data.append(match_data)
+            #                     temp_match = {}
+            #                     temp_score = None
+            #             elif " - " in span_text:
+            #                 temp_score = span_text
     
     #         return matches_data
     
@@ -401,6 +445,7 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
 
