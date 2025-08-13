@@ -139,41 +139,45 @@ try:
                 "Ambri", "Lugano", "Rapperswil", "Ajoie"
             }
             
-            # Wait for the table to load
+            print("Waiting for results table to load...")
             WebDriverWait(driver, 60).until(
                 EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
             )
+            print("Results table loaded.")
             
             matches_data = []
             
-            # Get all date elements for reference (assuming date applies to multiple rows beneath it)
+            # Collect all date elements text for reference (if needed)
             date_elements = driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
             dates_text = [date.text.strip() for date in date_elements]
+            print(f"Found date headers: {dates_text}")
             
             # Get all match rows
             rows = driver.find_elements(By.CSS_SELECTOR, "li.stxt-results-table-row")
+            print(f"Found {len(rows)} match rows.")
             
-            # A helper variable to track the current date for rows since the date might be displayed separately
             current_date = None
             
-            for row in rows:
-                # Check if the row contains a date (some rows might represent date labels)
+            for i, row in enumerate(rows, start=1):
+                print(f"\nProcessing row #{i}...")
+                # Check if this row is actually a date row
                 try:
                     date_elem = row.find_element(By.CSS_SELECTOR, ".stxt-results-table__date-inner")
                     if date_elem:
                         current_date = date_elem.text.strip()
-                        # Skip processing this as a match row, it is a date row
-                        continue
-                except:
-                    # No date element found in this row, continue processing match info
-                    pass
+                        print(f"Row #{i} is a date header: {current_date}")
+                        continue  # skip to next row since no match data here
+                except Exception:
+                    print(f"Row #{i} is not a date header.")
                 
-                # Extract the hour
+                # Extract hour
                 try:
                     hour_elem = row.find_element(By.CSS_SELECTOR, "div.cell.status")
                     hour = hour_elem.text.strip()
-                except:
+                    print(f"Row #{i} hour found: {hour}")
+                except Exception:
                     hour = ""
+                    print(f"Row #{i} hour not found.")
                 
                 # Extract home and away teams
                 try:
@@ -181,9 +185,11 @@ try:
                     away_elem = row.find_element(By.CSS_SELECTOR, "div.away span")
                     home_team = replace_team_names(home_elem.text.strip()) if home_elem else ""
                     away_team = replace_team_names(away_elem.text.strip()) if away_elem else ""
-                except:
+                    print(f"Row #{i} teams found: Home='{home_team}', Away='{away_team}'")
+                except Exception as e:
                     home_team = ""
                     away_team = ""
+                    print(f"Row #{i} teams not found or error: {e}")
                 
                 # Extract score
                 try:
@@ -191,10 +197,16 @@ try:
                     score = score_elem.text.strip()
                     if score == "":
                         score = "No Score"
-                except:
+                    print(f"Row #{i} score found: '{score}'")
+                except Exception:
                     score = "No Score"
+                    print(f"Row #{i} score not found, defaulting to 'No Score'")
                 
-                if current_date and home_team in teams and away_team in teams:
+                if current_date is None:
+                    print(f"Row #{i} skipping because no current date set yet.")
+                    continue
+                
+                if home_team in teams and away_team in teams:
                     win_type = determine_win_type(score)
                     cleaned_score = clean_score(score)
                     winner = determine_winner(home_team, away_team, cleaned_score)
@@ -211,8 +223,12 @@ try:
                         "available": "yes" if cleaned_score == "No Score" else "no",
                         "winner": winner
                     }
+                    print(f"Row #{i} match data compiled: {match_data}")
                     matches_data.append(match_data)
+                else:
+                    print(f"Row #{i} teams not in known teams list, skipping entry.")
             
+            print(f"\nTotal matches scraped for month: {len(matches_data)}")
             return matches_data
         
         except Exception as e:
@@ -220,6 +236,7 @@ try:
             import traceback
             print(traceback.format_exc())
             return []
+
 
     
     # def scrape_month(driver):
@@ -385,5 +402,6 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
