@@ -1,11 +1,11 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,9 septembre 2025,Live,Ambri - Kloten,Regular Time,0 - 0,no,
-Second Leg,,9 septembre 2025,Live,Davos - Lausanne,Regular Time,0 - 0,no,
-Second Leg,,9 septembre 2025,Live,Fribourg - Lugano,Regular Time,1 - 0,no,Fribourg
-Second Leg,,9 septembre 2025,Live,Geneve - Ajoie,Regular Time,0 - 1,no,Ajoie
-Second Leg,,9 septembre 2025,Live,Rapperswil - Langnau,Regular Time,2 - 0,no,Rapperswil
-Second Leg,,9 septembre 2025,Live,Zurich - Bienne,Regular Time,0 - 1,no,Bienne
-Second Leg,,9 septembre 2025,Live,Zoug - Berne,Regular Time,2 - 0,no,Zoug
+Second Leg,,9 septembre 2025,Terminé,Ambri - Kloten,Regular Time,2 - 1,no,Ambri
+Second Leg,,9 septembre 2025,Terminé,Davos - Lausanne,Regular Time,4 - 1,no,Davos
+Second Leg,,9 septembre 2025,Terminé,Fribourg - Lugano,Extra Time,3 - 2,no,Fribourg
+Second Leg,,9 septembre 2025,Terminé,Geneve - Ajoie,Regular Time,5 - 3,no,Geneve
+Second Leg,,9 septembre 2025,Terminé,Rapperswil - Langnau,Regular Time,5 - 1,no,Rapperswil
+Second Leg,,9 septembre 2025,Terminé,Zurich - Bienne,Regular Time,4 - 3,no,Zurich
+Second Leg,,9 septembre 2025,Terminé,Zoug - Berne,Regular Time,3 - 0,no,Zoug
 Second Leg,,11 septembre 2025,20:00,Bienne - Davos,Regular Time,No Score,yes,
 Second Leg,,12 septembre 2025,19:45,Ajoie - Zurich,Regular Time,No Score,yes,
 Second Leg,,12 septembre 2025,19:45,Berne - Geneve,Regular Time,No Score,yes,
