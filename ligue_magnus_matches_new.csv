@@ -1,0 +1,17 @@
+leg,journee,date,match,win_type,score,available,winner
+First Leg,1,12 septembre 2025,ROUEN - GAP,Regular Time,4-1,no,ROUEN
+First Leg,1,12 septembre 2025,NICE - CHAMONIX,Regular Time,3-1,no,NICE
+First Leg,1,12 septembre 2025,BRIANCON - ANGERS,Regular Time,2-3,no,ANGERS
+First Leg,1,12 septembre 2025,MARSEILLE - ANGLET,Regular Time,3-2,no,MARSEILLE
+First Leg,1,12 septembre 2025,GRENOBLE - BORDEAUX,Regular Time,6-2,no,GRENOBLE
+First Leg,1,13 septembre 2025,CERGY - AMIENS,,,yes,
+First Leg,2,16 septembre 2025,GAP - MARSEILLE,,,yes,
+First Leg,2,16 septembre 2025,BORDEAUX - ROUEN,,,yes,
+First Leg,2,16 septembre 2025,ANGERS - GRENOBLE,,,yes,
+First Leg,2,16 septembre 2025,CHAMONIX - BRIANCON,,,yes,
+First Leg,2,16 septembre 2025,ANGLET - CERGY,,,yes,
+First Leg,3,19 septembre 2025,NICE - ANGLET,,,yes,
+First Leg,3,19 septembre 2025,BRIANCON - AMIENS,,,yes,
+First Leg,3,19 septembre 2025,GRENOBLE - CHAMONIX,,,yes,
+First Leg,3,19 septembre 2025,ROUEN - MARSEILLE,,,yes,
+First Leg,3,19 septembre 2025,BORDEAUX - ANGERS,,,yes,
