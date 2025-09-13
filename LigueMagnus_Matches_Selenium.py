@@ -75,7 +75,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 #web = "https://liguemagnus.com/calendrier-resultats/?journee=&equipe=&poule=432&date_debut=&date_fin=2025-02-21"
-web = "https://liguemagnus.com/calendrier-resultats/"
+web = "https://liguemagnus.com/calendrier-resultats/?journee=&equipe=&poule=560&date_debut=&date_fin=2026-03-07"
 driver = None
 try:
     chrome_options = Options()
@@ -161,4 +161,5 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
