@@ -74,7 +74,6 @@ def determine_winner(home_team, away_team, score):
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-#web = "https://liguemagnus.com/calendrier-resultats/?journee=&equipe=&poule=432&date_debut=&date_fin=2025-02-21"
 web = "https://liguemagnus.com/calendrier-resultats/?journee=&equipe=&poule=560&date_debut=&date_fin=2026-03-07"
 driver = None
 try:
@@ -141,15 +140,14 @@ try:
     
     logger.info(f"Number of matches processed: {len(matches)}")
 
-    #with open('ligue_magnus_matches.csv', 'w', newline='', encoding='utf-8') as csvfile:
-    with open('ligue_magnus_matches_new.csv', 'w', newline='', encoding='utf-8') as csvfile:
+    with open('ligue_magnus_matches.csv', 'w', newline='', encoding='utf-8') as csvfile:
         fieldnames = ['leg', 'journee', 'date', 'match', 'win_type', 'score', 'available', 'winner']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for match in matches:
             writer.writerow(match)
 
-    logger.info("CSV file 'ligue_magnus_matches_new.csv' has been created.")
+    logger.info("CSV file 'ligue_magnus_matches.csv' has been created.")
 
 except Exception as e:
     logger.error(f"An error occurred: {str(e)}")
@@ -161,5 +159,6 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
