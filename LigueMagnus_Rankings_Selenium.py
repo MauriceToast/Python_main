@@ -44,7 +44,8 @@ def scrape_standings(driver, wait):
     return standings
 
 # Set up webdriver
-standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=432"
+#standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=432"
+standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=560"
 path = r'C:\WebDrivers\chromedriver-win64\chromedriver.exe'
 service = Service(executable_path=path)
 
@@ -79,3 +80,4 @@ logger.info("Standings data has been written to 'ligue_magnus_rankings.csv'")
 time.sleep(30)
 
 driver.quit()
+
