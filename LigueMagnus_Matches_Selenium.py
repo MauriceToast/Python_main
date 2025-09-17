@@ -12,6 +12,7 @@ from datetime import datetime, timedelta
 import re
 import time
 import traceback
+import re
 
 MONTH_TRANSLATIONS = {
     'January': 'janvier', 'February': 'février', 'March': 'mars', 'April': 'avril',
@@ -117,16 +118,26 @@ try:
                 logger.info(f"Processing match: Journee {journee}")
                 logger.info(f"Match data: {match_data}")
                 
-                score = extract_score(score_or_time)
-                if not score:
+                # Check if score_or_time contains a time (e.g. '18:00')
+                time_match = re.match(r'^\d{1,2}:\d{2}$', score_or_time.strip())
+                
+                if time_match:
+                    hour = score_or_time.strip()
+                    score = ""  # No score yet if it's a time
                     score_text = "vs"
                 else:
-                    score_text = score_or_time
+                    hour = ""
+                    score = extract_score(score_or_time)
+                    if not score:
+                        score_text = "vs"
+                    else:
+                        score_text = score_or_time
                 
                 match = {
                     'leg': determine_leg(journee),
                     'journee': journee,
                     'date': current_date,
+                    'hour': hour,
                     'match': f"{home_team} - {away_team}",
                     'win_type': determine_win_type(score_text),
                     'score': score,
@@ -141,7 +152,7 @@ try:
     logger.info(f"Number of matches processed: {len(matches)}")
 
     with open('ligue_magnus_matches_new.csv', 'w', newline='', encoding='utf-8') as csvfile:
-        fieldnames = ['leg', 'journee', 'date', 'match', 'win_type', 'score', 'available', 'winner']
+        fieldnames = ['leg', 'journee', 'date', 'hour', 'match', 'win_type', 'score', 'available', 'winner']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for match in matches:
@@ -159,6 +170,7 @@ except Exception as e:
 finally:
     if driver:
         driver.quit()
+
 
 
 
