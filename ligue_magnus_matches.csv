@@ -28,8 +28,8 @@ First Leg,5,26 septembre 2025,,BORDEAUX - AMIENS,Regular Time,0-4,no,AMIENS
 First Leg,5,26 septembre 2025,,BRIANCON - GAP,Extra Time,1-2,no,GAP
 First Leg,5,26 septembre 2025,,ANGERS - CHAMONIX,Extra Time,2-1,no,ANGERS
 First Leg,4,28 septembre 2025,,GAP - NICE,Regular Time,0-2,no,NICE
-First Leg,6,30 septembre 2025,18:00,GAP - GRENOBLE,,,yes,
-First Leg,6,30 septembre 2025,18:15,AMIENS - ANGERS,,,yes,
+First Leg,6,30 septembre 2025,,GAP - GRENOBLE,Regular Time,0-0,no,Draw
+First Leg,6,30 septembre 2025,,AMIENS - ANGERS,Regular Time,0-0,no,Draw
 First Leg,6,30 septembre 2025,18:30,CHAMONIX - ROUEN,,,yes,
 First Leg,6,30 septembre 2025,18:30,ANGLET - BORDEAUX,,,yes,
 First Leg,6,30 septembre 2025,18:30,CERGY - NICE,,,yes,
@@ -56,8 +56,8 @@ First Leg,9,13 octobre 2025,18:15,BORDEAUX - CERGY,,,yes,
 First Leg,10,17 octobre 2025,18:00,GAP - AMIENS,,,yes,
 First Leg,10,17 octobre 2025,18:00,BRIANCON - GRENOBLE,,,yes,
 First Leg,10,17 octobre 2025,18:00,NICE - BORDEAUX,,,yes,
-First Leg,10,17 octobre 2025,18:15,MARSEILLE - CHAMONIX,,,yes,
 First Leg,10,17 octobre 2025,18:30,ANGLET - ROUEN,,,yes,
+First Leg,10,17 octobre 2025,18:30,MARSEILLE - CHAMONIX,,,yes,
 Second Leg,24,19 octobre 2025,16:30,BORDEAUX - NICE,,,yes,
 First Leg,11,24 octobre 2025,18:00,ROUEN - GRENOBLE,,,yes,
 First Leg,11,24 octobre 2025,18:15,BORDEAUX - BRIANCON,,,yes,
