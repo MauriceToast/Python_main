@@ -8,6 +8,6 @@ rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_fo
 7,GAP,12,9,3,1,1,4,21,20,62
 8,CHAMONIX,10,9,3,0,1,5,13,32,110
 9,ANGLET,9,9,3,0,0,6,25,33,85
-10,CERGY,7,9,2,0,1,6,26,32,92
-11,BRIANCON,4,9,1,0,1,7,13,30,80
-12,BORDEAUX,3,8,1,0,0,7,14,32,127
+10,CERGY,7,10,2,0,1,7,27,36,98
+11,BORDEAUX,6,9,2,0,0,7,18,33,137
+12,BRIANCON,4,9,1,0,1,7,13,30,80
