@@ -1,10 +1,10 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Davos,55,23,16,3,1,3,84,52
-2,Lausanne,42,24,12,3,0,9,75,56
+1,Davos,58,24,17,3,1,3,89,53
+2,Lausanne,44,25,12,4,0,9,77,57
 3,Rapperswil,42,24,12,2,2,8,66,70
 4,Fribourg,41,24,9,6,2,7,74,59
-5,Zoug,40,22,11,2,3,6,64,56
-6,Zurich,40,23,12,0,4,7,66,47
+5,Zurich,41,24,12,0,5,7,67,49
+6,Zoug,40,23,11,2,3,7,65,61
 7,Lugano,40,24,12,1,2,9,67,51
 8,Geneve,39,24,11,2,2,9,68,77
 9,Langnau,31,24,8,2,3,11,61,66
