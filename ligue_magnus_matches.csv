@@ -108,12 +108,12 @@ First Leg,19,23 novembre 2025,,NICE - GAP,Regular Time,4-1,no,NICE
 First Leg,19,23 novembre 2025,,GRENOBLE - AMIENS,Regular Time,6-2,no,GRENOBLE
 First Leg,19,23 novembre 2025,,BRIANCON - ANGLET,Regular Time,4-3,no,BRIANCON
 First Leg,19,23 novembre 2025,,BORDEAUX - CHAMONIX,Regular Time,3-2,no,BORDEAUX
-First Leg,20,28 novembre 2025,19:00,GAP - CERGY,,,yes,
-First Leg,20,28 novembre 2025,19:05,CHAMONIX - GRENOBLE,,,yes,
-First Leg,20,28 novembre 2025,19:15,AMIENS - BRIANCON,,,yes,
-First Leg,20,28 novembre 2025,19:15,MARSEILLE - ROUEN,,,yes,
-First Leg,20,28 novembre 2025,19:30,ANGLET - NICE,,,yes,
-First Leg,20,28 novembre 2025,19:30,ANGERS - BORDEAUX,,,yes,
+First Leg,20,28 novembre 2025,,GAP - CERGY,Regular Time,0-3,no,CERGY
+First Leg,20,28 novembre 2025,,CHAMONIX - GRENOBLE,Regular Time,2-4,no,GRENOBLE
+First Leg,20,28 novembre 2025,,AMIENS - BRIANCON,Regular Time,3-2,no,AMIENS
+First Leg,20,28 novembre 2025,,MARSEILLE - ROUEN,Regular Time,0-6,no,ROUEN
+First Leg,20,28 novembre 2025,,ANGLET - NICE,Extra Time,4-3,no,ANGLET
+First Leg,20,28 novembre 2025,,ANGERS - BORDEAUX,Extra Time,3-4,no,BORDEAUX
 First Leg,21,30 novembre 2025,14:00,CERGY - ANGLET,,,yes,
 First Leg,21,30 novembre 2025,16:30,NICE - AMIENS,,,yes,
 First Leg,21,30 novembre 2025,17:15,GRENOBLE - ANGERS,,,yes,
