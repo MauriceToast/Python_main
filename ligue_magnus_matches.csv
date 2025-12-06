@@ -125,12 +125,12 @@ First Leg,22,2 décembre 2025,,CHAMONIX - NICE,Extra Time,2-3,no,NICE
 First Leg,22,2 décembre 2025,,AMIENS - CERGY,Extra Time,2-1,no,AMIENS
 First Leg,22,2 décembre 2025,,BRIANCON - ANGERS,Extra Time,3-4,no,ANGERS
 First Leg,22,2 décembre 2025,,ANGLET - MARSEILLE,Regular Time,1-3,no,MARSEILLE
-Second Leg,23,5 décembre 2025,19:00,ROUEN - ANGLET,,,yes,
-Second Leg,23,5 décembre 2025,19:00,NICE - GAP,,,yes,
-Second Leg,23,5 décembre 2025,19:15,GRENOBLE - CHAMONIX,,,yes,
-Second Leg,23,5 décembre 2025,19:15,MARSEILLE - BORDEAUX,,,yes,
-Second Leg,23,5 décembre 2025,19:30,ANGERS - BRIANCON,,,yes,
-Second Leg,23,5 décembre 2025,19:30,CERGY - AMIENS,,,yes,
+Second Leg,23,5 décembre 2025,,ROUEN - ANGLET,Regular Time,6-2,no,ROUEN
+Second Leg,23,5 décembre 2025,,NICE - GAP,Regular Time,6-3,no,NICE
+Second Leg,23,5 décembre 2025,,GRENOBLE - CHAMONIX,Regular Time,6-0,no,GRENOBLE
+Second Leg,23,5 décembre 2025,,MARSEILLE - BORDEAUX,Regular Time,0-4,no,BORDEAUX
+Second Leg,23,5 décembre 2025,,ANGERS - BRIANCON,Regular Time,4-5,no,BRIANCON
+Second Leg,23,5 décembre 2025,,CERGY - AMIENS,Regular Time,3-4,no,AMIENS
 Second Leg,24,7 décembre 2025,15:30,ANGERS - MARSEILLE,,,yes,
 Second Leg,24,7 décembre 2025,17:00,AMIENS - GRENOBLE,,,yes,
 Second Leg,24,7 décembre 2025,17:30,GAP - CERGY,,,yes,
