@@ -19,7 +19,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests python-dateutil
     - name: Run NHL quotes script
-      run: python nhl_quotes.py
+      run: python quotes_NHL.py
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
