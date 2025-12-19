@@ -30,12 +30,12 @@ team_prestige = {
      "Utah Mammoth": 11 / 20,
      "St.Louis Blues": 10 / 20,
      "Winnipeg Jets": 12 / 20,
-     "Chicago Blackhawks": 10 / 20
+     "Chicago Blackhawks": 10 / 20,
      "Nashville Predators": 9 / 20,
 
-     "Vegas Golden Knights": 14 / 20
-     "Anaheim Ducks": 12 / 20
-     "Edmonton Oilers": 16 / 20
+     "Vegas Golden Knights": 14 / 20,
+     "Anaheim Ducks": 12 / 20,
+     "Edmonton Oilers": 16 / 20,
      "Los Angeles Kings": 11 / 20,
      "San Jose Sharks": 11 / 20,
      "Calgary Flames": 10 / 20,
