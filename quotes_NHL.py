@@ -128,7 +128,7 @@ def calculate_bookmaker_quotes(team1, team2, rankings_data, matches_data, date_s
     assert sum(weights.values()) == 1, "Weights must sum to 1"
 
     group = None
-    for g in ['GrpA', 'GrpB']:
+    for g in ['Atlantic', 'Metropolitan', 'Central', 'Pacific]:
         teams = [r['team'] for r in rankings_data[g]]
         if team1 in teams and team2 in teams:
             group = g
