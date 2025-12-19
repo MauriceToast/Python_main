@@ -1,0 +1,40 @@
+name: Run NHL Matches Script
+
+on:
+  schedule:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  run-matches-script:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install selenium webdriver_manager babel
+    - name: Install Chrome
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y google-chrome-stable
+    - name: Run Matches script
+      run: python NHL_Selenium.py
+    - name: Fetch latest changes
+      run: git fetch origin main
+    - name: Configure Git
+      run: |
+        git config --global user.name 'GitHub Action'
+        git config --global user.email 'action@github.com'
+    - name: Merge changes
+      run: git merge origin/main
+    - name: Commit and push changes
+      run: |
+        git add nhl_matches.csv
+        git diff --quiet && git diff --staged --quiet || (git commit -m "Update matches CSV file" && git push origin main)
+
+
