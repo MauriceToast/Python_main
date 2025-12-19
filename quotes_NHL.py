@@ -4,22 +4,43 @@ import os
 import requests
 from io import StringIO
 
+
 team_prestige = {
-    "Canada": 18 / 20,
-    "Suède": 18 / 20,
-    "Finlande": 18 / 20,
-    "USA": 18 / 20,
-    "Tchèquie": 17 / 20,
-    "Allemagne": 17 / 20,
-    "Suisse": 16 / 20,
-    "Lettonie": 15 / 20,
-    "Slovaquie": 15 / 20,
-    "Autriche": 14 / 20,
-    "Norvège": 14 / 20,
-    "Hongrie": 13 / 20,
-    "Kazakhstan": 12 / 20,
-    "Slovénie": 12 / 20,
-    "France": 10 / 20,
+    "Detroit Red Wings": 12 / 20,
+    "Montreal Canadiens": 14 / 20,
+    "Boston Bruins": 14 / 20,
+    "Tampa Bay Lightning": 12 / 20,
+    "Florida Panthers": 18 / 20,
+    "Ottawa Senators": 11 / 20,
+    "Toronto Maple Leafs" : 12 / 20,
+    "Buffalo Sabres": 9 / 20,
+
+    "Carolina Hurricanes": 16 / 20,
+    "Washington Capitals": 16 / 20,
+    "New York Islanders": 10 / 20,
+    "Philadelphia Flyers": 12 / 20,
+    "New Jersey Devils": 13 / 20,
+    "New York Rangers": 11 / 20,
+    "Pittsburgh Penguins": 11 / 20,
+    "Columbus Blue Jackets": 12 / 20,
+
+     "Colorado Avalanche": 17 / 20,
+     "Dallas Stars": 16 / 20,
+     "Minnesota Wild": 14 / 20,
+     "Utah Mammoth": 11 / 20,
+     "St.Louis Blues": 10 / 20,
+     "Winnipeg Jets": 12 / 20,
+     "Chicago Blackhawks": 10 / 20
+     "Nashville Predators": 09 / 20,
+
+     "Vegas Golden Knights": 14 / 20
+     "Anaheim Ducks": 12 / 20
+     "Edmonton Oilers": 16 / 20
+     "Los Angeles Kings": 11 / 20,
+     "San Jose Sharks": 11 / 20,
+     "Calgary Flames": 10 / 20,
+     "Seattle Kraken": 10 / 20,
+     "Vancouver Canucks": 10 / 20,
 }
 
 
@@ -46,30 +67,44 @@ def parse_french_date(date_str):
 
 
 def fetch_rankings_data():
-    rankings_data = {"GrpA": [], "GrpB": []}
-    # Group A
-    url_a = base_url + "ChM_GrpA_rankings.csv"
+    rankings_data = {"Atlantic": [], "Metropolitan": [], "Central": [], "Pacific": []}
+    # Atlantic
+    url_a = base_url + "NHL_AtlanticDivision_rankings.csv"
     response_a = requests.get(url_a)
     if response_a.status_code == 200:
         content_a = StringIO(response_a.text)
         reader_a = csv.DictReader(content_a)
         for row in reader_a:
-            rankings_data["GrpA"].append(row)
-    # Group B
-    url_b = base_url + "ChM_GrpB_rankings.csv"
+            rankings_data["Atlantic"].append(row)
+    #Metropolitan
+    url_b = base_url + "NHL_MetropolitanDivision_rankings.csv"
     response_b = requests.get(url_b)
     if response_b.status_code == 200:
         content_b = StringIO(response_b.text)
         reader_b = csv.DictReader(content_b)
         for row in reader_b:
-            rankings_data["GrpB"].append(row)
+            rankings_data["Metropolitan"].append(row)
+    #Central
+    url_c = base_url + "NHL_CentralDivision_rankings.csv"
+    response_c = requests.get(url_c)
+    if response_c.status_code == 200:
+        content_c = StringIO(response_c.text)
+        reader_c = csv.DictReader(content_c)
+        for row in reader_c:
+            rankings_data["Central"].append(row)
+    #Pacific
+    url_d = base_url + "NHL_PacificDivision_rankings.csv"
+    response_d = requests.get(url_d)
+    if response_d.status_code == 200:
+        content_d = StringIO(response_d.text)
+        reader_d = csv.DictReader(content_d)
+        for row in reader_d:
+            rankings_data["Pacific"].append(row)
     return rankings_data
-
-
 
 def fetch_matches_data():
     matches_data = []
-    url = base_url + "ChM_matches_merged.csv"
+    url = base_url + "nhl_matches.csv"
     response = requests.get(url)
     if response.status_code == 200:
         content = StringIO(response.text)
@@ -267,7 +302,7 @@ def save_quotes(date_str, match_id, quotes):
     except ValueError:
         formatted_date = date_str
 
-    csv_file = 'quotes_ChM.csv'
+    csv_file = 'quotes_NHL.csv'
     file_exists = os.path.isfile(csv_file)
 
     # Read existing data
