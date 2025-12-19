@@ -28,29 +28,6 @@ def deduplicate_matches(matches_data):
     print(f"Deduplication: {len(matches_data)} -> {len(unique_matches)} unique matches")
     return unique_matches
 
-def is_future_match(match):
-    """Only keep matches from today onwards"""
-    try:
-        # Parse the French date back to datetime
-        date_str = match['date']
-        parts = date_str.split()
-        day = int(parts[0])
-        month_name = parts[1]
-        year = int(parts[-1])
-        
-        # Month mapping
-        month_map = {
-            'janvier': 1, 'février': 2, 'mars': 3, 'avril': 4, 'mai': 5, 'juin': 6,
-            'juillet': 7, 'août': 8, 'septembre': 9, 'octobre': 10, 'novembre': 11, 'décembre': 12
-        }
-        month = month_map.get(month_name, 1)
-        match_date = datetime(year, month, day)
-        
-        today = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-        return match_date >= today
-    except:
-        return True  # Keep if parsing fails
-
 web = "https://www.rts.ch/sport/resultats/#/results/hockey/nhl/Phase-1-0"
 driver = None
 try:
@@ -321,20 +298,16 @@ try:
     print("POST-PROCESSING ALL DATA")
     print(f"{'='*50}")
     
-    # Step 1: Remove duplicates
+    # *** ONLY DEDUPLICATION - NO DATE FILTERING ***
     all_matches_data = deduplicate_matches(all_matches_data)
-    
-    # Step 2: Filter future matches only
-    initial_count = len(all_matches_data)
-    all_matches_data = [m for m in all_matches_data if is_future_match(m)]
-    print(f"Future matches filter: {initial_count} -> {len(all_matches_data)} matches")
     
     if all_matches_data:
         write_matches_to_csv(all_matches_data, 'nhl_matches.csv')
-        print(f"\n✅ Total UNIQUE FUTURE matches written to CSV: {len(all_matches_data)}")
+        print(f"\n✅ Total UNIQUE matches written to CSV: {len(all_matches_data)}")
         print("📁 File: nhl_matches.csv")
+        print("✅ ALL months included (October, November, December, etc.)")
     else:
-        print("❌ No future matches collected")
+        print("❌ No matches collected")
     
     print("\n🎉 Scraping process completed successfully!")
 
