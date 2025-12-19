@@ -31,7 +31,7 @@ team_prestige = {
      "St.Louis Blues": 10 / 20,
      "Winnipeg Jets": 12 / 20,
      "Chicago Blackhawks": 10 / 20
-     "Nashville Predators": 09 / 20,
+     "Nashville Predators": 9 / 20,
 
      "Vegas Golden Knights": 14 / 20
      "Anaheim Ducks": 12 / 20
