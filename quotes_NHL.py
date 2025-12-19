@@ -131,14 +131,25 @@ def calculate_bookmaker_quotes(team1, team2, rankings_data, matches_data, date_s
     }
     assert sum(weights.values()) == 1, "Weights must sum to 1"
 
+    # Find team data across ALL divisions (handles inter-division games)
+    team1_data = None
+    team2_data = None
     group = None
+    
     for g in ['Atlantic', 'Metropolitan', 'Central', 'Pacific']:
-        teams = [r['team'] for r in rankings_data[g]]
-        if team1 in teams and team2 in teams:
+        group_rankings = rankings_data[g]
+        for r in group_rankings:
+            if r['team'] == team1:
+                team1_data = r
+            if r['team'] == team2:
+                team2_data = r
+        if team1_data and team2_data:
             group = g
             break
-    if group is None:
-        print(f"Teams {team1} and {team2} not found in the same group.")
+    
+    if not team1_data or not team2_data:
+        print(f"Missing data for one or both teams: {team1} vs {team2}. Using default odds.")
+
 
     group_rankings = rankings_data[group]
     team1_data = next((r for r in group_rankings if r['team'] == team1), None)
