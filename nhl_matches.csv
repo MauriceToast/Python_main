@@ -1,13 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,21 décembre 2025,Terminé,Detroit Red Wings - Washington Capitals,Extra Time,3 - 2,no,Detroit Red Wings
-Second Leg,,22 décembre 2025,Terminé,Minnesota Wild - Colorado Avalanche,Regular Time,1 - 5,no,Colorado Avalanche
-Second Leg,,22 décembre 2025,Terminé,New Jersey Devils - Buffalo Sabres,Regular Time,1 - 3,no,Buffalo Sabres
-Second Leg,,22 décembre 2025,Terminé,Pittsburgh Penguins - Montreal Canadiens,Extra Time,4 - 3,no,Pittsburgh Penguins
-Second Leg,,22 décembre 2025,Terminé,Nashville Predators - New York Rangers,Regular Time,2 - 1,no,Nashville Predators
-Second Leg,,22 décembre 2025,Terminé,Dallas Stars - Toronto Maple Leafs,Regular Time,5 - 1,no,Dallas Stars
-Second Leg,,22 décembre 2025,Terminé,Boston Bruins - Ottawa Senators,Regular Time,2 - 6,no,Ottawa Senators
-Second Leg,,22 décembre 2025,Terminé,Utah Mammoth - Winnipeg Jets,Extra Time,4 - 3,no,Utah Mammoth
-Second Leg,,22 décembre 2025,Terminé,Edmonton Oilers - Vegas Golden Knights,Regular Time,4 - 3,no,Edmonton Oilers
 Second Leg,,23 décembre 2025,01:00,Tampa Bay Lightning - St.Louis Blues,Regular Time,No Score,yes,
 Second Leg,,23 décembre 2025,01:30,Philadelphia Flyers - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,23 décembre 2025,04:00,Anaheim Ducks - Seattle Kraken,Regular Time,No Score,yes,
@@ -630,6 +621,15 @@ Second Leg,,21 décembre 2025,Terminé,Montreal Canadiens - Pittsburgh Penguins,
 Second Leg,,21 décembre 2025,Terminé,Calgary Flames - Vegas Golden Knights,Regular Time,6 - 3,no,Calgary Flames
 Second Leg,,21 décembre 2025,Terminé,Anaheim Ducks - Columbus Blue Jackets,Regular Time,4 - 3,no,Anaheim Ducks
 Second Leg,,21 décembre 2025,Terminé,San Jose Sharks - Seattle Kraken,Regular Time,2 - 4,no,Seattle Kraken
+Second Leg,,21 décembre 2025,Terminé,Detroit Red Wings - Washington Capitals,Extra Time,3 - 2,no,Detroit Red Wings
+Second Leg,,22 décembre 2025,Terminé,Minnesota Wild - Colorado Avalanche,Regular Time,1 - 5,no,Colorado Avalanche
+Second Leg,,22 décembre 2025,Terminé,New Jersey Devils - Buffalo Sabres,Regular Time,1 - 3,no,Buffalo Sabres
+Second Leg,,22 décembre 2025,Terminé,Pittsburgh Penguins - Montreal Canadiens,Extra Time,4 - 3,no,Pittsburgh Penguins
+Second Leg,,22 décembre 2025,Terminé,Nashville Predators - New York Rangers,Regular Time,2 - 1,no,Nashville Predators
+Second Leg,,22 décembre 2025,Terminé,Dallas Stars - Toronto Maple Leafs,Regular Time,5 - 1,no,Dallas Stars
+Second Leg,,22 décembre 2025,Terminé,Boston Bruins - Ottawa Senators,Regular Time,2 - 6,no,Ottawa Senators
+Second Leg,,22 décembre 2025,Terminé,Utah Mammoth - Winnipeg Jets,Extra Time,4 - 3,no,Utah Mammoth
+Second Leg,,22 décembre 2025,Terminé,Edmonton Oilers - Vegas Golden Knights,Regular Time,4 - 3,no,Edmonton Oilers
 Second Leg,,1 janvier 2026,19:00,Ottawa Senators - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,1 janvier 2026,21:00,New York Islanders - Utah Mammoth,Regular Time,No Score,yes,
 Second Leg,,2 janvier 2026,01:00,Toronto Maple Leafs - Winnipeg Jets,Regular Time,No Score,yes,
