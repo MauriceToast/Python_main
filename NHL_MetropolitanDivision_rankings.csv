@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
 1,Carolina Hurricanes,47,35,14,8,3,10,119,101
-2,Washington Capitals,43,36,18,1,5,12,114,96
-3,New York Islanders,42,36,13,6,4,13,105,103
-4,Philadelphia Flyers,41,34,10,7,7,10,103,99
+2,Philadelphia Flyers,43,35,11,7,7,10,108,101
+3,Washington Capitals,43,36,18,1,5,12,114,96
+4,New York Islanders,42,36,13,6,4,13,105,103
 5,New Jersey Devils,41,36,13,7,1,15,102,108
 6,New York Rangers,40,38,11,7,4,16,97,102
 7,Pittsburgh Penguins,39,35,13,2,9,11,107,113
-8,Columbus Blue Jackets,34,35,7,7,6,15,105,124
+8,Columbus Blue Jackets,36,36,8,7,6,15,108,125
