@@ -1,14 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,31 décembre 2025,Terminé,Washington Capitals - New York Rangers,Regular Time,6 - 3,no,Washington Capitals
-Second Leg,,31 décembre 2025,Terminé,Vegas Golden Knights - Nashville Predators,Regular Time,2 - 4,no,Nashville Predators
-Second Leg,,31 décembre 2025,Terminé,Anaheim Ducks - Tampa Bay Lightning,Extra Time,3 - 4,no,Tampa Bay Lightning
-Second Leg,,31 décembre 2025,Terminé,San Jose Sharks - Minnesota Wild,Extra Time,4 - 3,no,San Jose Sharks
-Second Leg,,1 janvier 2026,Terminé,Detroit Red Wings - Winnipeg Jets,Regular Time,2 - 1,no,Detroit Red Wings
-Second Leg,,1 janvier 2026,Terminé,Columbus Blue Jackets - New Jersey Devils,Regular Time,2 - 3,no,New Jersey Devils
-Second Leg,,1 janvier 2026,Terminé,Dallas Stars - Buffalo Sabres,Regular Time,1 - 4,no,Buffalo Sabres
-Second Leg,,1 janvier 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,6 - 1,no,Colorado Avalanche
-Second Leg,,1 janvier 2026,Terminé,Calgary Flames - Philadelphia Flyers,Regular Time,5 - 1,no,Calgary Flames
-Second Leg,,1 janvier 2026,Terminé,Edmonton Oilers - Boston Bruins,Regular Time,2 - 6,no,Boston Bruins
 Second Leg,,1 janvier 2026,19:00,Ottawa Senators - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,1 janvier 2026,21:00,New York Islanders - Utah Mammoth,Regular Time,No Score,yes,
 Second Leg,,2 janvier 2026,01:00,Toronto Maple Leafs - Winnipeg Jets,Regular Time,No Score,yes,
@@ -768,6 +758,16 @@ Second Leg,,31 décembre 2025,Terminé,Pittsburgh Penguins - Carolina Hurricanes
 Second Leg,,31 décembre 2025,Terminé,Toronto Maple Leafs - New Jersey Devils,Regular Time,4 - 0,no,Toronto Maple Leafs
 Second Leg,,31 décembre 2025,Terminé,Chicago Blackhawks - New York Islanders,Extra Time,2 - 3,no,New York Islanders
 Second Leg,,31 décembre 2025,Terminé,Vancouver Canucks - Philadelphia Flyers,Regular Time,3 - 6,no,Philadelphia Flyers
+Second Leg,,31 décembre 2025,Terminé,Washington Capitals - New York Rangers,Regular Time,6 - 3,no,Washington Capitals
+Second Leg,,31 décembre 2025,Terminé,Vegas Golden Knights - Nashville Predators,Regular Time,2 - 4,no,Nashville Predators
+Second Leg,,31 décembre 2025,Terminé,Anaheim Ducks - Tampa Bay Lightning,Extra Time,3 - 4,no,Tampa Bay Lightning
+Second Leg,,31 décembre 2025,Terminé,San Jose Sharks - Minnesota Wild,Extra Time,4 - 3,no,San Jose Sharks
+Second Leg,,1 janvier 2026,Terminé,Detroit Red Wings - Winnipeg Jets,Regular Time,2 - 1,no,Detroit Red Wings
+Second Leg,,1 janvier 2026,Terminé,Columbus Blue Jackets - New Jersey Devils,Regular Time,2 - 3,no,New Jersey Devils
+Second Leg,,1 janvier 2026,Terminé,Dallas Stars - Buffalo Sabres,Regular Time,1 - 4,no,Buffalo Sabres
+Second Leg,,1 janvier 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,6 - 1,no,Colorado Avalanche
+Second Leg,,1 janvier 2026,Terminé,Calgary Flames - Philadelphia Flyers,Regular Time,5 - 1,no,Calgary Flames
+Second Leg,,1 janvier 2026,Terminé,Edmonton Oilers - Boston Bruins,Regular Time,2 - 6,no,Boston Bruins
 Second Leg,,19 janvier 2026,19:30,Carolina Hurricanes - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,22:00,Colorado Avalanche - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,23:00,Seattle Kraken - Pittsburgh Penguins,Regular Time,No Score,yes,
