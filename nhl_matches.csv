@@ -1,12 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,1 janvier 2026,Terminé,Ottawa Senators - Washington Capitals,Regular Time,4 - 3,no,Ottawa Senators
-Second Leg,,1 janvier 2026,Terminé,New York Islanders - Utah Mammoth,Regular Time,2 - 7,no,Utah Mammoth
-Second Leg,,2 janvier 2026,Terminé,Toronto Maple Leafs - Winnipeg Jets,Regular Time,6 - 5,no,Toronto Maple Leafs
-Second Leg,,2 janvier 2026,Terminé,Los Angeles Kings - Tampa Bay Lightning,Regular Time,3 - 5,no,Tampa Bay Lightning
-Second Leg,,2 janvier 2026,Terminé,Pittsburgh Penguins - Detroit Red Wings,Extra Time,4 - 3,no,Pittsburgh Penguins
-Second Leg,,2 janvier 2026,Terminé,Carolina Hurricanes - Montreal Canadiens,Regular Time,5 - 7,no,Montreal Canadiens
-Second Leg,,2 janvier 2026,Terminé,Chicago Blackhawks - Dallas Stars,Regular Time,4 - 3,no,Chicago Blackhawks
-Second Leg,,2 janvier 2026,Terminé,Seattle Kraken - Nashville Predators,Regular Time,4 - 1,no,Seattle Kraken
 Second Leg,,2 janvier 2026,21:00,St.Louis Blues - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,3 janvier 2026,02:00,Florida Panthers - New York Rangers,Regular Time,No Score,yes,
 Second Leg,,3 janvier 2026,04:30,Vancouver Canucks - Seattle Kraken,Regular Time,No Score,yes,
@@ -768,6 +760,14 @@ Second Leg,,1 janvier 2026,Terminé,Dallas Stars - Buffalo Sabres,Regular Time,1
 Second Leg,,1 janvier 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,6 - 1,no,Colorado Avalanche
 Second Leg,,1 janvier 2026,Terminé,Calgary Flames - Philadelphia Flyers,Regular Time,5 - 1,no,Calgary Flames
 Second Leg,,1 janvier 2026,Terminé,Edmonton Oilers - Boston Bruins,Regular Time,2 - 6,no,Boston Bruins
+Second Leg,,1 janvier 2026,Terminé,Ottawa Senators - Washington Capitals,Regular Time,4 - 3,no,Ottawa Senators
+Second Leg,,1 janvier 2026,Terminé,New York Islanders - Utah Mammoth,Regular Time,2 - 7,no,Utah Mammoth
+Second Leg,,2 janvier 2026,Terminé,Toronto Maple Leafs - Winnipeg Jets,Regular Time,6 - 5,no,Toronto Maple Leafs
+Second Leg,,2 janvier 2026,Terminé,Los Angeles Kings - Tampa Bay Lightning,Regular Time,3 - 5,no,Tampa Bay Lightning
+Second Leg,,2 janvier 2026,Terminé,Pittsburgh Penguins - Detroit Red Wings,Extra Time,4 - 3,no,Pittsburgh Penguins
+Second Leg,,2 janvier 2026,Terminé,Carolina Hurricanes - Montreal Canadiens,Regular Time,5 - 7,no,Montreal Canadiens
+Second Leg,,2 janvier 2026,Terminé,Chicago Blackhawks - Dallas Stars,Regular Time,4 - 3,no,Chicago Blackhawks
+Second Leg,,2 janvier 2026,Terminé,Seattle Kraken - Nashville Predators,Regular Time,4 - 1,no,Seattle Kraken
 Second Leg,,19 janvier 2026,19:30,Carolina Hurricanes - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,22:00,Colorado Avalanche - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,23:00,Seattle Kraken - Pittsburgh Penguins,Regular Time,No Score,yes,
