@@ -1,8 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,2 janvier 2026,Terminé,St.Louis Blues - Vegas Golden Knights,Regular Time,4 - 3,no,St.Louis Blues
-Second Leg,,3 janvier 2026,Terminé,Florida Panthers - New York Rangers,Regular Time,1 - 5,no,New York Rangers
-Second Leg,,3 janvier 2026,Terminé,Vancouver Canucks - Seattle Kraken,Extra Time,3 - 4,no,Seattle Kraken
-Second Leg,,3 janvier 2026,Terminé,Anaheim Ducks - Minnesota Wild,Regular Time,2 - 5,no,Minnesota Wild
 Second Leg,,3 janvier 2026,18:00,Detroit Red Wings - Pittsburgh Penguins,Regular Time,No Score,yes,
 Second Leg,,3 janvier 2026,21:00,New Jersey Devils - Utah Mammoth,Regular Time,No Score,yes,
 Second Leg,,3 janvier 2026,21:00,Columbus Blue Jackets - Buffalo Sabres,Regular Time,No Score,yes,
@@ -768,6 +764,10 @@ Second Leg,,2 janvier 2026,Terminé,Pittsburgh Penguins - Detroit Red Wings,Extr
 Second Leg,,2 janvier 2026,Terminé,Carolina Hurricanes - Montreal Canadiens,Regular Time,5 - 7,no,Montreal Canadiens
 Second Leg,,2 janvier 2026,Terminé,Chicago Blackhawks - Dallas Stars,Regular Time,4 - 3,no,Chicago Blackhawks
 Second Leg,,2 janvier 2026,Terminé,Seattle Kraken - Nashville Predators,Regular Time,4 - 1,no,Seattle Kraken
+Second Leg,,2 janvier 2026,Terminé,St.Louis Blues - Vegas Golden Knights,Regular Time,4 - 3,no,St.Louis Blues
+Second Leg,,3 janvier 2026,Terminé,Florida Panthers - New York Rangers,Regular Time,1 - 5,no,New York Rangers
+Second Leg,,3 janvier 2026,Terminé,Vancouver Canucks - Seattle Kraken,Extra Time,3 - 4,no,Seattle Kraken
+Second Leg,,3 janvier 2026,Terminé,Anaheim Ducks - Minnesota Wild,Regular Time,2 - 5,no,Minnesota Wild
 Second Leg,,19 janvier 2026,19:30,Carolina Hurricanes - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,22:00,Colorado Avalanche - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,23:00,Seattle Kraken - Pittsburgh Penguins,Regular Time,No Score,yes,
