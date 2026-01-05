@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
 1,Tampa Bay Lightning,53,41,20,5,3,13,142,110
-2,Detroit Red Wings,52,43,17,7,4,15,131,138
-3,Montreal Canadiens,50,41,14,8,6,13,137,138
-4,Buffalo Sabres,46,40,15,6,4,15,125,126
-5,Boston Bruins,46,42,15,7,2,18,133,136
-6,Florida Panthers,45,40,18,3,3,16,127,129
+2,Montreal Canadiens,52,42,14,9,6,13,141,141
+3,Detroit Red Wings,52,43,17,7,4,15,131,138
+4,Florida Panthers,47,41,19,3,3,16,129,130
+5,Buffalo Sabres,46,40,15,6,4,15,125,126
+6,Boston Bruins,46,42,15,7,2,18,133,136
 7,Ottawa Senators,45,40,15,5,5,15,133,129
 8,Toronto Maple Leafs,45,41,15,4,7,15,137,138
