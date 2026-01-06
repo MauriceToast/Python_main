@@ -1,9 +1,9 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,6 janvier 2026,01:00,New York Rangers - Utah Mammoth,Regular Time,No Score,yes,
-Second Leg,,6 janvier 2026,01:00,Washington Capitals - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,6 janvier 2026,01:30,Ottawa Senators - Detroit Red Wings,Regular Time,No Score,yes,
-Second Leg,,6 janvier 2026,03:30,Calgary Flames - Seattle Kraken,Regular Time,No Score,yes,
-Second Leg,,6 janvier 2026,04:30,Los Angeles Kings - Minnesota Wild,Regular Time,No Score,yes,
+Second Leg,,6 janvier 2026,Terminé,New York Rangers - Utah Mammoth,Extra Time,2 - 3,no,Utah Mammoth
+Second Leg,,6 janvier 2026,Terminé,Washington Capitals - Anaheim Ducks,Regular Time,7 - 4,no,Washington Capitals
+Second Leg,,6 janvier 2026,Terminé,Ottawa Senators - Detroit Red Wings,Regular Time,3 - 5,no,Detroit Red Wings
+Second Leg,,6 janvier 2026,Terminé,Calgary Flames - Seattle Kraken,Regular Time,1 - 5,no,Seattle Kraken
+Second Leg,,6 janvier 2026,Terminé,Los Angeles Kings - Minnesota Wild,Regular Time,4 - 2,no,Los Angeles Kings
 Second Leg,,7 janvier 2026,01:00,Buffalo Sabres - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,7 janvier 2026,01:00,Tampa Bay Lightning - Colorado Avalanche,Regular Time,No Score,yes,
 Second Leg,,7 janvier 2026,01:00,Philadelphia Flyers - Anaheim Ducks,Regular Time,No Score,yes,
