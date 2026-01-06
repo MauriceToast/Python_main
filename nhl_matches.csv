@@ -1,9 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,6 janvier 2026,Terminé,New York Rangers - Utah Mammoth,Extra Time,2 - 3,no,Utah Mammoth
-Second Leg,,6 janvier 2026,Terminé,Washington Capitals - Anaheim Ducks,Regular Time,7 - 4,no,Washington Capitals
-Second Leg,,6 janvier 2026,Terminé,Ottawa Senators - Detroit Red Wings,Regular Time,3 - 5,no,Detroit Red Wings
-Second Leg,,6 janvier 2026,Terminé,Calgary Flames - Seattle Kraken,Regular Time,1 - 5,no,Seattle Kraken
-Second Leg,,6 janvier 2026,Terminé,Los Angeles Kings - Minnesota Wild,Regular Time,4 - 2,no,Los Angeles Kings
 Second Leg,,7 janvier 2026,01:00,Buffalo Sabres - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,7 janvier 2026,01:00,Tampa Bay Lightning - Colorado Avalanche,Regular Time,No Score,yes,
 Second Leg,,7 janvier 2026,01:00,Philadelphia Flyers - Anaheim Ducks,Regular Time,No Score,yes,
@@ -768,6 +763,11 @@ Second Leg,,4 janvier 2026,Terminé,Columbus Blue Jackets - Pittsburgh Penguins,
 Second Leg,,4 janvier 2026,Terminé,Florida Panthers - Colorado Avalanche,Regular Time,2 - 1,no,Florida Panthers
 Second Leg,,5 janvier 2026,Terminé,New Jersey Devils - Carolina Hurricanes,Regular Time,1 - 3,no,Carolina Hurricanes
 Second Leg,,5 janvier 2026,Terminé,Chicago Blackhawks - Vegas Golden Knights,Extra Time,3 - 2,no,Chicago Blackhawks
+Second Leg,,6 janvier 2026,Terminé,New York Rangers - Utah Mammoth,Extra Time,2 - 3,no,Utah Mammoth
+Second Leg,,6 janvier 2026,Terminé,Washington Capitals - Anaheim Ducks,Regular Time,7 - 4,no,Washington Capitals
+Second Leg,,6 janvier 2026,Terminé,Ottawa Senators - Detroit Red Wings,Regular Time,3 - 5,no,Detroit Red Wings
+Second Leg,,6 janvier 2026,Terminé,Calgary Flames - Seattle Kraken,Regular Time,1 - 5,no,Seattle Kraken
+Second Leg,,6 janvier 2026,Terminé,Los Angeles Kings - Minnesota Wild,Regular Time,4 - 2,no,Los Angeles Kings
 Second Leg,,19 janvier 2026,19:30,Carolina Hurricanes - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,22:00,Colorado Avalanche - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,23:00,Seattle Kraken - Pittsburgh Penguins,Regular Time,No Score,yes,
