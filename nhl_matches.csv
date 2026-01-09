@@ -1,16 +1,16 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,9 janvier 2026,01:00,Boston Bruins - Calgary Flames,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,Detroit Red Wings - Vancouver Canucks,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,Pittsburgh Penguins - New Jersey Devils,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,Carolina Hurricanes - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,New York Rangers - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,Philadelphia Flyers - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,01:00,Montreal Canadiens - Florida Panthers,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,02:00,Winnipeg Jets - Edmonton Oilers,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,02:00,Nashville Predators - New York Islanders,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,03:00,Colorado Avalanche - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,04:00,Vegas Golden Knights - Columbus Blue Jackets,Regular Time,No Score,yes,
-Second Leg,,9 janvier 2026,04:00,Seattle Kraken - Minnesota Wild,Regular Time,No Score,yes,
+Second Leg,,9 janvier 2026,Terminé,Boston Bruins - Calgary Flames,Regular Time,4 - 1,no,Boston Bruins
+Second Leg,,9 janvier 2026,Terminé,Detroit Red Wings - Vancouver Canucks,Regular Time,5 - 1,no,Detroit Red Wings
+Second Leg,,9 janvier 2026,Terminé,Pittsburgh Penguins - New Jersey Devils,Regular Time,4 - 1,no,Pittsburgh Penguins
+Second Leg,,9 janvier 2026,Terminé,Carolina Hurricanes - Anaheim Ducks,Regular Time,5 - 2,no,Carolina Hurricanes
+Second Leg,,9 janvier 2026,Terminé,New York Rangers - Buffalo Sabres,Regular Time,2 - 5,no,Buffalo Sabres
+Second Leg,,9 janvier 2026,Terminé,Philadelphia Flyers - Toronto Maple Leafs,Extra Time,1 - 2,no,Toronto Maple Leafs
+Second Leg,,9 janvier 2026,Terminé,Montreal Canadiens - Florida Panthers,Regular Time,6 - 2,no,Montreal Canadiens
+Second Leg,,9 janvier 2026,Terminé,Winnipeg Jets - Edmonton Oilers,Regular Time,3 - 4,no,Edmonton Oilers
+Second Leg,,9 janvier 2026,Terminé,Nashville Predators - New York Islanders,Extra Time,2 - 1,no,Nashville Predators
+Second Leg,,9 janvier 2026,Terminé,Colorado Avalanche - Ottawa Senators,Regular Time,8 - 2,no,Colorado Avalanche
+Second Leg,,9 janvier 2026,Terminé,Vegas Golden Knights - Columbus Blue Jackets,Regular Time,5 - 3,no,Vegas Golden Knights
+Second Leg,,9 janvier 2026,Terminé,Seattle Kraken - Minnesota Wild,Extra Time,2 - 3,no,Minnesota Wild
 Second Leg,,10 janvier 2026,02:00,Chicago Blackhawks - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,10 janvier 2026,02:00,Winnipeg Jets - Los Angeles Kings,Regular Time,No Score,yes,
 Second Leg,,10 janvier 2026,03:00,Utah Mammoth - St.Louis Blues,Regular Time,No Score,yes,
