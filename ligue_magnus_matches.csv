@@ -178,11 +178,11 @@ Second Leg,31,9 janvier 2026,,CERGY - NICE,Regular Time,1-2,no,NICE
 First Leg,15,11 janvier 2026,,GRENOBLE - CERGY,Extra Time,4-5,no,CERGY
 Second Leg,24,11 janvier 2026,,CHAMONIX - ROUEN,Extra Time,4-3,no,CHAMONIX
 Second Leg,32,11 janvier 2026,,ANGLET - ANGERS,Regular Time,0-7,no,ANGERS
-Second Leg,32,13 janvier 2026,19:00,NICE - GRENOBLE,,,yes,
-Second Leg,32,13 janvier 2026,19:00,ROUEN - BORDEAUX,,,yes,
-Second Leg,32,13 janvier 2026,19:15,MARSEILLE - AMIENS,,,yes,
-Second Leg,32,13 janvier 2026,19:30,BRIANCON - GAP,,,yes,
-Second Leg,32,13 janvier 2026,19:30,CERGY - CHAMONIX,,,yes,
+Second Leg,32,13 janvier 2026,,NICE - GRENOBLE,Regular Time,1-4,no,GRENOBLE
+Second Leg,32,13 janvier 2026,,ROUEN - BORDEAUX,Regular Time,6-2,no,ROUEN
+Second Leg,32,13 janvier 2026,,MARSEILLE - AMIENS,Extra Time,1-0,no,MARSEILLE
+Second Leg,32,13 janvier 2026,,BRIANCON - GAP,Regular Time,4-2,no,BRIANCON
+Second Leg,32,13 janvier 2026,,CERGY - CHAMONIX,Regular Time,8-2,no,CERGY
 Second Leg,33,16 janvier 2026,19:05,CHAMONIX - ANGLET,,,yes,
 Second Leg,33,16 janvier 2026,19:15,AMIENS - NICE,,,yes,
 Second Leg,33,16 janvier 2026,19:15,BORDEAUX - BRIANCON,,,yes,
