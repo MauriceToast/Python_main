@@ -1,7 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,18 janvier 2026,Terminé,Dallas Stars - Tampa Bay Lightning,Regular Time,1 - 4,no,Tampa Bay Lightning
-Second Leg,,18 janvier 2026,Terminé,Detroit Red Wings - Ottawa Senators,Extra Time,4 - 3,no,Detroit Red Wings
-Second Leg,,19 janvier 2026,Terminé,Edmonton Oilers - St.Louis Blues,Regular Time,5 - 0,no,Edmonton Oilers
 Second Leg,,19 janvier 2026,19:30,Carolina Hurricanes - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,22:00,Colorado Avalanche - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,19 janvier 2026,23:00,Seattle Kraken - Pittsburgh Penguins,Regular Time,No Score,yes,
@@ -52,7 +49,7 @@ Second Leg,,25 janvier 2026,02:00,St.Louis Blues - Los Angeles Kings,Regular Tim
 Second Leg,,25 janvier 2026,03:00,Minnesota Wild - Florida Panthers,Regular Time,No Score,yes,
 Second Leg,,25 janvier 2026,04:00,Edmonton Oilers - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,25 janvier 2026,19:30,Toronto Maple Leafs - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,25 janvier 2026,22:00,Seattle Kraken - New Jersey Devils,Regular Time,No Score,yes,
+Second Leg,,25 janvier 2026,21:00,Seattle Kraken - New Jersey Devils,Regular Time,No Score,yes,
 Second Leg,,25 janvier 2026,23:00,Ottawa Senators - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,26 janvier 2026,00:00,Vancouver Canucks - Pittsburgh Penguins,Regular Time,No Score,yes,
 Second Leg,,26 janvier 2026,01:00,Chicago Blackhawks - Florida Panthers,Regular Time,No Score,yes,
@@ -871,6 +868,9 @@ Second Leg,,18 janvier 2026,Terminé,Chicago Blackhawks - Boston Bruins,Regular 
 Second Leg,,18 janvier 2026,Terminé,Vancouver Canucks - Edmonton Oilers,Regular Time,0 - 6,no,Edmonton Oilers
 Second Leg,,18 janvier 2026,Terminé,Vegas Golden Knights - Nashville Predators,Regular Time,7 - 2,no,Vegas Golden Knights
 Second Leg,,18 janvier 2026,Terminé,Anaheim Ducks - Los Angeles Kings,Extra Time,2 - 1,no,Anaheim Ducks
+Second Leg,,18 janvier 2026,Terminé,Dallas Stars - Tampa Bay Lightning,Regular Time,1 - 4,no,Tampa Bay Lightning
+Second Leg,,18 janvier 2026,Terminé,Detroit Red Wings - Ottawa Senators,Extra Time,4 - 3,no,Detroit Red Wings
+Second Leg,,19 janvier 2026,Terminé,Edmonton Oilers - St.Louis Blues,Regular Time,5 - 0,no,Edmonton Oilers
 Second Leg,,1 février 2026,21:00,Carolina Hurricanes - Los Angeles Kings,Regular Time,No Score,yes,
 Second Leg,,2 février 2026,00:30,Tampa Bay Lightning - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,2 février 2026,03:30,Anaheim Ducks - Vegas Golden Knights,Regular Time,No Score,yes,
