@@ -1,12 +1,12 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,23 janvier 2026,01:00,Boston Bruins - Vegas Golden Knights,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,01:00,Carolina Hurricanes - Chicago Blackhawks,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,01:00,Columbus Blue Jackets - Dallas Stars,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,01:00,Montreal Canadiens - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,02:00,Nashville Predators - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,02:00,Winnipeg Jets - Florida Panthers,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,03:00,Edmonton Oilers - Pittsburgh Penguins,Regular Time,No Score,yes,
-Second Leg,,23 janvier 2026,03:30,Minnesota Wild - Detroit Red Wings,Regular Time,No Score,yes,
+Second Leg,,23 janvier 2026,Terminé,Boston Bruins - Vegas Golden Knights,Regular Time,4 - 3,no,Boston Bruins
+Second Leg,,23 janvier 2026,Terminé,Carolina Hurricanes - Chicago Blackhawks,Extra Time,3 - 4,no,Chicago Blackhawks
+Second Leg,,23 janvier 2026,Terminé,Columbus Blue Jackets - Dallas Stars,Regular Time,1 - 0,no,Columbus Blue Jackets
+Second Leg,,23 janvier 2026,Terminé,Montreal Canadiens - Buffalo Sabres,Regular Time,2 - 4,no,Buffalo Sabres
+Second Leg,,23 janvier 2026,Terminé,Nashville Predators - Ottawa Senators,Regular Time,5 - 3,no,Nashville Predators
+Second Leg,,23 janvier 2026,Terminé,Winnipeg Jets - Florida Panthers,Extra Time,1 - 2,no,Florida Panthers
+Second Leg,,23 janvier 2026,Terminé,Edmonton Oilers - Pittsburgh Penguins,Regular Time,2 - 6,no,Pittsburgh Penguins
+Second Leg,,23 janvier 2026,Terminé,Minnesota Wild - Detroit Red Wings,Extra Time,4 - 3,no,Minnesota Wild
 Second Leg,,24 janvier 2026,01:00,Toronto Maple Leafs - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,24 janvier 2026,01:00,Chicago Blackhawks - Tampa Bay Lightning,Regular Time,No Score,yes,
 Second Leg,,24 janvier 2026,02:00,Dallas Stars - St.Louis Blues,Regular Time,No Score,yes,
