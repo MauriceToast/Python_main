@@ -1,14 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,28 janvier 2026,Terminé,Boston Bruins - Nashville Predators,Extra Time,3 - 2,no,Boston Bruins
-Second Leg,,28 janvier 2026,Terminé,Toronto Maple Leafs - Buffalo Sabres,Regular Time,4 - 7,no,Buffalo Sabres
-Second Leg,,28 janvier 2026,Terminé,Montreal Canadiens - Vegas Golden Knights,Extra Time,3 - 2,no,Montreal Canadiens
-Second Leg,,28 janvier 2026,Terminé,Detroit Red Wings - Los Angeles Kings,Regular Time,1 - 3,no,Los Angeles Kings
-Second Leg,,28 janvier 2026,Terminé,Florida Panthers - Utah Mammoth,Regular Time,3 - 4,no,Utah Mammoth
-Second Leg,,28 janvier 2026,Terminé,New Jersey Devils - Winnipeg Jets,Regular Time,3 - 4,no,Winnipeg Jets
-Second Leg,,28 janvier 2026,Terminé,St.Louis Blues - Dallas Stars,Regular Time,3 - 4,no,Dallas Stars
-Second Leg,,28 janvier 2026,Terminé,Minnesota Wild - Chicago Blackhawks,Extra Time,4 - 3,no,Minnesota Wild
-Second Leg,,28 janvier 2026,Terminé,Vancouver Canucks - San Jose Sharks,Regular Time,2 - 5,no,San Jose Sharks
-Second Leg,,28 janvier 2026,Terminé,Seattle Kraken - Washington Capitals,Regular Time,5 - 1,no,Seattle Kraken
 Second Leg,,29 janvier 2026,01:00,New York Islanders - New York Rangers,Regular Time,No Score,yes,
 Second Leg,,29 janvier 2026,01:30,Columbus Blue Jackets - Philadelphia Flyers,Regular Time,No Score,yes,
 Second Leg,,29 janvier 2026,01:30,Ottawa Senators - Colorado Avalanche,Regular Time,No Score,yes,
@@ -907,6 +897,16 @@ Second Leg,,27 janvier 2026,Terminé,Tampa Bay Lightning - Utah Mammoth,Regular 
 Second Leg,,27 janvier 2026,Terminé,New York Rangers - Boston Bruins,Extra Time,4 - 3,no,New York Rangers
 Second Leg,,27 janvier 2026,Terminé,Philadelphia Flyers - New York Islanders,Regular Time,0 - 4,no,New York Islanders
 Second Leg,,27 janvier 2026,Terminé,Edmonton Oilers - Anaheim Ducks,Regular Time,7 - 4,no,Edmonton Oilers
+Second Leg,,28 janvier 2026,Terminé,Boston Bruins - Nashville Predators,Extra Time,3 - 2,no,Boston Bruins
+Second Leg,,28 janvier 2026,Terminé,Toronto Maple Leafs - Buffalo Sabres,Regular Time,4 - 7,no,Buffalo Sabres
+Second Leg,,28 janvier 2026,Terminé,Montreal Canadiens - Vegas Golden Knights,Extra Time,3 - 2,no,Montreal Canadiens
+Second Leg,,28 janvier 2026,Terminé,Detroit Red Wings - Los Angeles Kings,Regular Time,1 - 3,no,Los Angeles Kings
+Second Leg,,28 janvier 2026,Terminé,Florida Panthers - Utah Mammoth,Regular Time,3 - 4,no,Utah Mammoth
+Second Leg,,28 janvier 2026,Terminé,New Jersey Devils - Winnipeg Jets,Regular Time,3 - 4,no,Winnipeg Jets
+Second Leg,,28 janvier 2026,Terminé,St.Louis Blues - Dallas Stars,Regular Time,3 - 4,no,Dallas Stars
+Second Leg,,28 janvier 2026,Terminé,Minnesota Wild - Chicago Blackhawks,Extra Time,4 - 3,no,Minnesota Wild
+Second Leg,,28 janvier 2026,Terminé,Vancouver Canucks - San Jose Sharks,Regular Time,2 - 5,no,San Jose Sharks
+Second Leg,,28 janvier 2026,Terminé,Seattle Kraken - Washington Capitals,Regular Time,5 - 1,no,Seattle Kraken
 Second Leg,,26 février 2026,01:00,New Jersey Devils - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:00,Washington Capitals - Philadelphia Flyers,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:30,Tampa Bay Lightning - Toronto Maple Leafs,Regular Time,No Score,yes,
