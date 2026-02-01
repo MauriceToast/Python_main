@@ -1,10 +1,10 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,31 janvier 2026,18:30,Philadelphia Flyers - Los Angeles Kings,Regular Time,No Score,yes,
-Second Leg,,31 janvier 2026,19:00,Detroit Red Wings - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,31 janvier 2026,21:30,Pittsburgh Penguins - New York Rangers,Regular Time,No Score,yes,
-Second Leg,,31 janvier 2026,22:00,Florida Panthers - Winnipeg Jets,Regular Time,No Score,yes,
-Second Leg,,31 janvier 2026,22:00,Calgary Flames - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,31 janvier 2026,23:00,Washington Capitals - Carolina Hurricanes,Regular Time,No Score,yes,
+Second Leg,,31 janvier 2026,Terminé,Philadelphia Flyers - Los Angeles Kings,Extra Time,2 - 3,no,Los Angeles Kings
+Second Leg,,31 janvier 2026,Terminé,Detroit Red Wings - Colorado Avalanche,Regular Time,0 - 5,no,Colorado Avalanche
+Second Leg,,31 janvier 2026,Terminé,Pittsburgh Penguins - New York Rangers,Regular Time,6 - 5,no,Pittsburgh Penguins
+Second Leg,,31 janvier 2026,Terminé,Florida Panthers - Winnipeg Jets,Regular Time,1 - 2,no,Winnipeg Jets
+Second Leg,,31 janvier 2026,Terminé,Calgary Flames - San Jose Sharks,Regular Time,3 - 2,no,Calgary Flames
+Second Leg,,31 janvier 2026,Terminé,Washington Capitals - Carolina Hurricanes,Extra Time,4 - 3,no,Washington Capitals
 Second Leg,,1 février 2026,01:00,Buffalo Sabres - Montreal Canadiens,Regular Time,No Score,yes,
 Second Leg,,1 février 2026,01:00,Ottawa Senators - New Jersey Devils,Regular Time,No Score,yes,
 Second Leg,,1 février 2026,01:00,New York Islanders - Nashville Predators,Regular Time,No Score,yes,
