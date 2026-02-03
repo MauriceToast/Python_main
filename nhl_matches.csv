@@ -1,14 +1,14 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,3 février 2026,01:00,Pittsburgh Penguins - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,01:00,Florida Panthers - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,01:00,Washington Capitals - New York Islanders,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,01:30,Minnesota Wild - Montreal Canadiens,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,02:00,Nashville Predators - St.Louis Blues,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,02:30,Chicago Blackhawks - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,02:30,Dallas Stars - Winnipeg Jets,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,03:00,Colorado Avalanche - Detroit Red Wings,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,03:30,Utah Mammoth - Vancouver Canucks,Regular Time,No Score,yes,
-Second Leg,,3 février 2026,04:00,Calgary Flames - Toronto Maple Leafs,Regular Time,No Score,yes,
+Second Leg,,3 février 2026,Terminé,Pittsburgh Penguins - Ottawa Senators,Regular Time,2 - 3,no,Ottawa Senators
+Second Leg,,3 février 2026,Terminé,Florida Panthers - Buffalo Sabres,Regular Time,3 - 5,no,Buffalo Sabres
+Second Leg,,3 février 2026,Terminé,Washington Capitals - New York Islanders,Regular Time,4 - 1,no,Washington Capitals
+Second Leg,,3 février 2026,Terminé,Minnesota Wild - Montreal Canadiens,Extra Time,4 - 3,no,Minnesota Wild
+Second Leg,,3 février 2026,Terminé,Nashville Predators - St.Louis Blues,Regular Time,6 - 5,no,Nashville Predators
+Second Leg,,3 février 2026,Terminé,Chicago Blackhawks - San Jose Sharks,Regular Time,6 - 3,no,Chicago Blackhawks
+Second Leg,,3 février 2026,Terminé,Dallas Stars - Winnipeg Jets,Extra Time,4 - 3,no,Dallas Stars
+Second Leg,,3 février 2026,Terminé,Colorado Avalanche - Detroit Red Wings,Regular Time,0 - 2,no,Detroit Red Wings
+Second Leg,,3 février 2026,Terminé,Utah Mammoth - Vancouver Canucks,Regular Time,6 - 2,no,Utah Mammoth
+Second Leg,,3 février 2026,Terminé,Calgary Flames - Toronto Maple Leafs,Regular Time,2 - 4,no,Toronto Maple Leafs
 Second Leg,,4 février 2026,01:00,New Jersey Devils - Columbus Blue Jackets,Regular Time,No Score,yes,
 Second Leg,,4 février 2026,01:00,Philadelphia Flyers - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,4 février 2026,01:00,Carolina Hurricanes - Ottawa Senators,Regular Time,No Score,yes,
