@@ -1,11 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,4 février 2026,Terminé,New Jersey Devils - Columbus Blue Jackets,Regular Time,0 - 3,no,Columbus Blue Jackets
-Second Leg,,4 février 2026,Terminé,Philadelphia Flyers - Washington Capitals,Regular Time,4 - 2,no,Philadelphia Flyers
-Second Leg,,4 février 2026,Terminé,Carolina Hurricanes - Ottawa Senators,Regular Time,4 - 3,no,Carolina Hurricanes
-Second Leg,,4 février 2026,Terminé,New York Islanders - Pittsburgh Penguins,Extra Time,5 - 4,no,New York Islanders
-Second Leg,,4 février 2026,Terminé,Tampa Bay Lightning - Buffalo Sabres,Extra Time,4 - 3,no,Tampa Bay Lightning
-Second Leg,,4 février 2026,Terminé,Edmonton Oilers - Toronto Maple Leafs,Regular Time,2 - 5,no,Toronto Maple Leafs
-Second Leg,,4 février 2026,Terminé,Anaheim Ducks - Seattle Kraken,Regular Time,4 - 2,no,Anaheim Ducks
 Second Leg,,5 février 2026,01:00,Florida Panthers - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,5 février 2026,01:00,Columbus Blue Jackets - Chicago Blackhawks,Regular Time,No Score,yes,
 Second Leg,,5 février 2026,01:00,Winnipeg Jets - Montreal Canadiens,Regular Time,No Score,yes,
@@ -907,6 +900,13 @@ Second Leg,,3 février 2026,Terminé,Dallas Stars - Winnipeg Jets,Extra Time,4 -
 Second Leg,,3 février 2026,Terminé,Colorado Avalanche - Detroit Red Wings,Regular Time,0 - 2,no,Detroit Red Wings
 Second Leg,,3 février 2026,Terminé,Utah Mammoth - Vancouver Canucks,Regular Time,6 - 2,no,Utah Mammoth
 Second Leg,,3 février 2026,Terminé,Calgary Flames - Toronto Maple Leafs,Regular Time,2 - 4,no,Toronto Maple Leafs
+Second Leg,,4 février 2026,Terminé,New Jersey Devils - Columbus Blue Jackets,Regular Time,0 - 3,no,Columbus Blue Jackets
+Second Leg,,4 février 2026,Terminé,Philadelphia Flyers - Washington Capitals,Regular Time,4 - 2,no,Philadelphia Flyers
+Second Leg,,4 février 2026,Terminé,Carolina Hurricanes - Ottawa Senators,Regular Time,4 - 3,no,Carolina Hurricanes
+Second Leg,,4 février 2026,Terminé,New York Islanders - Pittsburgh Penguins,Extra Time,5 - 4,no,New York Islanders
+Second Leg,,4 février 2026,Terminé,Tampa Bay Lightning - Buffalo Sabres,Extra Time,4 - 3,no,Tampa Bay Lightning
+Second Leg,,4 février 2026,Terminé,Edmonton Oilers - Toronto Maple Leafs,Regular Time,2 - 5,no,Toronto Maple Leafs
+Second Leg,,4 février 2026,Terminé,Anaheim Ducks - Seattle Kraken,Regular Time,4 - 2,no,Anaheim Ducks
 Second Leg,,26 février 2026,01:00,New Jersey Devils - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:00,Washington Capitals - Philadelphia Flyers,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:30,Tampa Bay Lightning - Toronto Maple Leafs,Regular Time,No Score,yes,
