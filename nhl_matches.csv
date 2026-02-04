@@ -1,11 +1,11 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,4 février 2026,01:00,New Jersey Devils - Columbus Blue Jackets,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,01:00,Philadelphia Flyers - Washington Capitals,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,01:00,Carolina Hurricanes - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,01:30,New York Islanders - Pittsburgh Penguins,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,01:30,Tampa Bay Lightning - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,02:30,Edmonton Oilers - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,4 février 2026,04:00,Anaheim Ducks - Seattle Kraken,Regular Time,No Score,yes,
+Second Leg,,4 février 2026,Terminé,New Jersey Devils - Columbus Blue Jackets,Regular Time,0 - 3,no,Columbus Blue Jackets
+Second Leg,,4 février 2026,Terminé,Philadelphia Flyers - Washington Capitals,Regular Time,4 - 2,no,Philadelphia Flyers
+Second Leg,,4 février 2026,Terminé,Carolina Hurricanes - Ottawa Senators,Regular Time,4 - 3,no,Carolina Hurricanes
+Second Leg,,4 février 2026,Terminé,New York Islanders - Pittsburgh Penguins,Extra Time,5 - 4,no,New York Islanders
+Second Leg,,4 février 2026,Terminé,Tampa Bay Lightning - Buffalo Sabres,Extra Time,4 - 3,no,Tampa Bay Lightning
+Second Leg,,4 février 2026,Terminé,Edmonton Oilers - Toronto Maple Leafs,Regular Time,2 - 5,no,Toronto Maple Leafs
+Second Leg,,4 février 2026,Terminé,Anaheim Ducks - Seattle Kraken,Regular Time,4 - 2,no,Anaheim Ducks
 Second Leg,,5 février 2026,01:00,Florida Panthers - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,5 février 2026,01:00,Columbus Blue Jackets - Chicago Blackhawks,Regular Time,No Score,yes,
 Second Leg,,5 février 2026,01:00,Winnipeg Jets - Montreal Canadiens,Regular Time,No Score,yes,
