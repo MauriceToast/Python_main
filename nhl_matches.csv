@@ -1,14 +1,14 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,5 février 2026,01:00,Florida Panthers - Boston Bruins,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,01:00,Columbus Blue Jackets - Chicago Blackhawks,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,01:00,Winnipeg Jets - Montreal Canadiens,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,02:00,Nashville Predators - Minnesota Wild,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,03:00,Colorado Avalanche - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,03:00,Utah Mammoth - Detroit Red Wings,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,03:30,Dallas Stars - St.Louis Blues,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,04:00,Vegas Golden Knights - Vancouver Canucks,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,04:00,Calgary Flames - Edmonton Oilers,Regular Time,No Score,yes,
-Second Leg,,5 février 2026,04:00,Los Angeles Kings - Seattle Kraken,Regular Time,No Score,yes,
+Second Leg,,5 février 2026,Terminé,Florida Panthers - Boston Bruins,Extra Time,5 - 4,no,Florida Panthers
+Second Leg,,5 février 2026,Terminé,Columbus Blue Jackets - Chicago Blackhawks,Regular Time,4 - 0,no,Columbus Blue Jackets
+Second Leg,,5 février 2026,Terminé,Winnipeg Jets - Montreal Canadiens,Regular Time,1 - 5,no,Montreal Canadiens
+Second Leg,,5 février 2026,Terminé,Nashville Predators - Minnesota Wild,Extra Time,5 - 6,no,Minnesota Wild
+Second Leg,,5 février 2026,Terminé,Colorado Avalanche - San Jose Sharks,Regular Time,4 - 2,no,Colorado Avalanche
+Second Leg,,5 février 2026,Terminé,Utah Mammoth - Detroit Red Wings,Regular Time,4 - 1,no,Utah Mammoth
+Second Leg,,5 février 2026,Terminé,Dallas Stars - St.Louis Blues,Regular Time,5 - 4,no,Dallas Stars
+Second Leg,,5 février 2026,Terminé,Vegas Golden Knights - Vancouver Canucks,Regular Time,5 - 2,no,Vegas Golden Knights
+Second Leg,,5 février 2026,Terminé,Calgary Flames - Edmonton Oilers,Regular Time,4 - 3,no,Calgary Flames
+Second Leg,,5 février 2026,Terminé,Los Angeles Kings - Seattle Kraken,Regular Time,2 - 4,no,Seattle Kraken
 Second Leg,,6 février 2026,01:00,Buffalo Sabres - Pittsburgh Penguins,Regular Time,No Score,yes,
 Second Leg,,6 février 2026,01:00,New Jersey Devils - New York Islanders,Regular Time,No Score,yes,
 Second Leg,,6 février 2026,01:00,Philadelphia Flyers - Ottawa Senators,Regular Time,No Score,yes,
