@@ -1,11 +1,11 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,6 février 2026,01:00,Buffalo Sabres - Pittsburgh Penguins,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,01:00,New Jersey Devils - New York Islanders,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,01:00,Philadelphia Flyers - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,01:00,Washington Capitals - Nashville Predators,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,01:00,New York Rangers - Carolina Hurricanes,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,01:30,Tampa Bay Lightning - Florida Panthers,Regular Time,No Score,yes,
-Second Leg,,6 février 2026,04:00,Vegas Golden Knights - Los Angeles Kings,Regular Time,No Score,yes,
+Second Leg,,6 février 2026,Terminé,Buffalo Sabres - Pittsburgh Penguins,Regular Time,2 - 5,no,Pittsburgh Penguins
+Second Leg,,6 février 2026,Terminé,New Jersey Devils - New York Islanders,Regular Time,1 - 3,no,New York Islanders
+Second Leg,,6 février 2026,Terminé,Philadelphia Flyers - Ottawa Senators,Extra Time,1 - 2,no,Ottawa Senators
+Second Leg,,6 février 2026,Terminé,Washington Capitals - Nashville Predators,Regular Time,4 - 2,no,Washington Capitals
+Second Leg,,6 février 2026,Terminé,New York Rangers - Carolina Hurricanes,Regular Time,0 - 2,no,Carolina Hurricanes
+Second Leg,,6 février 2026,Terminé,Tampa Bay Lightning - Florida Panthers,Regular Time,6 - 1,no,Tampa Bay Lightning
+Second Leg,,6 février 2026,Terminé,Vegas Golden Knights - Los Angeles Kings,Regular Time,4 - 1,no,Vegas Golden Knights
 Second Leg,,26 février 2026,01:00,New Jersey Devils - Buffalo Sabres,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:00,Washington Capitals - Philadelphia Flyers,Regular Time,No Score,yes,
 Second Leg,,26 février 2026,01:30,Tampa Bay Lightning - Toronto Maple Leafs,Regular Time,No Score,yes,
