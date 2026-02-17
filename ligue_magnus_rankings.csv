@@ -1,7 +1,7 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against,penalty_minutes
-1,ROUEN,83,36,25,2,4,5,146,74,264
+1,ROUEN,86,37,26,2,4,5,150,76,284
 2,GRENOBLE,81,37,24,3,3,7,169,84,387
-3,ANGERS,77,36,22,5,1,8,134,83,399
+3,ANGERS,77,37,22,5,1,9,136,87,421
 4,BORDEAUX,69,38,20,3,3,12,124,103,416
 5,MARSEILLE,63,38,17,4,4,13,114,110,309
 6,NICE,56,38,13,6,5,14,113,125,381
