@@ -232,12 +232,12 @@ First Leg,11,21 février 2026,,CHAMONIX - CERGY,Regular Time,3-5,no,CERGY
 Second Leg,25,21 février 2026,,BRIANCON - ROUEN,Regular Time,2-5,no,ROUEN
 First Leg,17,22 février 2026,,GRENOBLE - GAP,Regular Time,4-5,no,GAP
 First Leg,16,22 février 2026,,ANGLET - ANGERS,Regular Time,4-2,no,ANGLET
-Second Leg,40,24 février 2026,19:00,NICE - CHAMONIX,,,yes,
-Second Leg,40,24 février 2026,19:00,GAP - ANGLET,,,yes,
-Second Leg,40,24 février 2026,19:15,GRENOBLE - BRIANCON,,,yes,
-Second Leg,40,24 février 2026,19:15,BORDEAUX - ANGERS,,,yes,
-Second Leg,40,24 février 2026,19:30,AMIENS - ROUEN,,,yes,
-Second Leg,40,24 février 2026,19:30,CERGY - MARSEILLE,,,yes,
+Second Leg,40,24 février 2026,,NICE - CHAMONIX,Regular Time,4-2,no,NICE
+Second Leg,40,24 février 2026,,GAP - ANGLET,Regular Time,2-3,no,ANGLET
+Second Leg,40,24 février 2026,,GRENOBLE - BRIANCON,Regular Time,5-2,no,GRENOBLE
+Second Leg,40,24 février 2026,,BORDEAUX - ANGERS,Regular Time,2-4,no,ANGERS
+Second Leg,40,24 février 2026,,AMIENS - ROUEN,Regular Time,1-7,no,ROUEN
+Second Leg,40,24 février 2026,,CERGY - MARSEILLE,Extra Time,6-5,no,CERGY
 Second Leg,39,26 février 2026,19:30,ANGERS - GAP,,,yes,
 Second Leg,41,27 février 2026,19:00,ROUEN - GAP,,,yes,
 Second Leg,41,27 février 2026,19:00,BRIANCON - AMIENS,,,yes,
