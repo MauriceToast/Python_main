@@ -1,12 +1,12 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,26 février 2026,01:00,New Jersey Devils - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,01:00,Washington Capitals - Philadelphia Flyers,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,01:30,Tampa Bay Lightning - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,02:00,Dallas Stars - Seattle Kraken,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,03:00,Utah Mammoth - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,04:00,Los Angeles Kings - Vegas Golden Knights,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,04:00,Vancouver Canucks - Winnipeg Jets,Regular Time,No Score,yes,
-Second Leg,,26 février 2026,04:30,Anaheim Ducks - Edmonton Oilers,Regular Time,No Score,yes,
+Second Leg,,26 février 2026,Terminé,New Jersey Devils - Buffalo Sabres,Regular Time,1 - 2,no,Buffalo Sabres
+Second Leg,,26 février 2026,Terminé,Washington Capitals - Philadelphia Flyers,Regular Time,3 - 1,no,Washington Capitals
+Second Leg,,26 février 2026,Terminé,Tampa Bay Lightning - Toronto Maple Leafs,Regular Time,4 - 2,no,Tampa Bay Lightning
+Second Leg,,26 février 2026,Terminé,Dallas Stars - Seattle Kraken,Regular Time,4 - 1,no,Dallas Stars
+Second Leg,,26 février 2026,Terminé,Utah Mammoth - Colorado Avalanche,Regular Time,2 - 4,no,Colorado Avalanche
+Second Leg,,26 février 2026,Terminé,Los Angeles Kings - Vegas Golden Knights,Regular Time,4 - 6,no,Vegas Golden Knights
+Second Leg,,26 février 2026,Terminé,Vancouver Canucks - Winnipeg Jets,Extra Time,2 - 3,no,Winnipeg Jets
+Second Leg,,26 février 2026,Terminé,Anaheim Ducks - Edmonton Oilers,Regular Time,6 - 5,no,Anaheim Ducks
 Second Leg,,27 février 2026,01:00,Montreal Canadiens - New York Islanders,Regular Time,No Score,yes,
 Second Leg,,27 février 2026,01:00,Florida Panthers - Toronto Maple Leafs,Regular Time,No Score,yes,
 Second Leg,,27 février 2026,01:00,Ottawa Senators - Detroit Red Wings,Regular Time,No Score,yes,
