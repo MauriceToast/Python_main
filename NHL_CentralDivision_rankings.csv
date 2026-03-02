@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
 1,Colorado Avalanche,87,58,36,3,9,10,221,146
 2,Dallas Stars,81,59,29,7,9,14,200,163
-3,Minnesota Wild,80,60,22,13,10,15,203,176
-4,Utah Mammoth,66,59,24,7,4,24,190,163
+3,Minnesota Wild,80,61,22,13,10,16,204,179
+4,Utah Mammoth,66,60,24,7,4,25,190,167
 5,Nashville Predators,62,59,20,7,8,24,175,203
-6,Winnipeg Jets,55,58,20,3,9,26,167,182
-7,Chicago Blackhawks,53,59,17,5,9,28,157,192
-8,St.Louis Blues,51,59,20,1,9,29,153,207
+6,Winnipeg Jets,56,59,20,3,10,26,168,184
+7,Chicago Blackhawks,55,60,18,5,9,28,161,192
+8,St.Louis Blues,53,60,21,1,9,29,156,208
