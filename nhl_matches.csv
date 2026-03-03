@@ -1,10 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,2 mars 2026,Terminé,Nashville Predators - Detroit Red Wings,Regular Time,2 - 4,no,Detroit Red Wings
-Second Leg,,3 mars 2026,Terminé,New York Rangers - Columbus Blue Jackets,Extra Time,4 - 5,no,Columbus Blue Jackets
-Second Leg,,3 mars 2026,Terminé,Toronto Maple Leafs - Philadelphia Flyers,Extra Time,2 - 3,no,Philadelphia Flyers
-Second Leg,,3 mars 2026,Terminé,Vancouver Canucks - Dallas Stars,Regular Time,1 - 6,no,Dallas Stars
-Second Leg,,3 mars 2026,Terminé,Seattle Kraken - Carolina Hurricanes,Regular Time,2 - 1,no,Seattle Kraken
-Second Leg,,3 mars 2026,Terminé,Los Angeles Kings - Colorado Avalanche,Regular Time,2 - 4,no,Colorado Avalanche
 Second Leg,,4 mars 2026,01:00,New Jersey Devils - Florida Panthers,Regular Time,No Score,yes,
 Second Leg,,4 mars 2026,01:00,Washington Capitals - Utah Mammoth,Regular Time,No Score,yes,
 Second Leg,,4 mars 2026,01:00,Columbus Blue Jackets - Nashville Predators,Regular Time,No Score,yes,
@@ -1061,6 +1055,12 @@ Second Leg,,1 mars 2026,Terminé,San Jose Sharks - Winnipeg Jets,Extra Time,2 - 
 Second Leg,,1 mars 2026,Terminé,Minnesota Wild - St.Louis Blues,Regular Time,1 - 3,no,St.Louis Blues
 Second Leg,,2 mars 2026,Terminé,New York Islanders - Florida Panthers,Regular Time,5 - 4,no,New York Islanders
 Second Leg,,2 mars 2026,Terminé,Anaheim Ducks - Calgary Flames,Extra Time,3 - 2,no,Anaheim Ducks
+Second Leg,,2 mars 2026,Terminé,Nashville Predators - Detroit Red Wings,Regular Time,2 - 4,no,Detroit Red Wings
+Second Leg,,3 mars 2026,Terminé,New York Rangers - Columbus Blue Jackets,Extra Time,4 - 5,no,Columbus Blue Jackets
+Second Leg,,3 mars 2026,Terminé,Toronto Maple Leafs - Philadelphia Flyers,Extra Time,2 - 3,no,Philadelphia Flyers
+Second Leg,,3 mars 2026,Terminé,Vancouver Canucks - Dallas Stars,Regular Time,1 - 6,no,Dallas Stars
+Second Leg,,3 mars 2026,Terminé,Seattle Kraken - Carolina Hurricanes,Regular Time,2 - 1,no,Seattle Kraken
+Second Leg,,3 mars 2026,Terminé,Los Angeles Kings - Colorado Avalanche,Regular Time,2 - 4,no,Colorado Avalanche
 Second Leg,,17 mars 2026,00:00,Detroit Red Wings - Calgary Flames,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New Jersey Devils - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New York Rangers - Los Angeles Kings,Regular Time,No Score,yes,
