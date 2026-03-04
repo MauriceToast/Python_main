@@ -1,15 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,4 mars 2026,Terminé,New Jersey Devils - Florida Panthers,Regular Time,5 - 1,no,New Jersey Devils
-Second Leg,,4 mars 2026,Terminé,Washington Capitals - Utah Mammoth,Regular Time,2 - 3,no,Utah Mammoth
-Second Leg,,4 mars 2026,Terminé,Columbus Blue Jackets - Nashville Predators,Regular Time,3 - 2,no,Columbus Blue Jackets
-Second Leg,,4 mars 2026,Terminé,Buffalo Sabres - Vegas Golden Knights,Regular Time,3 - 2,no,Buffalo Sabres
-Second Leg,,4 mars 2026,Terminé,Boston Bruins - Pittsburgh Penguins,Regular Time,2 - 1,no,Boston Bruins
-Second Leg,,4 mars 2026,Terminé,Winnipeg Jets - Chicago Blackhawks,Extra Time,3 - 2,no,Winnipeg Jets
-Second Leg,,4 mars 2026,Terminé,Calgary Flames - Dallas Stars,Regular Time,1 - 6,no,Dallas Stars
-Second Leg,,4 mars 2026,Terminé,Edmonton Oilers - Ottawa Senators,Extra Time,5 - 4,no,Edmonton Oilers
-Second Leg,,4 mars 2026,Terminé,Minnesota Wild - Tampa Bay Lightning,Regular Time,5 - 1,no,Minnesota Wild
-Second Leg,,4 mars 2026,Terminé,Anaheim Ducks - Colorado Avalanche,Regular Time,1 - 5,no,Colorado Avalanche
-Second Leg,,4 mars 2026,Terminé,San Jose Sharks - Montreal Canadiens,Regular Time,7 - 5,no,San Jose Sharks
 Second Leg,,5 mars 2026,01:00,New Jersey Devils - Toronto Maple Leafs,Regular Time,No Score,yes,
 Second Leg,,5 mars 2026,01:00,Detroit Red Wings - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,5 mars 2026,04:00,Vancouver Canucks - Carolina Hurricanes,Regular Time,No Score,yes,
@@ -1061,6 +1050,17 @@ Second Leg,,3 mars 2026,Terminé,Toronto Maple Leafs - Philadelphia Flyers,Extra
 Second Leg,,3 mars 2026,Terminé,Vancouver Canucks - Dallas Stars,Regular Time,1 - 6,no,Dallas Stars
 Second Leg,,3 mars 2026,Terminé,Seattle Kraken - Carolina Hurricanes,Regular Time,2 - 1,no,Seattle Kraken
 Second Leg,,3 mars 2026,Terminé,Los Angeles Kings - Colorado Avalanche,Regular Time,2 - 4,no,Colorado Avalanche
+Second Leg,,4 mars 2026,Terminé,New Jersey Devils - Florida Panthers,Regular Time,5 - 1,no,New Jersey Devils
+Second Leg,,4 mars 2026,Terminé,Washington Capitals - Utah Mammoth,Regular Time,2 - 3,no,Utah Mammoth
+Second Leg,,4 mars 2026,Terminé,Columbus Blue Jackets - Nashville Predators,Regular Time,3 - 2,no,Columbus Blue Jackets
+Second Leg,,4 mars 2026,Terminé,Buffalo Sabres - Vegas Golden Knights,Regular Time,3 - 2,no,Buffalo Sabres
+Second Leg,,4 mars 2026,Terminé,Boston Bruins - Pittsburgh Penguins,Regular Time,2 - 1,no,Boston Bruins
+Second Leg,,4 mars 2026,Terminé,Winnipeg Jets - Chicago Blackhawks,Extra Time,3 - 2,no,Winnipeg Jets
+Second Leg,,4 mars 2026,Terminé,Calgary Flames - Dallas Stars,Regular Time,1 - 6,no,Dallas Stars
+Second Leg,,4 mars 2026,Terminé,Edmonton Oilers - Ottawa Senators,Extra Time,5 - 4,no,Edmonton Oilers
+Second Leg,,4 mars 2026,Terminé,Minnesota Wild - Tampa Bay Lightning,Regular Time,5 - 1,no,Minnesota Wild
+Second Leg,,4 mars 2026,Terminé,Anaheim Ducks - Colorado Avalanche,Regular Time,1 - 5,no,Colorado Avalanche
+Second Leg,,4 mars 2026,Terminé,San Jose Sharks - Montreal Canadiens,Regular Time,7 - 5,no,San Jose Sharks
 Second Leg,,17 mars 2026,00:00,Detroit Red Wings - Calgary Flames,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New Jersey Devils - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New York Rangers - Los Angeles Kings,Regular Time,No Score,yes,
