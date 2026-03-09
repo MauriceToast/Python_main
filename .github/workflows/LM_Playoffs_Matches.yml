@@ -1,4 +1,4 @@
-name: Run LigueMagnus Matches Script
+name: Run LigueMagnus Playoffs Script
 
 on:
   schedule:
