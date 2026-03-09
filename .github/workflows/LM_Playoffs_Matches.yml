@@ -1,8 +1,8 @@
 name: Run LigueMagnus Matches Script
 
 on:
-  # schedule:
-  #   - cron: '0 */6 * * *'  # Runs every 6 hours
+  schedule:
+    - cron: '0 */6 * * *'  # Runs every 6 hours
   workflow_dispatch:  # Allows manual triggering
 
 jobs:
@@ -23,7 +23,7 @@ jobs:
         sudo apt-get update
         sudo apt-get install -y google-chrome-stable
     - name: Run Matches script
-      run: python LigueMagnus_Playoffs_Matches_Selenium.py
+      run: python LigueMagnusPlayoffs_Selenium.py
     - name: Commit and push if changes
       run: |
         git config --global user.name 'GitHub Action'
