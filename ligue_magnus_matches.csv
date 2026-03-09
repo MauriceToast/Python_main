@@ -263,6 +263,20 @@ Second Leg,44,6 mars 2026,,CHAMONIX - GRENOBLE,Regular Time,0-3,no,GRENOBLE
 Second Leg,44,6 mars 2026,,GAP - NICE,Regular Time,4-1,no,GAP
 Second Leg,44,6 mars 2026,,AMIENS - CERGY,Regular Time,2-3,no,CERGY
 Second Leg,44,6 mars 2026,,BORDEAUX - MARSEILLE,Regular Time,4-3,no,BORDEAUX
+
+Playoffs,1,13 mars 2026,19:30,CERGY - CHAMONIX,,,yes,
+Playoffs,1,13 mars 2026,19:30,ANGLET - GAP,,,yes,
+Playoffs,2,17 mars 2026,19:00,GAP - CERGY,,,yes,
+Playoffs,2,17 mars 2026,19:05,CHAMONIX - ANGLET,,,yes,
+Playoffs,3,20 mars 2026,19:30,CERGY - ANGLET,,,yes,
+Playoffs,3,24 mars 2026,19:00,CHAMONIX - GAP,,,yes,
+Playoffs,4,27 mars 2026,19:00,GAP - CHAMONIX,,,yes,
+Playoffs,4,27 mars 2026,19:30,ANGLET - CERGY,,,yes,
+Playoffs,5,3 avril 2026,18:00,GAP - ANGLET,,,yes,
+Playoffs,5,3 avril 2026,18:05,CHAMONIX - CERGY,,,yes,
+Playoffs,6,7 avril 2026,18:30,ANGLET - CHAMONIX,,,yes,
+Playoffs,6,7 avril 2026,18:30,CERGY - GAP,,,yes,
+
 Playoffs,T1,13 mars 2026,19:00,ROUEN - AMIENS,,,yes,
 Playoffs,T1,13 mars 2026,19:15,BORDEAUX - MARSEILLE,,,yes,
 Playoffs,T1,13 mars 2026,19:15,GRENOBLE - BRIANCON,,,yes,
@@ -283,5 +297,6 @@ Playoffs,T1,21 mars 2026,17:30,ANGERS - NICE,,,yes,
 Playoffs,T1,21 mars 2026,19:00,ROUEN - AMIENS,,,yes,
 Playoffs,T1,21 mars 2026,19:15,GRENOBLE - BRIANCON,,,yes,
 Playoffs,T1,21 mars 2026,19:15,BORDEAUX - MARSEILLE,,,yes,
+
 
 
