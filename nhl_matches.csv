@@ -1,11 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,8 mars 2026,Terminé,Colorado Avalanche - Minnesota Wild,Extra Time,3 - 2,no,Colorado Avalanche
-Second Leg,,8 mars 2026,Terminé,Pittsburgh Penguins - Boston Bruins,Extra Time,5 - 4,no,Pittsburgh Penguins
-Second Leg,,8 mars 2026,Terminé,Buffalo Sabres - Tampa Bay Lightning,Regular Time,8 - 7,no,Buffalo Sabres
-Second Leg,,8 mars 2026,Terminé,Dallas Stars - Chicago Blackhawks,Extra Time,4 - 3,no,Dallas Stars
-Second Leg,,9 mars 2026,Terminé,New Jersey Devils - Detroit Red Wings,Regular Time,0 - 3,no,Detroit Red Wings
-Second Leg,,9 mars 2026,Terminé,Anaheim Ducks - St.Louis Blues,Regular Time,0 - 4,no,St.Louis Blues
-Second Leg,,9 mars 2026,Terminé,Vegas Golden Knights - Edmonton Oilers,Regular Time,2 - 4,no,Edmonton Oilers
 Second Leg,,9 mars 2026,21:00,Columbus Blue Jackets - Los Angeles Kings,Regular Time,No Score,yes,
 Second Leg,,10 mars 2026,00:00,Philadelphia Flyers - New York Rangers,Regular Time,No Score,yes,
 Second Leg,,10 mars 2026,00:00,Washington Capitals - Calgary Flames,Regular Time,No Score,yes,
@@ -1061,6 +1054,13 @@ Second Leg,,8 mars 2026,Terminé,Toronto Maple Leafs - Tampa Bay Lightning,Regul
 Second Leg,,8 mars 2026,Terminé,Calgary Flames - Carolina Hurricanes,Regular Time,5 - 4,no,Calgary Flames
 Second Leg,,8 mars 2026,Terminé,Seattle Kraken - Ottawa Senators,Regular Time,4 - 7,no,Ottawa Senators
 Second Leg,,8 mars 2026,Terminé,San Jose Sharks - New York Islanders,Extra Time,1 - 2,no,New York Islanders
+Second Leg,,8 mars 2026,Terminé,Colorado Avalanche - Minnesota Wild,Extra Time,3 - 2,no,Colorado Avalanche
+Second Leg,,8 mars 2026,Terminé,Pittsburgh Penguins - Boston Bruins,Extra Time,5 - 4,no,Pittsburgh Penguins
+Second Leg,,8 mars 2026,Terminé,Buffalo Sabres - Tampa Bay Lightning,Regular Time,8 - 7,no,Buffalo Sabres
+Second Leg,,8 mars 2026,Terminé,Dallas Stars - Chicago Blackhawks,Extra Time,4 - 3,no,Dallas Stars
+Second Leg,,9 mars 2026,Terminé,New Jersey Devils - Detroit Red Wings,Regular Time,0 - 3,no,Detroit Red Wings
+Second Leg,,9 mars 2026,Terminé,Anaheim Ducks - St.Louis Blues,Regular Time,0 - 4,no,St.Louis Blues
+Second Leg,,9 mars 2026,Terminé,Vegas Golden Knights - Edmonton Oilers,Regular Time,2 - 4,no,Edmonton Oilers
 Second Leg,,17 mars 2026,00:00,Detroit Red Wings - Calgary Flames,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New Jersey Devils - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New York Rangers - Los Angeles Kings,Regular Time,No Score,yes,
