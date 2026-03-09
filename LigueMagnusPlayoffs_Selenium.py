@@ -43,7 +43,7 @@ def replace_team_names(team_name):
     return replacements.get(team_name, team_name)
     
 def determine_leg(journee):
-    return "First Leg" if int(journee) <= 22 else "Second Leg"
+    return "Playoffs"
 
 def determine_win_type(score):
     if "PRL" in score or "TAB" in score:
