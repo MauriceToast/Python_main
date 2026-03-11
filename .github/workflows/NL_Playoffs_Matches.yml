@@ -1,4 +1,4 @@
-name: Run NL Matches Script
+name: Run NL Playoffs Matches Script
 
 on:
   # schedule:
