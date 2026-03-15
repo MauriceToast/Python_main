@@ -1,13 +1,13 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,14 mars 2026,18:00,Ottawa Senators - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,14 mars 2026,20:00,Washington Capitals - Boston Bruins,Regular Time,No Score,yes,
-Second Leg,,14 mars 2026,21:00,Winnipeg Jets - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,14 mars 2026,23:00,Minnesota Wild - New York Rangers,Regular Time,No Score,yes,
-Second Leg,,15 mars 2026,00:00,Buffalo Sabres - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,15 mars 2026,00:00,Montreal Canadiens - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,15 mars 2026,00:00,Tampa Bay Lightning - Carolina Hurricanes,Regular Time,No Score,yes,
-Second Leg,,15 mars 2026,00:00,New Jersey Devils - Los Angeles Kings,Regular Time,No Score,yes,
-Second Leg,,15 mars 2026,00:00,New York Islanders - Calgary Flames,Regular Time,No Score,yes,
+Second Leg,,14 mars 2026,Terminé,Ottawa Senators - Anaheim Ducks,Regular Time,2 - 0,no,Ottawa Senators
+Second Leg,,14 mars 2026,Terminé,Washington Capitals - Boston Bruins,Extra Time,2 - 3,no,Boston Bruins
+Second Leg,,14 mars 2026,Terminé,Winnipeg Jets - Colorado Avalanche,Regular Time,3 - 1,no,Winnipeg Jets
+Second Leg,,14 mars 2026,Terminé,Minnesota Wild - New York Rangers,Regular Time,2 - 4,no,New York Rangers
+Second Leg,,15 mars 2026,Terminé,Buffalo Sabres - Toronto Maple Leafs,Extra Time,3 - 2,no,Buffalo Sabres
+Second Leg,,15 mars 2026,Terminé,Montreal Canadiens - San Jose Sharks,Regular Time,2 - 4,no,San Jose Sharks
+Second Leg,,15 mars 2026,Terminé,Tampa Bay Lightning - Carolina Hurricanes,Regular Time,2 - 4,no,Carolina Hurricanes
+Second Leg,,15 mars 2026,Terminé,New Jersey Devils - Los Angeles Kings,Regular Time,6 - 4,no,New Jersey Devils
+Second Leg,,15 mars 2026,Terminé,New York Islanders - Calgary Flames,Regular Time,3 - 2,no,New York Islanders
 Second Leg,,15 mars 2026,00:30,Philadelphia Flyers - Columbus Blue Jackets,Regular Time,No Score,yes,
 Second Leg,,15 mars 2026,01:00,Dallas Stars - Detroit Red Wings,Regular Time,No Score,yes,
 Second Leg,,15 mars 2026,02:00,Utah Mammoth - Pittsburgh Penguins,Regular Time,No Score,yes,
