@@ -1,10 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,15 mars 2026,Terminé,Winnipeg Jets - St.Louis Blues,Regular Time,3 - 2,no,Winnipeg Jets
-Second Leg,,15 mars 2026,Terminé,Ottawa Senators - San Jose Sharks,Regular Time,7 - 4,no,Ottawa Senators
-Second Leg,,15 mars 2026,Terminé,Minnesota Wild - Toronto Maple Leafs,Regular Time,2 - 4,no,Toronto Maple Leafs
-Second Leg,,16 mars 2026,Terminé,Montreal Canadiens - Anaheim Ducks,Regular Time,3 - 4,no,Anaheim Ducks
-Second Leg,,16 mars 2026,Terminé,Edmonton Oilers - Nashville Predators,Regular Time,3 - 1,no,Edmonton Oilers
-Second Leg,,16 mars 2026,Terminé,Seattle Kraken - Florida Panthers,Regular Time,6 - 2,no,Seattle Kraken
 Second Leg,,17 mars 2026,00:00,Detroit Red Wings - Calgary Flames,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New Jersey Devils - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,17 mars 2026,00:00,New York Rangers - Los Angeles Kings,Regular Time,No Score,yes,
@@ -1186,6 +1180,12 @@ Second Leg,,15 mars 2026,Terminé,Dallas Stars - Detroit Red Wings,Extra Time,3 
 Second Leg,,15 mars 2026,Terminé,Utah Mammoth - Pittsburgh Penguins,Regular Time,3 - 4,no,Pittsburgh Penguins
 Second Leg,,15 mars 2026,Terminé,Vancouver Canucks - Seattle Kraken,Regular Time,2 - 5,no,Seattle Kraken
 Second Leg,,15 mars 2026,Terminé,Vegas Golden Knights - Chicago Blackhawks,Regular Time,4 - 0,no,Vegas Golden Knights
+Second Leg,,15 mars 2026,Terminé,Winnipeg Jets - St.Louis Blues,Regular Time,3 - 2,no,Winnipeg Jets
+Second Leg,,15 mars 2026,Terminé,Ottawa Senators - San Jose Sharks,Regular Time,7 - 4,no,Ottawa Senators
+Second Leg,,15 mars 2026,Terminé,Minnesota Wild - Toronto Maple Leafs,Regular Time,2 - 4,no,Toronto Maple Leafs
+Second Leg,,16 mars 2026,Terminé,Montreal Canadiens - Anaheim Ducks,Regular Time,3 - 4,no,Anaheim Ducks
+Second Leg,,16 mars 2026,Terminé,Edmonton Oilers - Nashville Predators,Regular Time,3 - 1,no,Edmonton Oilers
+Second Leg,,16 mars 2026,Terminé,Seattle Kraken - Florida Panthers,Regular Time,6 - 2,no,Seattle Kraken
 Second Leg,,2 avril 2026,02:30,Colorado Avalanche - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,Los Angeles Kings - St.Louis Blues,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,04:00,San Jose Sharks - Anaheim Ducks,Regular Time,No Score,yes,
