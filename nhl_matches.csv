@@ -1,7 +1,7 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,18 mars 2026,00:00,Toronto Maple Leafs - New York Islanders,Regular Time,No Score,yes,
-Second Leg,,18 mars 2026,00:00,Montreal Canadiens - Boston Bruins,Regular Time,No Score,yes,
-Second Leg,,18 mars 2026,00:00,Columbus Blue Jackets - Carolina Hurricanes,Regular Time,No Score,yes,
+Second Leg,,18 mars 2026,Terminé,Toronto Maple Leafs - New York Islanders,Regular Time,1 - 3,no,New York Islanders
+Second Leg,,18 mars 2026,Terminé,Montreal Canadiens - Boston Bruins,Extra Time,3 - 2,no,Montreal Canadiens
+Second Leg,,18 mars 2026,Terminé,Columbus Blue Jackets - Carolina Hurricanes,Regular Time,5 - 1,no,Columbus Blue Jackets
 Second Leg,,18 mars 2026,00:30,Chicago Blackhawks - Minnesota Wild,Regular Time,No Score,yes,
 Second Leg,,18 mars 2026,01:00,Winnipeg Jets - Nashville Predators,Regular Time,No Score,yes,
 Second Leg,,18 mars 2026,02:00,Edmonton Oilers - San Jose Sharks,Regular Time,No Score,yes,
