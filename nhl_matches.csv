@@ -1,10 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,19 mars 2026,Terminé,New York Rangers - New Jersey Devils,Regular Time,3 - 6,no,New Jersey Devils
-Second Leg,,19 mars 2026,Terminé,Carolina Hurricanes - Pittsburgh Penguins,Extra Time,6 - 5,no,Carolina Hurricanes
-Second Leg,,19 mars 2026,Terminé,Washington Capitals - Ottawa Senators,Regular Time,4 - 1,no,Washington Capitals
-Second Leg,,19 mars 2026,Terminé,Colorado Avalanche - Dallas Stars,Extra Time,1 - 2,no,Dallas Stars
-Second Leg,,19 mars 2026,Terminé,Calgary Flames - St.Louis Blues,Extra Time,2 - 1,no,Calgary Flames
-Second Leg,,19 mars 2026,Terminé,Anaheim Ducks - Philadelphia Flyers,Extra Time,2 - 3,no,Philadelphia Flyers
 Second Leg,,20 mars 2026,00:00,Boston Bruins - Winnipeg Jets,Regular Time,No Score,yes,
 Second Leg,,20 mars 2026,00:00,Ottawa Senators - New York Islanders,Regular Time,No Score,yes,
 Second Leg,,20 mars 2026,00:00,Detroit Red Wings - Montreal Canadiens,Regular Time,No Score,yes,
@@ -1186,6 +1180,12 @@ Second Leg,,18 mars 2026,Terminé,Edmonton Oilers - San Jose Sharks,Regular Time
 Second Leg,,18 mars 2026,Terminé,Vancouver Canucks - Florida Panthers,Regular Time,5 - 2,no,Vancouver Canucks
 Second Leg,,18 mars 2026,Terminé,Vegas Golden Knights - Buffalo Sabres,Regular Time,0 - 2,no,Buffalo Sabres
 Second Leg,,18 mars 2026,Terminé,Seattle Kraken - Tampa Bay Lightning,Regular Time,2 - 6,no,Tampa Bay Lightning
+Second Leg,,19 mars 2026,Terminé,New York Rangers - New Jersey Devils,Regular Time,3 - 6,no,New Jersey Devils
+Second Leg,,19 mars 2026,Terminé,Carolina Hurricanes - Pittsburgh Penguins,Extra Time,6 - 5,no,Carolina Hurricanes
+Second Leg,,19 mars 2026,Terminé,Washington Capitals - Ottawa Senators,Regular Time,4 - 1,no,Washington Capitals
+Second Leg,,19 mars 2026,Terminé,Colorado Avalanche - Dallas Stars,Extra Time,1 - 2,no,Dallas Stars
+Second Leg,,19 mars 2026,Terminé,Calgary Flames - St.Louis Blues,Extra Time,2 - 1,no,Calgary Flames
+Second Leg,,19 mars 2026,Terminé,Anaheim Ducks - Philadelphia Flyers,Extra Time,2 - 3,no,Philadelphia Flyers
 Second Leg,,2 avril 2026,02:30,Colorado Avalanche - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,Los Angeles Kings - St.Louis Blues,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,San Jose Sharks - Anaheim Ducks,Regular Time,No Score,yes,
