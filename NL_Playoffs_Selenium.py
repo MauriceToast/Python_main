@@ -17,7 +17,7 @@ def replace_team_names(team_name):
     }
     return replacements.get(team_name, team_name)
     
-web = "https://www.rts.ch/sport/resultats/#/results/hockey/nla/KoRound-1-3"
+web = "https://www.rts.ch/sport/resultats/#/results/hockey/nla/KoSeries-1-3/KoSeries-2-0"
 driver = None
 try:
     chrome_options = Options()
