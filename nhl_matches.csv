@@ -1,13 +1,13 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,21 mars 2026,18:00,Pittsburgh Penguins - Winnipeg Jets,Regular Time,No Score,yes,
-Second Leg,,21 mars 2026,19:00,Nashville Predators - Vegas Golden Knights,Regular Time,No Score,yes,
-Second Leg,,21 mars 2026,21:00,Minnesota Wild - Dallas Stars,Regular Time,No Score,yes,
-Second Leg,,21 mars 2026,21:00,Los Angeles Kings - Buffalo Sabres,Regular Time,No Score,yes,
-Second Leg,,21 mars 2026,21:00,San Jose Sharks - Philadelphia Flyers,Regular Time,No Score,yes,
-Second Leg,,21 mars 2026,22:00,Columbus Blue Jackets - Seattle Kraken,Regular Time,No Score,yes,
-Second Leg,,22 mars 2026,00:00,Montreal Canadiens - New York Islanders,Regular Time,No Score,yes,
-Second Leg,,22 mars 2026,00:00,Ottawa Senators - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,22 mars 2026,00:00,Vancouver Canucks - St.Louis Blues,Regular Time,No Score,yes,
+Second Leg,,21 mars 2026,Terminé,Pittsburgh Penguins - Winnipeg Jets,Extra Time,5 - 4,no,Pittsburgh Penguins
+Second Leg,,21 mars 2026,Terminé,Nashville Predators - Vegas Golden Knights,Regular Time,4 - 1,no,Nashville Predators
+Second Leg,,21 mars 2026,Terminé,Minnesota Wild - Dallas Stars,Extra Time,2 - 1,no,Minnesota Wild
+Second Leg,,21 mars 2026,Terminé,Los Angeles Kings - Buffalo Sabres,Regular Time,1 - 4,no,Buffalo Sabres
+Second Leg,,21 mars 2026,Terminé,San Jose Sharks - Philadelphia Flyers,Regular Time,1 - 4,no,Philadelphia Flyers
+Second Leg,,21 mars 2026,Terminé,Columbus Blue Jackets - Seattle Kraken,Regular Time,5 - 2,no,Columbus Blue Jackets
+Second Leg,,22 mars 2026,Terminé,Montreal Canadiens - New York Islanders,Regular Time,7 - 3,no,Montreal Canadiens
+Second Leg,,22 mars 2026,Terminé,Ottawa Senators - Toronto Maple Leafs,Regular Time,5 - 2,no,Ottawa Senators
+Second Leg,,22 mars 2026,Terminé,Vancouver Canucks - St.Louis Blues,Regular Time,1 - 3,no,St.Louis Blues
 Second Leg,,22 mars 2026,01:00,Detroit Red Wings - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,22 mars 2026,03:00,Edmonton Oilers - Tampa Bay Lightning,Regular Time,No Score,yes,
 Second Leg,,22 mars 2026,17:00,New York Rangers - Winnipeg Jets,Regular Time,No Score,yes,
