@@ -1,15 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,21 mars 2026,Terminé,Pittsburgh Penguins - Winnipeg Jets,Extra Time,5 - 4,no,Pittsburgh Penguins
-Second Leg,,21 mars 2026,Terminé,Nashville Predators - Vegas Golden Knights,Regular Time,4 - 1,no,Nashville Predators
-Second Leg,,21 mars 2026,Terminé,Minnesota Wild - Dallas Stars,Extra Time,2 - 1,no,Minnesota Wild
-Second Leg,,21 mars 2026,Terminé,Los Angeles Kings - Buffalo Sabres,Regular Time,1 - 4,no,Buffalo Sabres
-Second Leg,,21 mars 2026,Terminé,San Jose Sharks - Philadelphia Flyers,Regular Time,1 - 4,no,Philadelphia Flyers
-Second Leg,,21 mars 2026,Terminé,Columbus Blue Jackets - Seattle Kraken,Regular Time,5 - 2,no,Columbus Blue Jackets
-Second Leg,,22 mars 2026,Terminé,Montreal Canadiens - New York Islanders,Regular Time,7 - 3,no,Montreal Canadiens
-Second Leg,,22 mars 2026,Terminé,Ottawa Senators - Toronto Maple Leafs,Regular Time,5 - 2,no,Ottawa Senators
-Second Leg,,22 mars 2026,Terminé,Vancouver Canucks - St.Louis Blues,Regular Time,1 - 3,no,St.Louis Blues
-Second Leg,,22 mars 2026,Terminé,Detroit Red Wings - Boston Bruins,Regular Time,2 - 4,no,Boston Bruins
-Second Leg,,22 mars 2026,Terminé,Edmonton Oilers - Tampa Bay Lightning,Regular Time,2 - 5,no,Tampa Bay Lightning
 Second Leg,,22 mars 2026,17:00,New York Rangers - Winnipeg Jets,Regular Time,No Score,yes,
 Second Leg,,22 mars 2026,17:30,Washington Capitals - Colorado Avalanche,Regular Time,No Score,yes,
 Second Leg,,22 mars 2026,20:00,Pittsburgh Penguins - Carolina Hurricanes,Regular Time,No Score,yes,
@@ -33,8 +22,8 @@ Second Leg,,25 mars 2026,01:00,Nashville Predators - San Jose Sharks,Regular Tim
 Second Leg,,25 mars 2026,01:00,Dallas Stars - New Jersey Devils,Regular Time,No Score,yes,
 Second Leg,,25 mars 2026,01:00,Winnipeg Jets - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,25 mars 2026,02:00,Calgary Flames - Los Angeles Kings,Regular Time,No Score,yes,
+Second Leg,,25 mars 2026,02:30,Utah Mammoth - Edmonton Oilers,Regular Time,No Score,yes,
 Second Leg,,25 mars 2026,03:00,Vancouver Canucks - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,03:30,Utah Mammoth - Edmonton Oilers,Regular Time,No Score,yes,
 Second Leg,,26 mars 2026,00:30,Buffalo Sabres - Boston Bruins,Regular Time,No Score,yes,
 Second Leg,,26 mars 2026,00:30,Toronto Maple Leafs - New York Rangers,Regular Time,No Score,yes,
 Second Leg,,27 mars 2026,00:00,Montreal Canadiens - Columbus Blue Jackets,Regular Time,No Score,yes,
@@ -1186,6 +1175,17 @@ Second Leg,,21 mars 2026,Terminé,Washington Capitals - New Jersey Devils,Regula
 Second Leg,,21 mars 2026,Terminé,Chicago Blackhawks - Colorado Avalanche,Regular Time,1 - 4,no,Colorado Avalanche
 Second Leg,,21 mars 2026,Terminé,Calgary Flames - Florida Panthers,Regular Time,4 - 1,no,Calgary Flames
 Second Leg,,21 mars 2026,Terminé,Utah Mammoth - Anaheim Ducks,Regular Time,1 - 4,no,Anaheim Ducks
+Second Leg,,21 mars 2026,Terminé,Pittsburgh Penguins - Winnipeg Jets,Extra Time,5 - 4,no,Pittsburgh Penguins
+Second Leg,,21 mars 2026,Terminé,Nashville Predators - Vegas Golden Knights,Regular Time,4 - 1,no,Nashville Predators
+Second Leg,,21 mars 2026,Terminé,Minnesota Wild - Dallas Stars,Extra Time,2 - 1,no,Minnesota Wild
+Second Leg,,21 mars 2026,Terminé,Los Angeles Kings - Buffalo Sabres,Regular Time,1 - 4,no,Buffalo Sabres
+Second Leg,,21 mars 2026,Terminé,San Jose Sharks - Philadelphia Flyers,Regular Time,1 - 4,no,Philadelphia Flyers
+Second Leg,,21 mars 2026,Terminé,Columbus Blue Jackets - Seattle Kraken,Regular Time,5 - 2,no,Columbus Blue Jackets
+Second Leg,,22 mars 2026,Terminé,Montreal Canadiens - New York Islanders,Regular Time,7 - 3,no,Montreal Canadiens
+Second Leg,,22 mars 2026,Terminé,Ottawa Senators - Toronto Maple Leafs,Regular Time,5 - 2,no,Ottawa Senators
+Second Leg,,22 mars 2026,Terminé,Vancouver Canucks - St.Louis Blues,Regular Time,1 - 3,no,St.Louis Blues
+Second Leg,,22 mars 2026,Terminé,Detroit Red Wings - Boston Bruins,Regular Time,2 - 4,no,Boston Bruins
+Second Leg,,22 mars 2026,Terminé,Edmonton Oilers - Tampa Bay Lightning,Regular Time,2 - 5,no,Tampa Bay Lightning
 Second Leg,,2 avril 2026,02:30,Colorado Avalanche - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,Los Angeles Kings - St.Louis Blues,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,San Jose Sharks - Anaheim Ducks,Regular Time,No Score,yes,
