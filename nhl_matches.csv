@@ -1,12 +1,11 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,24 mars 2026,Terminé,New York Rangers - Ottawa Senators,Regular Time,1 - 2,no,Ottawa Senators
-Second Leg,,25 mars 2026,00:00,Montreal Canadiens - Carolina Hurricanes,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,Detroit Red Wings - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,New York Islanders - Chicago Blackhawks,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,Philadelphia Flyers - Columbus Blue Jackets,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,Pittsburgh Penguins - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,Florida Panthers - Seattle Kraken,Regular Time,No Score,yes,
-Second Leg,,25 mars 2026,00:00,Boston Bruins - Toronto Maple Leafs,Regular Time,No Score,yes,
+Second Leg,,25 mars 2026,Terminé,Montreal Canadiens - Carolina Hurricanes,Regular Time,5 - 2,no,Montreal Canadiens
+Second Leg,,25 mars 2026,Terminé,Detroit Red Wings - Ottawa Senators,Regular Time,2 - 3,no,Ottawa Senators
+Second Leg,,25 mars 2026,Terminé,New York Islanders - Chicago Blackhawks,Regular Time,3 - 4,no,Chicago Blackhawks
+Second Leg,,25 mars 2026,Terminé,Philadelphia Flyers - Columbus Blue Jackets,Regular Time,2 - 3,no,Columbus Blue Jackets
+Second Leg,,25 mars 2026,Terminé,Pittsburgh Penguins - Colorado Avalanche,Regular Time,2 - 6,no,Colorado Avalanche
+Second Leg,,25 mars 2026,Terminé,Florida Panthers - Seattle Kraken,Extra Time,5 - 4,no,Florida Panthers
+Second Leg,,25 mars 2026,Terminé,Boston Bruins - Toronto Maple Leafs,Regular Time,2 - 4,no,Toronto Maple Leafs
 Second Leg,,25 mars 2026,00:30,Tampa Bay Lightning - Minnesota Wild,Regular Time,No Score,yes,
 Second Leg,,25 mars 2026,01:00,St.Louis Blues - Washington Capitals,Regular Time,No Score,yes,
 Second Leg,,25 mars 2026,01:00,Nashville Predators - San Jose Sharks,Regular Time,No Score,yes,
@@ -1186,6 +1185,7 @@ Second Leg,,23 mars 2026,Terminé,Dallas Stars - Vegas Golden Knights,Regular Ti
 Second Leg,,23 mars 2026,Terminé,Calgary Flames - Tampa Bay Lightning,Extra Time,4 - 3,no,Calgary Flames
 Second Leg,,23 mars 2026,Terminé,Anaheim Ducks - Buffalo Sabres,Extra Time,6 - 5,no,Anaheim Ducks
 Second Leg,,23 mars 2026,Terminé,Utah Mammoth - Los Angeles Kings,Extra Time,4 - 3,no,Utah Mammoth
+Second Leg,,24 mars 2026,Terminé,New York Rangers - Ottawa Senators,Regular Time,1 - 2,no,Ottawa Senators
 Second Leg,,2 avril 2026,02:30,Colorado Avalanche - Vancouver Canucks,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,Los Angeles Kings - St.Louis Blues,Regular Time,No Score,yes,
 Second Leg,,2 avril 2026,03:00,San Jose Sharks - Anaheim Ducks,Regular Time,No Score,yes,
