@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
 1,Anaheim Ducks,86,73,24,17,4,28,245,251
 2,Edmonton Oilers,83,74,28,9,9,28,258,251
-3,Vegas Golden Knights,79,73,24,8,15,26,228,229
-4,Los Angeles Kings,76,72,19,10,18,25,193,216
+3,Vegas Golden Knights,80,74,24,8,16,26,232,234
+4,Los Angeles Kings,76,73,19,10,18,26,195,222
 5,Seattle Kraken,75,72,25,7,11,29,206,224
 6,San Jose Sharks,73,71,21,12,7,31,215,253
-7,Calgary Flames,68,72,23,7,8,34,182,222
-8,Vancouver Canucks,50,71,14,7,8,42,182,266
+7,Calgary Flames,70,73,24,7,8,34,189,225
+8,Vancouver Canucks,50,72,14,7,8,43,185,273
