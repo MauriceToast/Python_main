@@ -1,9 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,31 mars 2026,Terminé,New York Islanders - Pittsburgh Penguins,Regular Time,3 - 8,no,Pittsburgh Penguins
-Second Leg,,31 mars 2026,Terminé,Colorado Avalanche - Calgary Flames,Regular Time,9 - 2,no,Colorado Avalanche
-Second Leg,,31 mars 2026,Terminé,Vegas Golden Knights - Vancouver Canucks,Regular Time,4 - 2,no,Vegas Golden Knights
-Second Leg,,31 mars 2026,Terminé,Anaheim Ducks - Toronto Maple Leafs,Extra Time,4 - 5,no,Toronto Maple Leafs
-Second Leg,,31 mars 2026,Terminé,San Jose Sharks - St.Louis Blues,Regular Time,5 - 4,no,San Jose Sharks
 Second Leg,,1 avril 2026,01:00,New York Rangers - New Jersey Devils,Regular Time,No Score,yes,
 Second Leg,,1 avril 2026,01:00,Buffalo Sabres - New York Islanders,Regular Time,No Score,yes,
 Second Leg,,1 avril 2026,01:00,Tampa Bay Lightning - Montreal Canadiens,Regular Time,No Score,yes,
@@ -1311,3 +1306,8 @@ Second Leg,,29 mars 2026,Terminé,Columbus Blue Jackets - Boston Bruins,Extra Ti
 Second Leg,,29 mars 2026,Terminé,Tampa Bay Lightning - Nashville Predators,Regular Time,3 - 2,no,Tampa Bay Lightning
 Second Leg,,30 mars 2026,Terminé,New Jersey Devils - Chicago Blackhawks,Regular Time,5 - 3,no,New Jersey Devils
 Second Leg,,30 mars 2026,Terminé,Philadelphia Flyers - Dallas Stars,Extra Time,2 - 1,no,Philadelphia Flyers
+Second Leg,,31 mars 2026,Terminé,New York Islanders - Pittsburgh Penguins,Regular Time,3 - 8,no,Pittsburgh Penguins
+Second Leg,,31 mars 2026,Terminé,Colorado Avalanche - Calgary Flames,Regular Time,9 - 2,no,Colorado Avalanche
+Second Leg,,31 mars 2026,Terminé,Vegas Golden Knights - Vancouver Canucks,Regular Time,4 - 2,no,Vegas Golden Knights
+Second Leg,,31 mars 2026,Terminé,Anaheim Ducks - Toronto Maple Leafs,Extra Time,4 - 5,no,Toronto Maple Leafs
+Second Leg,,31 mars 2026,Terminé,San Jose Sharks - St.Louis Blues,Regular Time,5 - 4,no,San Jose Sharks
