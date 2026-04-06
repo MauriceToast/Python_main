@@ -1,11 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,5 avril 2026,Terminé,Detroit Red Wings - Minnesota Wild,Regular Time,4 - 5,no,Minnesota Wild
-Second Leg,,5 avril 2026,Terminé,Pittsburgh Penguins - Florida Panthers,Regular Time,5 - 2,no,Pittsburgh Penguins
-Second Leg,,5 avril 2026,Terminé,Philadelphia Flyers - Boston Bruins,Extra Time,2 - 1,no,Philadelphia Flyers
-Second Leg,,5 avril 2026,Terminé,Ottawa Senators - Carolina Hurricanes,Regular Time,6 - 3,no,Ottawa Senators
-Second Leg,,6 avril 2026,Terminé,Montreal Canadiens - New Jersey Devils,Regular Time,0 - 3,no,New Jersey Devils
-Second Leg,,6 avril 2026,Terminé,New York Rangers - Washington Capitals,Regular Time,8 - 1,no,New York Rangers
-Second Leg,,6 avril 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,2 - 3,no,St.Louis Blues
 Second Leg,,7 avril 2026,01:00,Buffalo Sabres - Tampa Bay Lightning,Regular Time,No Score,yes,
 Second Leg,,7 avril 2026,01:30,Winnipeg Jets - Seattle Kraken,Regular Time,No Score,yes,
 Second Leg,,7 avril 2026,04:00,San Jose Sharks - Chicago Blackhawks,Regular Time,No Score,yes,
@@ -1311,3 +1304,10 @@ Second Leg,,5 avril 2026,Terminé,San Jose Sharks - Nashville Predators,Regular 
 Second Leg,,5 avril 2026,Terminé,Edmonton Oilers - Vegas Golden Knights,Regular Time,1 - 5,no,Vegas Golden Knights
 Second Leg,,5 avril 2026,Terminé,Anaheim Ducks - Calgary Flames,Regular Time,3 - 5,no,Calgary Flames
 Second Leg,,5 avril 2026,Terminé,Seattle Kraken - Chicago Blackhawks,Regular Time,2 - 4,no,Chicago Blackhawks
+Second Leg,,5 avril 2026,Terminé,Detroit Red Wings - Minnesota Wild,Regular Time,4 - 5,no,Minnesota Wild
+Second Leg,,5 avril 2026,Terminé,Pittsburgh Penguins - Florida Panthers,Regular Time,5 - 2,no,Pittsburgh Penguins
+Second Leg,,5 avril 2026,Terminé,Philadelphia Flyers - Boston Bruins,Extra Time,2 - 1,no,Philadelphia Flyers
+Second Leg,,5 avril 2026,Terminé,Ottawa Senators - Carolina Hurricanes,Regular Time,6 - 3,no,Ottawa Senators
+Second Leg,,6 avril 2026,Terminé,Montreal Canadiens - New Jersey Devils,Regular Time,0 - 3,no,New Jersey Devils
+Second Leg,,6 avril 2026,Terminé,New York Rangers - Washington Capitals,Regular Time,8 - 1,no,New York Rangers
+Second Leg,,6 avril 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,2 - 3,no,St.Louis Blues
