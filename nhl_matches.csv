@@ -1,8 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,7 avril 2026,Terminé,Buffalo Sabres - Tampa Bay Lightning,Regular Time,4 - 2,no,Buffalo Sabres
-Second Leg,,7 avril 2026,Terminé,Winnipeg Jets - Seattle Kraken,Regular Time,6 - 2,no,Winnipeg Jets
-Second Leg,,7 avril 2026,Terminé,San Jose Sharks - Chicago Blackhawks,Regular Time,3 - 2,no,San Jose Sharks
-Second Leg,,7 avril 2026,Terminé,Los Angeles Kings - Nashville Predators,Extra Time,3 - 2,no,Los Angeles Kings
 Second Leg,,8 avril 2026,01:00,Montreal Canadiens - Florida Panthers,Regular Time,No Score,yes,
 Second Leg,,8 avril 2026,01:00,Detroit Red Wings - Columbus Blue Jackets,Regular Time,No Score,yes,
 Second Leg,,8 avril 2026,01:00,New Jersey Devils - Philadelphia Flyers,Regular Time,No Score,yes,
@@ -1311,3 +1307,7 @@ Second Leg,,5 avril 2026,Terminé,Ottawa Senators - Carolina Hurricanes,Regular 
 Second Leg,,6 avril 2026,Terminé,Montreal Canadiens - New Jersey Devils,Regular Time,0 - 3,no,New Jersey Devils
 Second Leg,,6 avril 2026,Terminé,New York Rangers - Washington Capitals,Regular Time,8 - 1,no,New York Rangers
 Second Leg,,6 avril 2026,Terminé,Colorado Avalanche - St.Louis Blues,Regular Time,2 - 3,no,St.Louis Blues
+Second Leg,,7 avril 2026,Terminé,Buffalo Sabres - Tampa Bay Lightning,Regular Time,4 - 2,no,Buffalo Sabres
+Second Leg,,7 avril 2026,Terminé,Winnipeg Jets - Seattle Kraken,Regular Time,6 - 2,no,Winnipeg Jets
+Second Leg,,7 avril 2026,Terminé,San Jose Sharks - Chicago Blackhawks,Regular Time,3 - 2,no,San Jose Sharks
+Second Leg,,7 avril 2026,Terminé,Los Angeles Kings - Nashville Predators,Extra Time,3 - 2,no,Los Angeles Kings
