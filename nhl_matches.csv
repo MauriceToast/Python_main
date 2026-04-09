@@ -1,7 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,9 avril 2026,Terminé,New York Rangers - Buffalo Sabres,Regular Time,3 - 5,no,Buffalo Sabres
-Second Leg,,9 avril 2026,Terminé,Toronto Maple Leafs - Washington Capitals,Regular Time,0 - 4,no,Washington Capitals
-Second Leg,,9 avril 2026,Terminé,San Jose Sharks - Edmonton Oilers,Regular Time,2 - 5,no,Edmonton Oilers
 Second Leg,,10 avril 2026,00:45,New York Islanders - Toronto Maple Leafs,Regular Time,No Score,yes,
 Second Leg,,10 avril 2026,01:00,Buffalo Sabres - Columbus Blue Jackets,Regular Time,No Score,yes,
 Second Leg,,10 avril 2026,01:00,Montreal Canadiens - Tampa Bay Lightning,Regular Time,No Score,yes,
@@ -1311,3 +1308,6 @@ Second Leg,,8 avril 2026,Terminé,Minnesota Wild - Seattle Kraken,Regular Time,5
 Second Leg,,8 avril 2026,Terminé,Utah Mammoth - Edmonton Oilers,Extra Time,6 - 5,no,Utah Mammoth
 Second Leg,,8 avril 2026,Terminé,Vancouver Canucks - Vegas Golden Knights,Regular Time,1 - 2,no,Vegas Golden Knights
 Second Leg,,8 avril 2026,Terminé,Anaheim Ducks - Nashville Predators,Regular Time,0 - 5,no,Nashville Predators
+Second Leg,,9 avril 2026,Terminé,New York Rangers - Buffalo Sabres,Regular Time,3 - 5,no,Buffalo Sabres
+Second Leg,,9 avril 2026,Terminé,Toronto Maple Leafs - Washington Capitals,Regular Time,0 - 4,no,Washington Capitals
+Second Leg,,9 avril 2026,Terminé,San Jose Sharks - Edmonton Oilers,Regular Time,2 - 5,no,Edmonton Oilers
