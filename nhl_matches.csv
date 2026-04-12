@@ -1,13 +1,13 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,11 avril 2026,18:30,Boston Bruins - Tampa Bay Lightning,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,19:00,New York Islanders - Ottawa Senators,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,21:00,Pittsburgh Penguins - Washington Capitals,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,22:00,Los Angeles Kings - Edmonton Oilers,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,23:00,Detroit Red Wings - New Jersey Devils,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,23:00,Utah Mammoth - Carolina Hurricanes,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,23:00,Nashville Predators - Minnesota Wild,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,23:00,Dallas Stars - New York Rangers,Regular Time,No Score,yes,
-Second Leg,,11 avril 2026,23:00,Chicago Blackhawks - St.Louis Blues,Regular Time,No Score,yes,
+Second Leg,,11 avril 2026,Terminé,Boston Bruins - Tampa Bay Lightning,Regular Time,1 - 2,no,Tampa Bay Lightning
+Second Leg,,11 avril 2026,Terminé,New York Islanders - Ottawa Senators,Regular Time,0 - 3,no,Ottawa Senators
+Second Leg,,11 avril 2026,Terminé,Pittsburgh Penguins - Washington Capitals,Regular Time,3 - 6,no,Washington Capitals
+Second Leg,,11 avril 2026,Terminé,Los Angeles Kings - Edmonton Oilers,Regular Time,1 - 0,no,Los Angeles Kings
+Second Leg,,11 avril 2026,Terminé,Detroit Red Wings - New Jersey Devils,Regular Time,3 - 5,no,New Jersey Devils
+Second Leg,,11 avril 2026,Terminé,Utah Mammoth - Carolina Hurricanes,Regular Time,1 - 4,no,Carolina Hurricanes
+Second Leg,,11 avril 2026,Terminé,Nashville Predators - Minnesota Wild,Regular Time,2 - 1,no,Nashville Predators
+Second Leg,,11 avril 2026,Terminé,Dallas Stars - New York Rangers,Regular Time,2 - 0,no,Dallas Stars
+Second Leg,,11 avril 2026,Terminé,Chicago Blackhawks - St.Louis Blues,Regular Time,3 - 5,no,St.Louis Blues
 Second Leg,,12 avril 2026,21:00,Washington Capitals - Pittsburgh Penguins,Regular Time,No Score,yes,
 Second Leg,,13 avril 2026,00:00,New York Islanders - Montreal Canadiens,Regular Time,No Score,yes,
 Second Leg,,13 avril 2026,00:00,Columbus Blue Jackets - Boston Bruins,Regular Time,No Score,yes,
@@ -1305,9 +1305,9 @@ Second Leg,,10 avril 2026,Terminé,Utah Mammoth - Nashville Predators,Regular Ti
 Second Leg,,10 avril 2026,Terminé,Anaheim Ducks - San Jose Sharks,Regular Time,6 - 1,no,Anaheim Ducks
 Second Leg,,10 avril 2026,Terminé,Seattle Kraken - Vegas Golden Knights,Extra Time,4 - 3,no,Seattle Kraken
 Second Leg,,10 avril 2026,Terminé,Los Angeles Kings - Vancouver Canucks,Regular Time,4 - 1,no,Los Angeles Kings
-Second Leg,,12 avril 2026,01:00,Toronto Maple Leafs - Florida Panthers,Regular Time,No Score,yes,
-Second Leg,,12 avril 2026,01:00,Montreal Canadiens - Columbus Blue Jackets,Regular Time,No Score,yes,
-Second Leg,,12 avril 2026,01:00,Winnipeg Jets - Philadelphia Flyers,Regular Time,No Score,yes,
-Second Leg,,12 avril 2026,01:00,Seattle Kraken - Calgary Flames,Regular Time,No Score,yes,
+Second Leg,,12 avril 2026,Terminé,Toronto Maple Leafs - Florida Panthers,Regular Time,2 - 6,no,Florida Panthers
+Second Leg,,12 avril 2026,Terminé,Montreal Canadiens - Columbus Blue Jackets,Regular Time,2 - 5,no,Columbus Blue Jackets
+Second Leg,,12 avril 2026,Terminé,Winnipeg Jets - Philadelphia Flyers,Regular Time,1 - 7,no,Philadelphia Flyers
+Second Leg,,12 avril 2026,Terminé,Seattle Kraken - Calgary Flames,Regular Time,4 - 1,no,Seattle Kraken
 Second Leg,,12 avril 2026,02:00,Colorado Avalanche - Vegas Golden Knights,Regular Time,No Score,yes,
 Second Leg,,12 avril 2026,04:00,San Jose Sharks - Vancouver Canucks,Regular Time,No Score,yes,
