@@ -1,10 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,12 avril 2026,Terminé,Washington Capitals - Pittsburgh Penguins,Regular Time,3 - 0,no,Washington Capitals
-Second Leg,,13 avril 2026,Terminé,New York Islanders - Montreal Canadiens,Regular Time,1 - 4,no,Montreal Canadiens
-Second Leg,,13 avril 2026,Terminé,Columbus Blue Jackets - Boston Bruins,Regular Time,2 - 3,no,Boston Bruins
-Second Leg,,13 avril 2026,Terminé,New Jersey Devils - Ottawa Senators,Extra Time,4 - 3,no,New Jersey Devils
-Second Leg,,13 avril 2026,Terminé,Anaheim Ducks - Vancouver Canucks,Extra Time,3 - 4,no,Vancouver Canucks
-Second Leg,,13 avril 2026,Terminé,Calgary Flames - Utah Mammoth,Regular Time,4 - 1,no,Calgary Flames
 Second Leg,,14 avril 2026,01:00,Florida Panthers - New York Rangers,Regular Time,No Score,yes,
 Second Leg,,14 avril 2026,01:00,Philadelphia Flyers - Carolina Hurricanes,Regular Time,No Score,yes,
 Second Leg,,14 avril 2026,01:00,Tampa Bay Lightning - Detroit Red Wings,Regular Time,No Score,yes,
@@ -1311,3 +1305,9 @@ Second Leg,,12 avril 2026,Terminé,Winnipeg Jets - Philadelphia Flyers,Regular T
 Second Leg,,12 avril 2026,Terminé,Seattle Kraken - Calgary Flames,Regular Time,4 - 1,no,Seattle Kraken
 Second Leg,,12 avril 2026,Terminé,Colorado Avalanche - Vegas Golden Knights,Extra Time,2 - 3,no,Vegas Golden Knights
 Second Leg,,12 avril 2026,Terminé,San Jose Sharks - Vancouver Canucks,Extra Time,3 - 4,no,Vancouver Canucks
+Second Leg,,12 avril 2026,Terminé,Washington Capitals - Pittsburgh Penguins,Regular Time,3 - 0,no,Washington Capitals
+Second Leg,,13 avril 2026,Terminé,New York Islanders - Montreal Canadiens,Regular Time,1 - 4,no,Montreal Canadiens
+Second Leg,,13 avril 2026,Terminé,Columbus Blue Jackets - Boston Bruins,Regular Time,2 - 3,no,Boston Bruins
+Second Leg,,13 avril 2026,Terminé,New Jersey Devils - Ottawa Senators,Extra Time,4 - 3,no,New Jersey Devils
+Second Leg,,13 avril 2026,Terminé,Anaheim Ducks - Vancouver Canucks,Extra Time,3 - 4,no,Vancouver Canucks
+Second Leg,,13 avril 2026,Terminé,Calgary Flames - Utah Mammoth,Regular Time,4 - 1,no,Calgary Flames
