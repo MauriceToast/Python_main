@@ -1,25 +1,4 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,15 avril 2026,01:00,Philadelphia Flyers - Montreal Canadiens,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,01:00,New York Islanders - Carolina Hurricanes,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,01:00,Columbus Blue Jackets - Washington Capitals,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,01:00,Boston Bruins - New Jersey Devils,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,02:00,Minnesota Wild - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,03:00,Utah Mammoth - Winnipeg Jets,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,03:00,Calgary Flames - Colorado Avalanche,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,03:30,St.Louis Blues - Pittsburgh Penguins,Regular Time,No Score,yes,
-Second Leg,,15 avril 2026,04:00,Vancouver Canucks - Los Angeles Kings,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,01:00,Buffalo Sabres - Dallas Stars,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,01:00,Tampa Bay Lightning - New York Rangers,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,01:00,Florida Panthers - Detroit Red Wings,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,01:30,Ottawa Senators - Toronto Maple Leafs,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,02:30,Chicago Blackhawks - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,16 avril 2026,04:00,Vegas Golden Knights - Seattle Kraken,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,01:30,Utah Mammoth - St.Louis Blues,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,02:00,Nashville Predators - Anaheim Ducks,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,02:00,Winnipeg Jets - San Jose Sharks,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,03:00,Calgary Flames - Los Angeles Kings,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,03:00,Edmonton Oilers - Vancouver Canucks,Regular Time,No Score,yes,
-Second Leg,,17 avril 2026,04:00,Colorado Avalanche - Seattle Kraken,Regular Time,No Score,yes,
 Second Leg,,7 octobre 2025,Terminé,Florida Panthers - Chicago Blackhawks,Regular Time,3 - 2,no,Florida Panthers
 Second Leg,,8 octobre 2025,Terminé,New York Rangers - Pittsburgh Penguins,Regular Time,0 - 3,no,Pittsburgh Penguins
 Second Leg,,8 octobre 2025,Terminé,Los Angeles Kings - Colorado Avalanche,Regular Time,1 - 4,no,Colorado Avalanche
@@ -1311,3 +1290,24 @@ Second Leg,,14 avril 2026,Terminé,Chicago Blackhawks - Buffalo Sabres,Regular T
 Second Leg,,14 avril 2026,Terminé,Seattle Kraken - Los Angeles Kings,Regular Time,3 - 5,no,Los Angeles Kings
 Second Leg,,14 avril 2026,Terminé,Edmonton Oilers - Colorado Avalanche,Extra Time,1 - 2,no,Colorado Avalanche
 Second Leg,,14 avril 2026,Terminé,Vegas Golden Knights - Winnipeg Jets,Regular Time,6 - 2,no,Vegas Golden Knights
+Second Leg,,15 avril 2026,Terminé,Philadelphia Flyers - Montreal Canadiens,Regular Time,4 - 2,no,Philadelphia Flyers
+Second Leg,,15 avril 2026,Terminé,New York Islanders - Carolina Hurricanes,Regular Time,1 - 2,no,Carolina Hurricanes
+Second Leg,,15 avril 2026,Terminé,Columbus Blue Jackets - Washington Capitals,Regular Time,1 - 2,no,Washington Capitals
+Second Leg,,15 avril 2026,Terminé,Boston Bruins - New Jersey Devils,Regular Time,4 - 0,no,Boston Bruins
+Second Leg,,15 avril 2026,02:00,Minnesota Wild - Anaheim Ducks,Regular Time,No Score,yes,
+Second Leg,,15 avril 2026,03:00,Utah Mammoth - Winnipeg Jets,Regular Time,No Score,yes,
+Second Leg,,15 avril 2026,03:00,Calgary Flames - Colorado Avalanche,Regular Time,No Score,yes,
+Second Leg,,15 avril 2026,03:30,St.Louis Blues - Pittsburgh Penguins,Regular Time,No Score,yes,
+Second Leg,,15 avril 2026,04:00,Vancouver Canucks - Los Angeles Kings,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,01:00,Buffalo Sabres - Dallas Stars,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,01:00,Tampa Bay Lightning - New York Rangers,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,01:00,Florida Panthers - Detroit Red Wings,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,01:30,Ottawa Senators - Toronto Maple Leafs,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,02:30,Chicago Blackhawks - San Jose Sharks,Regular Time,No Score,yes,
+Second Leg,,16 avril 2026,04:00,Vegas Golden Knights - Seattle Kraken,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,01:30,Utah Mammoth - St.Louis Blues,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,02:00,Nashville Predators - Anaheim Ducks,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,02:00,Winnipeg Jets - San Jose Sharks,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,03:00,Calgary Flames - Los Angeles Kings,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,03:00,Edmonton Oilers - Vancouver Canucks,Regular Time,No Score,yes,
+Second Leg,,17 avril 2026,04:00,Colorado Avalanche - Seattle Kraken,Regular Time,No Score,yes,
