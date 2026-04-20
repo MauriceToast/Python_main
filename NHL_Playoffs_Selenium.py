@@ -28,7 +28,7 @@ def deduplicate_matches(matches_data):
     print(f"Deduplication: {len(matches_data)} -> {len(unique_matches)} unique matches")
     return unique_matches
 
-web = "https://www.rts.ch/sport/resultats/#/results/hockey/nhl/Phase-1-0"
+web = "https://www.rts.ch/sport/resultats/#/results/hockey/nhl/KoSeries-1-1/KoSeries-2-0"
 driver = None
 try:
     chrome_options = Options()
