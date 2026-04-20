@@ -87,26 +87,41 @@ try:
             print(f"Error accepting cookies: {str(e)}")
     
     
+    # def select_month(driver, month):
+    #     try:
+    #         print(f"Attempting to select month: {month}")
+    #         month_selector = WebDriverWait(driver, 10).until(
+    #             EC.presence_of_element_located(
+    #                 (By.XPATH, f"//p[@class='stxt-scrollselection__label' and text()='{month}']"))
+    #         )
+    #         print(f"Month selector found for {month}")
+    
+    #         # Try regular click first
+    #         try:
+    #             month_selector.click()
+    #         except:
+    #             # If regular click fails, try JavaScript click
+    #             driver.execute_script("arguments[0].click();", month_selector)
+    
+    #         print(f"Clicked on month: {month}")
+    #         time.sleep(5)
+    #     except Exception as e:
+    #         print(f"Error selecting month {month}: {str(e)}")
+
     def select_month(driver, month):
+    print(f"Attempting to select month: {month}")
+    candidates = driver.find_elements(By.XPATH, f"//*[normalize-space()='{month}']")
+    print("Candidates:", len(candidates))
+    for c in candidates:
         try:
-            print(f"Attempting to select month: {month}")
-            month_selector = WebDriverWait(driver, 10).until(
-                EC.presence_of_element_located(
-                    (By.XPATH, f"//p[@class='stxt-scrollselection__label' and text()='{month}']"))
-            )
-            print(f"Month selector found for {month}")
+            driver.execute_script("arguments[0].scrollIntoView({block:'center'});", c)
+            driver.execute_script("arguments[0].click();", c)
+            time.sleep(3)
+            return
+        except Exception:
+            pass
+    raise Exception(f"Month {month} not clickable")
     
-            # Try regular click first
-            try:
-                month_selector.click()
-            except:
-                # If regular click fails, try JavaScript click
-                driver.execute_script("arguments[0].click();", month_selector)
-    
-            print(f"Clicked on month: {month}")
-            time.sleep(5)
-        except Exception as e:
-            print(f"Error selecting month {month}: {str(e)}")
     
     def determine_win_type(score):
         return "Extra Time" if "ap" in score or "tb" in score else "Regular Time"
