@@ -30,6 +30,12 @@ try:
     chrome_options.add_argument("--disable-dev-shm-usage")
     chrome_options.add_argument("--remote-debugging-port=9222")
     chrome_options.add_argument("--window-size=1920,1080")
+    chrome_options.add_argument("--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36")
+    chrome_options.add_argument("--disable-blink-features=AutomationControlled")
+    chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
+    chrome_options.add_experimental_option('useAutomationExtension', False)
+    chrome_options.add_argument("--disable-web-security")
+    chrome_options.add_argument("--allow-running-insecure-content")
 
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service, options=chrome_options)
@@ -75,7 +81,25 @@ try:
             time.sleep(5)
         except Exception as e:
             print(f"Error accepting cookies: {str(e)}")
-    
+
+    def wait_for_full_load(driver, timeout=120):
+        print("Waiting for full playoff data load...")
+        # Wait for first table
+        WebDriverWait(driver, timeout).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
+        )
+        # Then wait for multiple dates (proof of data injection)
+        WebDriverWait(driver, timeout).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, ".stxt-results-table__date-inner")) >= 3
+        )
+        # Scroll to bottom to trigger lazy load
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(3)
+        # Final check for rows
+        WebDriverWait(driver, timeout).until(
+            lambda d: len(d.find_elements(By.CSS_SELECTOR, "li.stxt-results-table-row")) > 0
+        )
+        print("Full load confirmed!")
     
     def select_month(driver, month):
         try:
@@ -301,6 +325,8 @@ try:
     print("Webpage loaded")
     accept_cookies(driver)
     accept_cookies(driver)
+    time.sleep(5)  # Stabilize after cookies
+    wait_for_full_load(driver)  # New wait
     
     months = ["Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars"]
     
