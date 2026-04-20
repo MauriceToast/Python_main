@@ -145,11 +145,12 @@ try:
             #     EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
             # )
 
-            WebDriverWait(driver, 60).until(
-                EC.visibility_of_element_located((By.CSS_SELECTOR, ".stxt-results-table__date-inner"))
-            )
-            print("Results table loaded.")
-            
+            print("Page source length:", len(driver.page_source))  # Check if page loaded fully
+                table = driver.find_elements(By.CSS_SELECTOR, ".stxt-results-table")
+                print(f"Found {len(table)} tables")
+                if table:
+                    print("Table inner HTML:", table[0].get_attribute('innerHTML')[:500])
+                    
             matches_data = []
             
             # --- STEP 1: Extract all dates via span text to create a list of all dates ---
