@@ -140,9 +140,13 @@ try:
                 "Vegas Golden Knights", "Anaheim Ducks", "Edmonton Oilers", "Los Angeles Kings", "San Jose Sharks", "Calgary Flames", "Seattle Kraken", "Vancouver Canucks",
             }
             
-            print("Waiting for results table to load...")
+            # print("Waiting for results table to load...")
+            # WebDriverWait(driver, 60).until(
+            #     EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
+            # )
+
             WebDriverWait(driver, 60).until(
-                EC.presence_of_element_located((By.CSS_SELECTOR, ".stxt-results-table"))
+                EC.visibility_of_element_located((By.CSS_SELECTOR, ".stxt-results-table__date-inner"))
             )
             print("Results table loaded.")
             
