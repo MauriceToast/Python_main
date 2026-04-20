@@ -1,3 +1,4 @@
+
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
@@ -15,19 +16,7 @@ def replace_team_names(team_name):
         # Add more replacements here if needed
     }
     return replacements.get(team_name, team_name)
-
-def deduplicate_matches(matches_data):
-    """Remove duplicate matches based on date + match combination"""
-    seen = set()
-    unique_matches = []
-    for match in matches_data:
-        match_key = f"{match['date']} - {match['match']}"
-        if match_key not in seen:
-            seen.add(match_key)
-            unique_matches.append(match)
-    print(f"Deduplication: {len(matches_data)} -> {len(unique_matches)} unique matches")
-    return unique_matches
-
+    
 web = "https://www.rts.ch/sport/resultats/#/results/hockey/nhl/KoSeries-1-1/KoSeries-2-0"
 driver = None
 try:
@@ -48,6 +37,7 @@ try:
 
     driver.get(web)
     print(f"Webpage loaded: {web}")
+
 
     def parsefrenchdate(datestr):
         day, month, year = map(int, datestr.split('.'))
@@ -87,41 +77,26 @@ try:
             print(f"Error accepting cookies: {str(e)}")
     
     
-    # def select_month(driver, month):
-    #     try:
-    #         print(f"Attempting to select month: {month}")
-    #         month_selector = WebDriverWait(driver, 10).until(
-    #             EC.presence_of_element_located(
-    #                 (By.XPATH, f"//p[@class='stxt-scrollselection__label' and text()='{month}']"))
-    #         )
-    #         print(f"Month selector found for {month}")
-    
-    #         # Try regular click first
-    #         try:
-    #             month_selector.click()
-    #         except:
-    #             # If regular click fails, try JavaScript click
-    #             driver.execute_script("arguments[0].click();", month_selector)
-    
-    #         print(f"Clicked on month: {month}")
-    #         time.sleep(5)
-    #     except Exception as e:
-    #         print(f"Error selecting month {month}: {str(e)}")
-
     def select_month(driver, month):
-        print(f"Attempting to select month: {month}")
-        candidates = driver.find_elements(By.XPATH, f"//*[normalize-space()='{month}']")
-        print("Candidates:", len(candidates))
-        for c in candidates:
-            try:
-                driver.execute_script("arguments[0].scrollIntoView({block:'center'});", c)
-                driver.execute_script("arguments[0].click();", c)
-                time.sleep(3)
-                return
-            except Exception:
-                pass
-        raise Exception(f"Month {month} not clickable")
+        try:
+            print(f"Attempting to select month: {month}")
+            month_selector = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located(
+                    (By.XPATH, f"//p[@class='stxt-scrollselection__label' and text()='{month}']"))
+            )
+            print(f"Month selector found for {month}")
     
+            # Try regular click first
+            try:
+                month_selector.click()
+            except:
+                # If regular click fails, try JavaScript click
+                driver.execute_script("arguments[0].click();", month_selector)
+    
+            print(f"Clicked on month: {month}")
+            time.sleep(5)
+        except Exception as e:
+            print(f"Error selecting month {month}: {str(e)}")
     
     def determine_win_type(score):
         return "Extra Time" if "ap" in score or "tb" in score else "Regular Time"
@@ -159,10 +134,9 @@ try:
     def scrape_month(driver):
         try:
             teams = {
-                "Detroit Red Wings", "Montreal Canadiens", "Boston Bruins", "Tampa Bay Lightning", "Florida Panthers", "Ottawa Senators", "Toronto Maple Leafs", "Buffalo Sabres",
-                "Carolina Hurricanes", "Washington Capitals", "New York Islanders", "Philadelphia Flyers", "New Jersey Devils", "New York Rangers", "Pittsburgh Penguins", "Columbus Blue Jackets",
-                "Colorado Avalanche", "Dallas Stars", "Minnesota Wild", "Utah Mammoth", "St.Louis Blues", "Winnipeg Jets", "Chicago Blackhawks", "Nashville Predators",
-                "Vegas Golden Knights", "Anaheim Ducks", "Edmonton Oilers", "Los Angeles Kings", "San Jose Sharks", "Calgary Flames", "Seattle Kraken", "Vancouver Canucks",
+                "Davos", "Zurich", "Berne", "Lausanne", "Kloten",
+                "Zoug", "Bienne", "Langnau", "Fribourg", "Genève",
+                "Ambri", "Lugano", "Rapperswil", "Ajoie"
             }
             
             print("Waiting for results table to load...")
@@ -183,6 +157,7 @@ try:
             all_spans = [span.text.strip() for span in span_elements]
             
             # Create a map from each match key (home + away + score) to the corresponding date
+            # by simulating iteration over the spans (like your original fallback logic)
             current_date_for_match = None
             matches_date_map = []  # list of (home_team, away_team, score, date) item placeholders
             
@@ -191,10 +166,14 @@ try:
             
             print("Processing spans to map matches to dates...")
             for span_text in all_spans:
+                # Debug print for spans
+                # print(f"Span text: '{span_text}'")
+            
                 if span_text in dates_text:
                     current_date_for_match = span_text
                     temp_match = {}
                     temp_score = None
+                    # print(f"Current date updated to: {current_date_for_match}")
                 elif current_date_for_match:
                     if span_text in teams:
                         if "home_team" not in temp_match:
@@ -215,15 +194,23 @@ try:
             rows = driver.find_elements(By.CSS_SELECTOR, "li.stxt-results-table-row")
             print(f"Found {len(rows)} match rows.")
     
+            # We will iterate rows and try to match each row to one entry in matches_date_map, 
+            # based on home_team and away_team (score could also help)
+            
+            # Use a copy to safely pop matched entries to avoid duplicates
             unmatched_matches = matches_date_map.copy()
             
             for i, row in enumerate(rows, start=1):
+                print(f"\nProcessing row #{i}...")
+                
                 # Extract hour
                 try:
                     hour_elem = row.find_element(By.CSS_SELECTOR, "div.cell.status")
                     hour = hour_elem.text.strip()
+                    print(f"Row #{i} hour found: {hour}")
                 except Exception:
                     hour = ""
+                    print(f"Row #{i} hour not found.")
                 
                 # Extract home and away teams
                 try:
@@ -231,9 +218,11 @@ try:
                     away_elem = row.find_element(By.CSS_SELECTOR, "div.away span")
                     home_team = replace_team_names(home_elem.text.strip()) if home_elem else ""
                     away_team = replace_team_names(away_elem.text.strip()) if away_elem else ""
-                except Exception:
+                    print(f"Row #{i} teams found: Home='{home_team}', Away='{away_team}'")
+                except Exception as e:
                     home_team = ""
                     away_team = ""
+                    print(f"Row #{i} teams not found or error: {e}")
                     continue  # skip this row
                 
                 # Extract score
@@ -242,26 +231,31 @@ try:
                     score = score_elem.text.strip()
                     if score == "":
                         score = "No Score"
+                    print(f"Row #{i} score found: '{score}'")
                 except Exception:
                     score = "No Score"
+                    print(f"Row #{i} score not found, defaulting to 'No Score'")
                 
-                # Find the matching date based on team names
+                # Find the matching date based on team names and score from matches_date_map
                 matched_date = None
-                for match in unmatched_matches[:]:  # Use slice to avoid modification during iteration
+                for match in unmatched_matches:
+                    # We match on home and away teams (and optionally score)
                     if (match.get("home_team") == home_team and 
                         match.get("away_team") == away_team):
+                        # Optionally match score here if you want stricter matching:
+                        # if match.get("score") == clean_score(score):
                         matched_date = match.get("date")
                         unmatched_matches.remove(match)
                         break
                 
                 if matched_date is None:
+                    print(f"Row #{i} no matching date found for teams '{home_team} - {away_team}'. Skipping...")
                     continue
                 
                 win_type = determine_win_type(score)
                 cleaned_score = clean_score(score)
                 winner = determine_winner(home_team, away_team, cleaned_score)
-                # leg = "Second Leg" if parsefrenchdate(matched_date) >= datetime(2024, 12, 4) else "First Leg"
-                leg = "Playoffs"
+                leg = "First Leg" if parsefrenchdate(matched_date) < datetime(2024, 12, 4) else "Second Leg"
                 
                 match_data = {
                     "leg": leg,
@@ -274,9 +268,10 @@ try:
                     "available": "yes" if cleaned_score == "No Score" else "no",
                     "winner": winner
                 }
+                print(f"Row #{i} match data compiled: {match_data}")
                 matches_data.append(match_data)
             
-            print(f"Total matches scraped for month: {len(matches_data)}")
+            print(f"\nTotal matches scraped for month: {len(matches_data)}")
             return matches_data
     
         except Exception as e:
@@ -286,53 +281,40 @@ try:
             return []
     
     def write_matches_to_csv(matches_data, filename):
-        with open(filename, 'w', newline='', encoding='utf-8') as csvfile:
+        with open(filename, 'w', newline='') as csvfile:
             fieldnames = ['leg', 'journee', 'date', 'hour', 'match', 'win_type', 'score', 'available', 'winner']
             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     
             writer.writeheader()
             for match in matches_data:
                 writer.writerow(match)
+                # print(f"Wrote match to CSV: {match}")  # Debug print
         
     print("Starting the scraping process...")
     driver.get(web)
     print("Webpage loaded")
     accept_cookies(driver)
+    accept_cookies(driver)
     
-    months = ["Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars", "Avril"]
+    months = ["Septembre", "Octobre", "Novembre", "Décembre", "Janvier", "Février", "Mars"]
     
     all_matches_data = []
     for month in months:
-        print(f"\n{'='*50}")
-        print(f"Scraping data for: {month}")
-        print(f"{'='*50}")
+        print(f"\nScraping data for: {month}")
         select_month(driver, month)
         matches_data = scrape_month(driver)
         all_matches_data.extend(matches_data)
     
-    print(f"\n{'='*50}")
-    print("POST-PROCESSING ALL DATA")
-    print(f"{'='*50}")
-    
-    # *** ONLY DEDUPLICATION - NO DATE FILTERING ***
-    all_matches_data = deduplicate_matches(all_matches_data)
-    
     if all_matches_data:
         write_matches_to_csv(all_matches_data, 'nhl_playoffs_matches.csv')
-        print(f"\n✅ Total UNIQUE matches written to CSV: {len(all_matches_data)}")
-        print("📁 File: nhl__playoffs_matches.csv")
-        print("✅ ALL months included (October, November, December, etc.)")
+        print(f"Total matches written to CSV: {len(all_matches_data)}")
     else:
-        print("❌ No matches collected")
+        print("No data collected for any month")
     
-    print("\n🎉 Scraping process completed successfully!")
-
+    print("Scraping process completed")
 except Exception as e:
-    print(f"\n❌ An error occurred: {str(e)}")
-    import traceback
-    print(traceback.format_exc())
+    print(f"An error occurred: {str(e)}")
 
 finally:
     if driver:
         driver.quit()
-        print("Browser closed.")
