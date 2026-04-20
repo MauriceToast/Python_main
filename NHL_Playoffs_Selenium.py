@@ -134,9 +134,10 @@ try:
     def scrape_month(driver):
         try:
             teams = {
-                "Davos", "Zurich", "Berne", "Lausanne", "Kloten",
-                "Zoug", "Bienne", "Langnau", "Fribourg", "Genève",
-                "Ambri", "Lugano", "Rapperswil", "Ajoie"
+                "Detroit Red Wings", "Montreal Canadiens", "Boston Bruins", "Tampa Bay Lightning", "Florida Panthers", "Ottawa Senators", "Toronto Maple Leafs", "Buffalo Sabres",
+                "Carolina Hurricanes", "Washington Capitals", "New York Islanders", "Philadelphia Flyers", "New Jersey Devils", "New York Rangers", "Pittsburgh Penguins", "Columbus Blue Jackets",
+                "Colorado Avalanche", "Dallas Stars", "Minnesota Wild", "Utah Mammoth", "St.Louis Blues", "Winnipeg Jets", "Chicago Blackhawks", "Nashville Predators",
+                "Vegas Golden Knights", "Anaheim Ducks", "Edmonton Oilers", "Los Angeles Kings", "San Jose Sharks", "Calgary Flames", "Seattle Kraken", "Vancouver Canucks",
             }
             
             print("Waiting for results table to load...")
