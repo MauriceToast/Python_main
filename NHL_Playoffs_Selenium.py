@@ -109,18 +109,18 @@ try:
     #         print(f"Error selecting month {month}: {str(e)}")
 
     def select_month(driver, month):
-    print(f"Attempting to select month: {month}")
-    candidates = driver.find_elements(By.XPATH, f"//*[normalize-space()='{month}']")
-    print("Candidates:", len(candidates))
-    for c in candidates:
-        try:
-            driver.execute_script("arguments[0].scrollIntoView({block:'center'});", c)
-            driver.execute_script("arguments[0].click();", c)
-            time.sleep(3)
-            return
-        except Exception:
-            pass
-    raise Exception(f"Month {month} not clickable")
+        print(f"Attempting to select month: {month}")
+        candidates = driver.find_elements(By.XPATH, f"//*[normalize-space()='{month}']")
+        print("Candidates:", len(candidates))
+        for c in candidates:
+            try:
+                driver.execute_script("arguments[0].scrollIntoView({block:'center'});", c)
+                driver.execute_script("arguments[0].click();", c)
+                time.sleep(3)
+                return
+            except Exception:
+                pass
+        raise Exception(f"Month {month} not clickable")
     
     
     def determine_win_type(score):
