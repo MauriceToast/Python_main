@@ -245,7 +245,8 @@ try:
                 win_type = determine_win_type(score)
                 cleaned_score = clean_score(score)
                 winner = determine_winner(home_team, away_team, cleaned_score)
-                leg = "Second Leg" if parsefrenchdate(matched_date) >= datetime(2024, 12, 4) else "First Leg"
+                # leg = "Second Leg" if parsefrenchdate(matched_date) >= datetime(2024, 12, 4) else "First Leg"
+                leg = "Playoffs"
                 
                 match_data = {
                     "leg": leg,
@@ -302,9 +303,9 @@ try:
     all_matches_data = deduplicate_matches(all_matches_data)
     
     if all_matches_data:
-        write_matches_to_csv(all_matches_data, 'nhl_matches.csv')
+        write_matches_to_csv(all_matches_data, 'nhl_playoffs_matches.csv')
         print(f"\n✅ Total UNIQUE matches written to CSV: {len(all_matches_data)}")
-        print("📁 File: nhl_matches.csv")
+        print("📁 File: nhl__playoffs_matches.csv")
         print("✅ ALL months included (October, November, December, etc.)")
     else:
         print("❌ No matches collected")
