@@ -1,9 +1,9 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Canada,19,7,6,0,1,0,34,7
-2,Sweden,18,7,6,0,0,1,28,8
-3,Finland,16,7,4,2,0,1,22,10
-4,Austria,10,7,2,2,0,3,21,18
-5,Latvia,9,7,3,0,0,4,17,25
-6,Slovakia,7,7,2,0,1,4,9,24
-7,Slovenia,4,7,1,0,1,5,9,29
-8,France,1,7,0,0,1,6,8,27
+1,Austria,6,2,2,0,0,0,9,4
+2,Finland,6,2,2,0,0,0,7,2
+3,Switzerland,6,2,2,0,0,0,7,3
+4,USA,3,2,1,0,0,1,6,4
+5,Latvia,3,2,1,0,0,1,4,4
+6,Germany,0,2,0,0,0,2,1,5
+7,Hungary,0,2,0,0,0,2,3,8
+8,Gde-Bretagne,0,2,0,0,0,2,3,10
