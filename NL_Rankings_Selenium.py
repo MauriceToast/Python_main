@@ -16,7 +16,7 @@ chrome_options.add_argument("--disable-dev-shm-usage")
 service = Service(ChromeDriverManager().install())
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
-web = "https://www.rts.ch/sport/resultats/#/results/hockey/nla/Phase-1-0/rankings/700866"
+web = "https://www.rts.ch/sport/resultats/#/results/hockey/nla/rankings/701524"
 driver = webdriver.Chrome(service=service, options=chrome_options)
 
 def replace_team_names(team_name):
