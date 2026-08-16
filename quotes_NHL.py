@@ -7,20 +7,20 @@ from io import StringIO
 
 team_prestige = {
     #Atlantic
-    "Detroit Red Wings": 12 / 20,
-    "Montreal Canadiens": 14 / 20,
-    "Boston Bruins": 14 / 20,
-    "Tampa Bay Lightning": 12 / 20,
+    "Detroit Red Wings": 10 / 20,
+    "Montreal Canadiens": 16 / 20,
+    "Boston Bruins": 13 / 20,
+    "Tampa Bay Lightning": 14 / 20,
     "Florida Panthers": 18 / 20,
-    "Ottawa Senators": 11 / 20,
-    "Toronto Maple Leafs": 12 / 20,
-    "Buffalo Sabres": 9 / 20,
+    "Ottawa Senators": 10 / 20,
+    "Toronto Maple Leafs": 14 / 20,
+    "Buffalo Sabres": 16 / 20,
 
     #Metropolitan
-    "Carolina Hurricanes": 16 / 20,
+    "Carolina Hurricanes": 18 / 20,
     "Washington Capitals": 16 / 20,
     "New York Islanders": 10 / 20,
-    "Philadelphia Flyers": 12 / 20,
+    "Philadelphia Flyers": 14 / 20,
     "New Jersey Devils": 13 / 20,
     "New York Rangers": 11 / 20,
     "Pittsburgh Penguins": 11 / 20,
@@ -29,7 +29,7 @@ team_prestige = {
     #Central
     "Colorado Avalanche": 17 / 20,
     "Dallas Stars": 16 / 20,
-    "Minnesota Wild": 14 / 20,
+    "Minnesota Wild": 16 / 20,
     "Utah Mammoth": 11 / 20,
     "St.Louis Blues": 10 / 20,
     "Winnipeg Jets": 12 / 20,
@@ -37,8 +37,8 @@ team_prestige = {
     "Nashville Predators": 9 / 20,
 
     #Pacific
-    "Vegas Golden Knights": 14 / 20,
-    "Anaheim Ducks": 12 / 20,
+    "Vegas Golden Knights": 15 / 20,
+    "Anaheim Ducks": 14 / 20,
     "Edmonton Oilers": 16 / 20,
     "Los Angeles Kings": 11 / 20,
     "San Jose Sharks": 11 / 20,
