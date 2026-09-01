@@ -75,7 +75,7 @@ def determine_winner(home_team, away_team, score):
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-web = "https://liguemagnus.com/calendrier-resultats/?phase=560"
+web = "https://liguemagnus.com/calendrier/?journee=&equipe=&poule=714&date_debut=&date_fin=2027-03-07"
 driver = None
 try:
     chrome_options = Options()
