@@ -1,10 +1,10 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-First Leg,1,15 septembre 2026,18:00,GAP - CHAMONIX,,,yes,
-First Leg,1,15 septembre 2026,18:00,BRIANCON - ROUEN,,,yes,
-First Leg,1,15 septembre 2026,18:15,AMIENS - NICE,,,yes,
-First Leg,1,15 septembre 2026,18:15,GRENOBLE - ANGERS,,,yes,
-First Leg,1,15 septembre 2026,18:30,ANGLET - BORDEAUX,,,yes,
-First Leg,1,15 septembre 2026,18:30,CERGY - MARSEILLE,,,yes,
+First Leg,1,15 septembre 2026,,GAP - CHAMONIX,Regular Time,2-1,no,GAP
+First Leg,1,15 septembre 2026,,BRIANCON - ROUEN,Regular Time,3-1,no,BRIANCON
+First Leg,1,15 septembre 2026,,AMIENS - NICE,Regular Time,3-3,no,Draw
+First Leg,1,15 septembre 2026,,GRENOBLE - ANGERS,Regular Time,4-1,no,GRENOBLE
+First Leg,1,15 septembre 2026,,ANGLET - BORDEAUX,Regular Time,0-3,no,BORDEAUX
+First Leg,1,15 septembre 2026,,CERGY - MARSEILLE,Regular Time,1-2,no,MARSEILLE
 First Leg,2,18 septembre 2026,18:00,NICE - ANGLET,,,yes,
 First Leg,2,18 septembre 2026,18:05,CHAMONIX - AMIENS,,,yes,
 First Leg,2,18 septembre 2026,18:15,BORDEAUX - CERGY,,,yes,
