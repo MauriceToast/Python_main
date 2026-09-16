@@ -45,7 +45,7 @@ def scrape_standings(driver, wait):
 
 # Set up webdriver
 #standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=432"
-standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=560"
+standings_url = "https://liguemagnus.com/saison-reguliere/classement/?phase=714"
 path = r'C:\WebDrivers\chromedriver-win64\chromedriver.exe'
 service = Service(executable_path=path)
 
