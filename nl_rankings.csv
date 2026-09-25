@@ -1,0 +1,15 @@
+rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
+1,Zurich,12,4,4,0,0,0,16,8
+2,Ambri,8,4,2,1,0,1,14,12
+3,Zoug,7,3,2,0,1,0,13,5
+4,Bienne,7,4,2,0,1,1,16,10
+5,Berne,6,3,2,0,0,1,12,8
+6,Lausanne,6,4,2,0,0,2,11,13
+7,Kloten,6,5,1,1,1,2,13,19
+8,Lugano,5,3,1,1,0,1,11,10
+9,Fribourg,5,4,1,1,0,2,10,10
+10,Ajoie,5,4,0,2,1,1,12,13
+11,Rapperswil,4,4,1,0,1,2,11,16
+12,Geneve,4,4,1,0,1,2,10,15
+13,Davos,4,4,1,0,1,2,9,14
+14,Langnau,2,4,0,1,0,3,11,16
