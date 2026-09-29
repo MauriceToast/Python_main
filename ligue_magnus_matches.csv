@@ -29,12 +29,12 @@ First Leg,5,27 septembre 2026,,AMIENS - GAP,Regular Time,2-5,no,GAP
 First Leg,5,27 septembre 2026,,BORDEAUX - ROUEN,Regular Time,1-2,no,ROUEN
 First Leg,5,27 septembre 2026,,MARSEILLE - NICE,Regular Time,4-3,no,MARSEILLE
 First Leg,5,27 septembre 2026,,ANGLET - GRENOBLE,Regular Time,2-3,no,GRENOBLE
-First Leg,6,29 septembre 2026,18:00,ROUEN - AMIENS,,,yes,
-First Leg,6,29 septembre 2026,18:00,NICE - BORDEAUX,,,yes,
-First Leg,6,29 septembre 2026,18:00,GAP - ANGLET,,,yes,
-First Leg,6,29 septembre 2026,18:05,CHAMONIX - MARSEILLE,,,yes,
-First Leg,6,29 septembre 2026,18:15,GRENOBLE - CERGY,,,yes,
-First Leg,6,29 septembre 2026,18:30,ANGERS - BRIANCON,,,yes,
+First Leg,6,29 septembre 2026,,ROUEN - AMIENS,Regular Time,2-0,no,ROUEN
+First Leg,6,29 septembre 2026,,NICE - BORDEAUX,Regular Time,5-1,no,NICE
+First Leg,6,29 septembre 2026,,GAP - ANGLET,Extra Time,3-4,no,ANGLET
+First Leg,6,29 septembre 2026,,CHAMONIX - MARSEILLE,Extra Time,2-3,no,MARSEILLE
+First Leg,6,29 septembre 2026,,GRENOBLE - CERGY,Regular Time,3-0,no,GRENOBLE
+First Leg,6,29 septembre 2026,,ANGERS - BRIANCON,Extra Time,3-4,no,BRIANCON
 First Leg,7,2 octobre 2026,18:00,NICE - ROUEN,,,yes,
 First Leg,7,2 octobre 2026,18:00,BRIANCON - GRENOBLE,,,yes,
 First Leg,7,2 octobre 2026,18:15,MARSEILLE - ANGERS,,,yes,
