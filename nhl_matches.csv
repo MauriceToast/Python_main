@@ -1,9 +1,9 @@
 leg,journee,date,hour,match,win_type,score,available,winner
-Second Leg,,29 septembre 2026,23:00,Carolina Hurricanes - Florida Panthers,Regular Time,No Score,yes,
-Second Leg,,30 septembre 2026,01:00,Toronto Maple Leafs - Montreal Canadiens,Regular Time,No Score,yes,
-Second Leg,,30 septembre 2026,02:00,Boston Bruins - New York Rangers,Regular Time,No Score,yes,
-Second Leg,,30 septembre 2026,04:00,Edmonton Oilers - Vancouver Canucks,Regular Time,No Score,yes,
-Second Leg,,30 septembre 2026,04:30,Vegas Golden Knights - Chicago Blackhawks,Regular Time,No Score,yes,
+Second Leg,,29 septembre 2026,Terminé,Carolina Hurricanes - Florida Panthers,Extra Time,0 - 1,no,Florida Panthers
+Second Leg,,30 septembre 2026,Terminé,Toronto Maple Leafs - Montreal Canadiens,Regular Time,2 - 3,no,Montreal Canadiens
+Second Leg,,30 septembre 2026,Terminé,Boston Bruins - New York Rangers,Regular Time,3 - 0,no,Boston Bruins
+Second Leg,,30 septembre 2026,Terminé,Edmonton Oilers - Vancouver Canucks,Extra Time,5 - 6,no,Vancouver Canucks
+Second Leg,,30 septembre 2026,Terminé,Vegas Golden Knights - Chicago Blackhawks,Regular Time,5 - 2,no,Vegas Golden Knights
 Second Leg,,1 octobre 2026,01:30,Toronto Maple Leafs - New York Islanders,Regular Time,No Score,yes,
 Second Leg,,1 octobre 2026,01:30,Philadelphia Flyers - Pittsburgh Penguins,Regular Time,No Score,yes,
 Second Leg,,1 octobre 2026,04:00,Colorado Avalanche - Los Angeles Kings,Regular Time,No Score,yes,
