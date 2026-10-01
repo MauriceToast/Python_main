@@ -1,0 +1,9 @@
+rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
+1,Vegas Golden Knights,2,1,1,0,0,0,5,2
+2,Vancouver Canucks,2,1,0,1,0,0,6,5
+3,Edmonton Oilers,1,1,0,0,1,0,5,6
+4,Seattle Kraken,0,0,0,0,0,0,0,0
+5,Calgary Flames,0,0,0,0,0,0,0,0
+6,Anaheim Ducks,0,0,0,0,0,0,0,0
+7,San Jose Sharks,0,0,0,0,0,0,0,0
+8,Los Angeles Kings,0,1,0,0,0,1,4,8
