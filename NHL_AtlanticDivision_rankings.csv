@@ -1,7 +1,7 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Boston Bruins,2,1,1,0,0,0,3,0
-2,Montreal Canadiens,2,1,1,0,0,0,3,2
-3,Florida Panthers,2,1,0,1,0,0,1,0
+1,Florida Panthers,3,2,0,1,1,0,4,4
+2,Boston Bruins,2,1,1,0,0,0,3,0
+3,Montreal Canadiens,2,1,1,0,0,0,3,2
 4,Toronto Maple Leafs,2,2,1,0,0,1,4,4
 5,Ottawa Senators,0,0,0,0,0,0,0,0
 6,Detroit Red Wings,0,0,0,0,0,0,0,0
