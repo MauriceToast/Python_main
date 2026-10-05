@@ -1,19 +1,53 @@
 date,match,team1,team2,draw,team1_extra,team2_extra
-2026-10-07,Detroit Red Wings - Ottawa Senators,4.21,1.52,5.5,5.27,1.9
+2026-10-03,Detroit Red Wings - New York Rangers,2.0,2.0,3.0,4.0,4.0
+2026-10-04,Pittsburgh Penguins - Montreal Canadiens,2.0,2.0,3.0,4.0,4.0
+2026-10-03,Winnipeg Jets - Boston Bruins,2.0,2.0,3.0,4.0,4.0
+2026-10-02,New York Rangers - Tampa Bay Lightning,2.0,2.0,3.0,4.0,4.0
+2026-10-02,San Jose Sharks - Florida Panthers,2.0,2.0,3.0,4.0,4.0
+2026-10-04,Toronto Maple Leafs - Ottawa Senators,2.0,2.0,3.0,4.0,4.0
+2026-10-02,Columbus Blue Jackets - Buffalo Sabres,2.0,2.0,3.0,4.0,4.0
+2026-10-03,Carolina Hurricanes - Washington Capitals,2.0,2.0,3.0,4.0,4.0
+2026-10-01,Toronto Maple Leafs - New York Islanders,2.0,2.0,3.0,4.0,4.0
+2026-10-01,Philadelphia Flyers - Pittsburgh Penguins,2.0,2.0,3.0,4.0,4.0
+2026-10-02,New Jersey Devils - Philadelphia Flyers,2.0,2.0,3.0,4.0,4.0
+2026-10-01,Colorado Avalanche - Los Angeles Kings,2.0,2.0,3.0,4.0,4.0
+2026-10-03,Dallas Stars - St.Louis Blues,2.0,2.0,3.0,4.0,4.0
+2026-10-02,Nashville Predators - Minnesota Wild,2.0,2.0,3.0,4.0,4.0
+2026-10-02,Utah Mammoth - Chicago Blackhawks,2.0,2.0,3.0,4.0,4.0
+2026-10-03,Vegas Golden Knights - Anaheim Ducks,2.0,2.0,3.0,4.0,4.0
+2026-10-02,Vancouver Canucks - Edmonton Oilers,2.0,2.0,3.0,4.0,4.0
+2026-10-02,Calgary Flames - Seattle Kraken,2.0,2.0,3.0,4.0,4.0
+2026-10-04,Detroit Red Wings - Winnipeg Jets,4.1,1.54,5.5,5.13,1.92
+2026-10-04,Minnesota Wild - Boston Bruins,1.87,2.78,5.5,2.34,3.47
+2026-10-04,Tampa Bay Lightning - Washington Capitals,2.75,1.88,5.5,3.43,2.36
+2026-10-05,Anaheim Ducks - Florida Panthers,2.02,2.5,5.5,2.52,3.13
+2026-10-04,Buffalo Sabres - Chicago Blackhawks,1.41,5.45,5.5,1.76,6.81
+2026-10-04,Philadelphia Flyers - Carolina Hurricanes,2.35,2.13,5.5,2.94,2.66
+2026-10-04,New York Islanders - New Jersey Devils,4.33,1.51,5.5,5.41,1.88
+2026-10-05,New York Rangers - Utah Mammoth,2.46,2.05,5.5,3.08,2.56
+2026-10-04,Columbus Blue Jackets - Utah Mammoth,2.17,2.31,5.5,2.71,2.88
+2026-10-04,Colorado Avalanche - St.Louis Blues,2.0,2.54,5.5,2.49,3.18
+2026-10-04,Nashville Predators - Dallas Stars,1.58,3.8,5.5,1.98,4.75
+2026-10-05,Vancouver Canucks - Vegas Golden Knights,2.55,1.99,5.5,3.18,2.49
+2026-10-04,Edmonton Oilers - Seattle Kraken,1.9,2.71,5.5,2.37,3.39
+2026-10-04,San Jose Sharks - Los Angeles Kings,1.44,5.04,5.5,1.79,6.3
+2026-10-04,Vancouver Canucks - Calgary Flames,1.41,5.32,5.5,1.77,6.65
 2026-10-07,Montreal Canadiens - Carolina Hurricanes,1.91,2.7,5.5,2.39,3.37
 2026-10-06,Boston Bruins - Ottawa Senators,2.33,2.15,5.5,2.91,2.69
 2026-10-06,Tampa Bay Lightning - Philadelphia Flyers,1.92,2.68,5.5,2.39,3.35
-2026-10-07,Los Angeles Kings - Florida Panthers,3.25,1.7,5.5,4.06,2.13
 2026-10-07,Toronto Maple Leafs - Nashville Predators,2.11,2.37,5.5,2.64,2.97
 2026-10-07,Buffalo Sabres - Minnesota Wild,2.66,1.93,5.5,3.32,2.41
 2026-10-08,Washington Capitals - Pittsburgh Penguins,2.43,2.07,5.5,3.04,2.59
-2026-10-07,New York Rangers - New York Islanders,2.05,2.46,5.5,2.56,3.07
-2026-10-07,New Jersey Devils - Utah Mammoth,2.44,2.06,5.5,3.05,2.58
+2026-10-07,New York Rangers - New York Islanders,2.1,2.38,5.5,2.63,2.98
+2026-10-07,New Jersey Devils - Utah Mammoth,2.63,1.94,5.5,3.29,2.43
 2026-10-10,Columbus Blue Jackets - Pittsburgh Penguins,2.65,1.93,5.5,3.31,2.42
-2026-10-08,Winnipeg Jets - Colorado Avalanche,2.65,1.93,5.5,3.31,2.42
+2026-10-08,Winnipeg Jets - Colorado Avalanche,2.88,1.83,5.5,3.6,2.28
 2026-10-06,Dallas Stars - San Jose Sharks,3.51,1.64,5.5,4.38,2.05
 2026-10-07,Chicago Blackhawks - St.Louis Blues,4.32,1.51,5.5,5.4,1.89
-2026-10-07,Seattle Kraken - Vegas Golden Knights,2.22,2.26,5.5,2.77,2.82
 2026-10-08,Anaheim Ducks - Edmonton Oilers,2.16,2.32,5.5,2.69,2.9
+2026-10-07,Los Angeles Kings - Florida Panthers,3.45,1.65,5.5,4.32,2.07
+2026-10-05,Seattle Kraken - Calgary Flames,1.43,5.15,5.5,1.78,6.43
+2026-10-07,Detroit Red Wings - Ottawa Senators,4.21,1.52,5.5,5.27,1.9
+2026-10-07,Seattle Kraken - Vegas Golden Knights,2.22,2.26,5.5,2.77,2.82
 2026-10-09,Calgary Flames - Colorado Avalanche,4.57,1.48,5.5,5.71,1.85
 2026-10-09,Carolina Hurricanes - Vancouver Canucks,2.12,2.37,5.5,2.64,2.96
