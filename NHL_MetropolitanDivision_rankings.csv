@@ -1,6 +1,6 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Pittsburgh Penguins,4,2,1,1,0,0,13,5
-2,New York Rangers,4,3,2,0,0,1,7,4
+1,New York Rangers,6,4,3,0,0,1,11,6
+2,Pittsburgh Penguins,4,2,1,1,0,0,13,5
 3,Carolina Hurricanes,3,3,0,1,1,1,5,8
 4,New York Islanders,2,2,1,0,0,1,7,2
 5,Washington Capitals,2,2,1,0,0,1,6,5
