@@ -1,8 +1,8 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Utah Mammoth,6,4,3,0,0,1,17,8
-2,Minnesota Wild,5,3,2,0,1,0,9,5
-3,Winnipeg Jets,5,3,2,0,1,0,9,8
-4,Colorado Avalanche,4,2,2,0,0,0,14,5
+1,Winnipeg Jets,7,4,3,0,1,0,12,10
+2,Utah Mammoth,6,4,3,0,0,1,17,8
+3,Minnesota Wild,5,3,2,0,1,0,9,5
+4,Colorado Avalanche,4,3,2,0,0,1,16,8
 5,Nashville Predators,3,3,1,0,1,1,7,9
 6,St.Louis Blues,2,3,1,0,0,2,7,10
 7,Dallas Stars,2,3,1,0,0,2,6,6
