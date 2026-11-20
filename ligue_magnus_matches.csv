@@ -92,12 +92,12 @@ First Leg,15,13 novembre 2026,,CERGY - AMIENS,Regular Time,8-5,no,CERGY
 First Leg,15,13 novembre 2026,,BORDEAUX - ANGERS,Regular Time,3-1,no,BORDEAUX
 First Leg,19,14 novembre 2026,,ANGLET - ANGERS,Regular Time,6-8,no,ANGERS
 Second Leg,36,17 novembre 2026,,ANGERS - CHAMONIX,Regular Time,6-2,no,ANGERS
-First Leg,16,20 novembre 2026,19:00,GAP - CERGY,,,yes,
-First Leg,16,20 novembre 2026,19:05,CHAMONIX - BORDEAUX,,,yes,
-First Leg,16,20 novembre 2026,19:15,AMIENS - ANGLET,,,yes,
-First Leg,16,20 novembre 2026,19:15,GRENOBLE - BRIANCON,,,yes,
-First Leg,16,20 novembre 2026,19:30,ROUEN - NICE,,,yes,
-First Leg,16,20 novembre 2026,19:30,ANGERS - MARSEILLE,,,yes,
+First Leg,16,20 novembre 2026,,GAP - CERGY,Regular Time,3-2,no,GAP
+First Leg,16,20 novembre 2026,,CHAMONIX - BORDEAUX,Regular Time,1-4,no,BORDEAUX
+First Leg,16,20 novembre 2026,,AMIENS - ANGLET,Extra Time,5-4,no,AMIENS
+First Leg,16,20 novembre 2026,,GRENOBLE - BRIANCON,Regular Time,4-0,no,GRENOBLE
+First Leg,16,20 novembre 2026,,ROUEN - NICE,Extra Time,4-3,no,ROUEN
+First Leg,16,20 novembre 2026,,ANGERS - MARSEILLE,Regular Time,4-0,no,ANGERS
 First Leg,17,22 novembre 2026,14:00,CERGY - GRENOBLE,,,yes,
 First Leg,17,22 novembre 2026,17:00,AMIENS - ROUEN,,,yes,
 First Leg,17,22 novembre 2026,17:30,BORDEAUX - NICE,,,yes,
