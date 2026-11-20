@@ -1,5 +1,5 @@
 rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_for,goals_against
-1,Zurich,49,20,13,5,0,2,81,45
+1,Zurich,52,21,14,5,0,2,86,47
 2,Berne,36,20,9,3,3,5,58,54
 3,Ambri,36,20,10,2,2,6,62,57
 4,Geneve,35,21,9,3,2,7,56,63
@@ -9,7 +9,7 @@ rank,team,points,games_played,wins,overtime_wins,overtime_losses,losses,goals_fo
 8,Ajoie,28,21,6,4,2,9,64,70
 9,Lugano,28,21,8,1,2,10,64,66
 10,Davos,27,21,7,2,2,10,52,62
-11,Lausanne,26,21,7,2,1,11,59,73
+11,Lausanne,26,22,7,2,1,12,61,78
 12,Bienne,24,20,7,0,3,10,62,69
 13,Rapperswil,22,21,5,2,3,11,55,74
 14,Kloten,21,21,6,1,1,13,51,76
